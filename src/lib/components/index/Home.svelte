@@ -9,12 +9,10 @@
 
 {#if $page.url.pathname === '/'}
 <div class="wrapper w-full h-full flex items-center text-left relative">
-	<div class="main w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%]">
-		<div
-			class="big-text w-5/6 md:w-7/12 text-3xl xl:text-5xl 2xl:text-6xl bg-clip-text text-transparent hemnder font-bold leading-[3.5rem] xl:leading-[5.5rem] 2xl:leading-[7rem]"
-		>
-		Embark on an interstellar journey to space with Adhyaaya where innovation meets the infinite!
-		</div>
+	<div class="main h-full w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%] mb-4">
+		
+		<p class="absolute text-xl w-4/5 md:w-2/4 md:text-3xl left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-40">Embark on an interstellar journey to higher level with Adhyaaya, where innovation meets the infinite!
+		</p>
 	</div>
 	
 	{#if scrollPos < 35}
@@ -45,12 +43,12 @@
 background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 40%, #FFCC70 100%); */
 
 		background-color: #8ec5fc;
-		background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
-
+		
+		
 		@apply transition-all duration-300 ease-in-out;
 	}
 
 	.big-text:hover {
-		background-position: 0% 0%;
+		
 	}
 </style>

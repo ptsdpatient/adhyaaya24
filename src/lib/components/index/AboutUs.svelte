@@ -28,7 +28,7 @@
 			<a
 				data-sveltekit-reload
 				href="/team"
-				class="team-button relative text-white px-5 py-3 text-2xl bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8"
+				class="team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8"
 				>Meet The Team <iconify-icon icon="mdi:arrow-right" /></a
 			>
 			
@@ -48,7 +48,7 @@
 				href="https://gcoen.ac.in/"
 				target="_blank"
 				rel="noreferrer"
-				class="college-button relative bg-gradient-to-bl from-black via-blue-400 to-purple-400 text-white text-2xl py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4 mt-4"
+				class="team-button font-bold relative text-white text-3xl text-3xl border border-solid border-white rounded-lg hover:scale-110 hover:bg-white hover:text-black py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4 mt-4"
 				>Our College <iconify-icon icon="mdi:arrow-right" /></a
 			>
 
@@ -63,7 +63,8 @@
 		<a
 			data-sveltekit-reload
 			href="/gallery"
-			class="gallery-button uppercase relative bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white text-2xl py-5 px-8 rounded-lg inline-flex items-center gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out"
+			class="gallery-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8"
+			
 		>
 			Image Gallery <iconify-icon icon="mdi:arrow-right" />
 		</a>
@@ -74,6 +75,5 @@
 	.team-button::before {
 		content: '';
 		z-index: -1;
-		@apply absolute h-full w-full rounded-lg blur-lg opacity-50 bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 -translate-x-[7.5%];
-	}
+			}
 </style>

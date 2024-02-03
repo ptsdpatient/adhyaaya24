@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'; // Import GLTFLoader
 import drone from '$lib/assets/3d-models/drone.glb?url'
-import nova from '$lib/assets/3d-models/sb.glb?url'
+import nova from '$lib/assets/3d-models/ms.glb?url'
 import type { Var } from 'svelte/types/compiler/interfaces';
 export class Sketch {
   private scene: THREE.Scene;
@@ -11,10 +11,11 @@ export class Sketch {
   private model2: THREE.Object3D;
   private floatingSpeed = 0.002
   private scrollPosition = 0;
-  private lastScrollPosition = 0;
+  private mixer:THREE.AnimationMixer;
   
   loaded=false;
   constructor(canvas: HTMLCanvasElement) {
+    
     // Create a scene
     this.scene = new THREE.Scene();
     this.model1 = new THREE.Object3D();
@@ -56,6 +57,8 @@ export class Sketch {
       }     
       this.model2.rotation.x=-1.3;
       this.scene.add(this.model2);
+      const animationAction = this.mixer.clipAction(gltf.animations[1]); 
+        animationAction.play();
     this.loaded=true;
     });
 
@@ -85,14 +88,14 @@ export class Sketch {
     this.scrollPosition = window.scrollY;
     const normalizedScroll = this.scrollPosition / (document.body.scrollHeight - window.innerHeight);
     this.model1.rotation.y =90+ normalizedScroll * Math.PI *-2;
-    this.model2.rotation.y =90+ normalizedScroll * Math.PI *-2;
-    this.model2.rotation.x =90+ normalizedScroll * Math.PI *-2;
-    this.model2.rotation.z =90+ normalizedScroll * Math.PI *-2;
+    // this.model2.rotation.y =90+ normalizedScroll * Math.PI *-2;
+     this.model2.rotation.x =90+ normalizedScroll * Math.PI *-2;
+     this.model2.rotation.z =90+ normalizedScroll * Math.PI *-2;
   };
   private animate = () => {
     this.handleScroll();
     requestAnimationFrame(this.animate);
-
+    if (this.mixer) this.mixer.update(0.01);
     if (this.model1) {
      // this.model.rotation.x += 0.005;
       this.model1.position.y = Math.cos(Date.now() * this.floatingSpeed) * 0.01; 

@@ -15,7 +15,8 @@
 		</div>
 		<a
 			href="/sponsors"
-			class="da-button text-white mb-10 lg:mt-10 mt-auto mx-auto text-2xl lg:text-3xl relative p-4 lg:p-6 max-w-lg text-center bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-500 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 active:opacity-90 inline-flex items-center justify-center gap-3 "
+			class="da-button team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8"
+			
 			><span>View Sponsors</span> <iconify-icon icon="mdi:arrow-right" /></a
 		>
 	</div>

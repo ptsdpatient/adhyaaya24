@@ -104,7 +104,7 @@ function tweened(value, defaults = {}) {
   };
 }
 const drone = "/_app/immutable/assets/drone.5226bdc2.glb";
-const nova = "/_app/immutable/assets/sb.94b83198.glb";
+const nova = "/_app/immutable/assets/ms.2672a151.glb";
 class Sketch {
   scene;
   camera;
@@ -113,7 +113,7 @@ class Sketch {
   model2;
   floatingSpeed = 2e-3;
   scrollPosition = 0;
-  lastScrollPosition = 0;
+  mixer;
   loaded = false;
   constructor(canvas) {
     this.scene = new THREE.Scene();
@@ -146,6 +146,8 @@ class Sketch {
       }
       this.model2.rotation.x = -1.3;
       this.scene.add(this.model2);
+      const animationAction = this.mixer.clipAction(gltf.animations[1]);
+      animationAction.play();
       this.loaded = true;
     });
     const ambientLight = new THREE.AmbientLight(4210752);
@@ -169,13 +171,14 @@ class Sketch {
     this.scrollPosition = window.scrollY;
     const normalizedScroll = this.scrollPosition / (document.body.scrollHeight - window.innerHeight);
     this.model1.rotation.y = 90 + normalizedScroll * Math.PI * -2;
-    this.model2.rotation.y = 90 + normalizedScroll * Math.PI * -2;
     this.model2.rotation.x = 90 + normalizedScroll * Math.PI * -2;
     this.model2.rotation.z = 90 + normalizedScroll * Math.PI * -2;
   };
   animate = () => {
     this.handleScroll();
     requestAnimationFrame(this.animate);
+    if (this.mixer)
+      this.mixer.update(0.01);
     if (this.model1) {
       this.model1.position.y = Math.cos(Date.now() * this.floatingSpeed) * 0.01;
       this.camera.position.y = Math.sin(Date.now() * this.floatingSpeed) * 0.02;
@@ -185,21 +188,15 @@ class Sketch {
     this.renderer.render(this.scene, this.camera);
   };
 }
-const Home_svelte_svelte_type_style_lang = "";
-const css$6 = {
-  code: ".big-text.svelte-f1c7x3{background-size:200% 200%;background-position:100% 100%;background-color:#8ec5fc;background-image:linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);transition-property:all;transition-duration:300ms;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.big-text.svelte-f1c7x3:hover{background-position:0% 0%}",
-  map: null
-};
 const Home = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
   let { scrollPos = 0 } = $$props;
   if ($$props.scrollPos === void 0 && $$bindings.scrollPos && scrollPos !== void 0)
     $$bindings.scrollPos(scrollPos);
-  $$result.css.add(css$6);
   $$unsubscribe_page();
-  return `${$page.url.pathname === "/" ? `<div class="wrapper w-full h-full flex items-center text-left relative"><div class="main w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%]"><div class="big-text w-5/6 md:w-7/12 text-3xl xl:text-5xl 2xl:text-6xl bg-clip-text text-transparent hemnder font-bold leading-[3.5rem] xl:leading-[5.5rem] 2xl:leading-[7rem] svelte-f1c7x3">Embark on an interstellar journey to space with Adhyaaya where innovation meets the infinite!
-		</div></div>
+  return `${$page.url.pathname === "/" ? `<div class="wrapper w-full h-full flex items-center text-left relative"><div class="main h-full w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%] mb-4"><p class="absolute text-xl w-4/5 md:w-2/4 md:text-3xl left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-40">Embark on an interstellar journey to higher level with Adhyaaya, where innovation meets the infinite!
+		</p></div>
 	
 	${scrollPos < 35 ? `<div class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-2xl font-normal text-white opacity-60">SCROLL TO EXPLORE
 			<div class="scroll-line mt-2 h-24 w-1 bg-blue-300/80 "></div></div>` : ``}</div>` : ``}
@@ -233,16 +230,16 @@ const EventsCarousel = create_ssr_component(($$result, $$props, $$bindings, slot
 });
 const Events_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: "@keyframes svelte-nb17le-move-da-button{0%,100%{background-position:left center}50%{background-position:right center}}.da-button.svelte-nb17le{background-size:200% auto;animation:svelte-nb17le-move-da-button 10s ease infinite}.da-button.svelte-nb17le::before{background-size:200% auto;animation:svelte-nb17le-move-da-button 10s ease infinite;z-index:-1;content:'';position:absolute;height:100%;width:100%;max-width:32rem;--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));border-radius:0.75rem;background-image:linear-gradient(to right, var(--tw-gradient-stops));--tw-gradient-from:#ec4899 var(--tw-gradient-from-position);--tw-gradient-to:rgb(236 72 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to);--tw-gradient-to:rgb(217 70 239 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #d946ef var(--tw-gradient-via-position), var(--tw-gradient-to);--tw-gradient-to:#0ea5e9 var(--tw-gradient-to-position);padding:1rem;text-align:center;opacity:0.5;--tw-blur:blur(16px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}",
+  code: "@keyframes svelte-1e82bll-move-da-button{0%,100%{background-position:left center}50%{background-position:right center}}.da-button.svelte-1e82bll{background-size:200% auto;animation:svelte-1e82bll-move-da-button 10s ease infinite}.da-button.svelte-1e82bll::before{background-size:200% auto;animation:svelte-1e82bll-move-da-button 10s ease infinite;z-index:-1;content:''}",
   map: null
 };
 const Events = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$4);
   return `<div class="mini-events-container flex flex-col h-full w-full justify-evenly items-center md:px-20 lg:px-40">${validate_component(EventsCarousel, "EventsCarousel").$$render($$result, {}, {}, {})}
 
-	<div class="middle-container text-xl lg:text-3xl flex items-center flex-col">
+	<div class="middle-container text-4xl lg:text-3xl border border-white flex items-center flex-col">
 		
-		<a href="/events" class="da-button relative lg:p-8 max-w-xs lg:max-w-lg text-center bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-500 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 active:opacity-90 inline-flex items-center justify-center gap-3 text-white svelte-nb17le"><span>EXPLORE OUR EVENTS</span> <iconify-icon icon="mdi:arrow-right"></iconify-icon></a>
+		<a href="/events" class="da-button text-2xl md:text-3xl relative lg:p-8 max-w-xs lg:max-w-lg text-center hover:bg-white hover:text-black hover:scale-110 active:opacity-90 inline-flex items-center justify-center gap-3 text-white transition-all duration-300 border border-solid border-2 border-white rounded-md p-4 svelte-1e82bll"><span>EXPLORE OUR EVENTS</span> <iconify-icon icon="mdi:arrow-right"></iconify-icon></a>
 		</div>
 
 	${validate_component(EventsCarousel, "EventsCarousel").$$render($$result, { alt: true }, {}, {})}
@@ -305,7 +302,7 @@ const ContactUs = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 const gcoen = "/_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp";
 const AboutUs_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".team-button.svelte-7mr9id::before{content:'';z-index:-1;position:absolute;height:100%;width:100%;--tw-translate-x:-7.5%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));border-radius:0.5rem;background-image:linear-gradient(to top right, var(--tw-gradient-stops));--tw-gradient-from:#ec4899 var(--tw-gradient-from-position);--tw-gradient-to:rgb(236 72 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to);--tw-gradient-to:rgb(239 68 68 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #ef4444 var(--tw-gradient-via-position), var(--tw-gradient-to);--tw-gradient-to:#eab308 var(--tw-gradient-to-position);opacity:0.5;--tw-blur:blur(16px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}",
+  code: ".team-button.svelte-1e6fhy2::before{content:'';z-index:-1}",
   map: null
 };
 const AboutUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -318,17 +315,17 @@ const AboutUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 				from renowned experts and attracts participants from across the region. Join us at Adhyaaya
 				for a journey of innovation and creativity.
 			</p>
-			<a data-sveltekit-reload href="/team" class="team-button relative text-white px-5 py-3 text-2xl bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-7mr9id">Meet The Team <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
+			<a data-sveltekit-reload href="/team" class="team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-1e6fhy2">Meet The Team <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
 		<div class="us w-full max-w-2xl xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify backdrop-blur-none rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"><img loading="lazy"${add_attribute("src", gcoen, 0)} class="h-28" height="112" width="355" alt="">
 			<p class="max-w-lg md:text-2xl nunu">Government College of Engineering, Nagpur is a premier engineering institute established in
 				2016, affiliated to Rashtrasant Tukadoji Maharaj Nagpur University and mentored by
 				Visvesvaraya National Institute of Technology. The campus is situated at New Khapri, Nagpur,
 				providing a top-notch engineering education to its students.
 			</p>
-			<a data-sveltekit-reload href="https://gcoen.ac.in/" target="_blank" rel="noreferrer" class="college-button relative bg-gradient-to-bl from-black via-blue-400 to-purple-400 text-white text-2xl py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4 mt-4">Our College <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div></div>
+			<a data-sveltekit-reload href="https://gcoen.ac.in/" target="_blank" rel="noreferrer" class="team-button font-bold relative text-white text-3xl text-3xl border border-solid border-white rounded-lg hover:scale-110 hover:bg-white hover:text-black py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4 mt-4 svelte-1e6fhy2">Our College <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div></div>
 	<div class="flex flex-col items-center justify-center pt-10"><lite-youtube-embed videoid="DeRLoZuCKfs"></lite-youtube-embed>
 		<lite-youtube videoid="DeRLoZuCKfs" playlabel="Adhyaaya'20 Aftermovie" class="w-[80vw] lg:w-[50vw] rounded-lg"></lite-youtube></div>
-	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8"><a data-sveltekit-reload href="/gallery" class="gallery-button uppercase relative bg-gradient-to-bl from-rose-400 via-fuchsia-500 to-indigo-500 text-white text-2xl py-5 px-8 rounded-lg inline-flex items-center gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out">Image Gallery <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
+	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8"><a data-sveltekit-reload href="/gallery" class="gallery-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8">Image Gallery <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
 </div>`;
 });
 const Sponsors_svelte_svelte_type_style_lang = "";
@@ -344,7 +341,7 @@ const Sponsors = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 			unparalleled. The fest has always been a platform for several brands to engage in unique crowd
 			engaging activations which has proved to deliver a strong sponsor take back value.
 		</div>
-		<a href="/sponsors" class="da-button text-white mb-10 lg:mt-10 mt-auto mx-auto text-2xl lg:text-3xl relative p-4 lg:p-6 max-w-lg text-center bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-500 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 active:opacity-90 inline-flex items-center justify-center gap-3  svelte-p0c6z0"><span>View Sponsors</span> <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
+		<a href="/sponsors" class="da-button team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-p0c6z0"><span>View Sponsors</span> <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
 	<div class="xl:w-1/3"></div>
 </div>`;
 });
