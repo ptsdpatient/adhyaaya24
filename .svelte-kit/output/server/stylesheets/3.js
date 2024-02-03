@@ -1,2 +1,0 @@
-// _app/immutable/assets/EventInfoModal.fbc88251.css
-export default ".modal-wrapper.svelte-10v77i8{position:absolute;top:0;left:0;display:flex;justify-content:center;align-items:center;background-color:#00000080;color:#fff}\n";

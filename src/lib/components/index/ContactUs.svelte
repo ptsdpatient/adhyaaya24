@@ -128,7 +128,39 @@
 			>
 				<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YiVULH51pJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 			</div>
-		
+			<div
+				class="section w-5/6 md:h-full h-auto md:w-1/3 mx-auto flex flex-col items-center py-3 md:py-0 bg-black/40 rounded-lg md:border md:border-white pd-10"
+			>
+			<div class="flex flex-col w-4/6 items-stretch pd-0 p-4 pb-0 pt-4 gap-2">
+				<div
+					class="heading pt-0 text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white "
+				>
+					Sitemap
+				</div>
+				<a href="/" class="btn btn-ghost btn-sm text-xl text-white font-normal hover:bg-white hover:text-black">Home</a>
+				<a href="/events" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Events</a>
+				<a data-sveltekit-reload href="/team" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Team</a>
+				<a href="/sponsors" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Sponsors</a>
+				<a href="/gallery" data-sveltekit-reload class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black" 
+					>Gallery</a
+				>
+				</div>
+			<div class="flex flex-col w-4/6 pt-4 items-stretch justify-evenly gap-1">
+				<div
+					class="heading text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white "
+				>
+					Legal
+				</div>
+				<a href="/legal/terms_and_conditions" class="btn btn-sm  btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black"
+					>T &amp; C</a
+				>
+				<a href="/legal/privacy_policy" class="btn btn-sm  btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black"
+					>Privacy Policy</a
+				>
+				<a href="/legal/contact_info" class="btn btn-sm  btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black">Legal Contact</a>
+			</div>
+				</div>
+	
 			<div
 				class="section w-5/6 h-1/5 md:h-full md:w-1/3 mx-auto flex flex-col items-center justify-between py-3 md:py-0 rounded-lg md:border md:border-white"
 			>
@@ -170,39 +202,7 @@
 				>
 			</div>
 				</div>
-				<div
-				class="section w-5/6 md:h-full h-auto md:w-1/3 mx-auto flex flex-col items-center py-3 md:py-0 bg-black/40 rounded-lg md:border md:border-white pd-10"
-			>
-			<div class="flex flex-col w-4/6 items-stretch pd-0 p-4 pb-0 pt-4 gap-2">
-				<div
-					class="heading pt-0 text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white "
-				>
-					Sitemap
-				</div>
-				<a href="/" class="btn btn-ghost btn-sm text-xl text-white font-normal hover:bg-white hover:text-black">Home</a>
-				<a href="/events" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Events</a>
-				<a data-sveltekit-reload href="/team" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Team</a>
-				<a href="/sponsors" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Sponsors</a>
-				<a href="/gallery" data-sveltekit-reload class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black" 
-					>Gallery</a
-				>
-				</div>
-			<div class="flex flex-col w-4/6 pt-4 items-stretch justify-evenly gap-1">
-				<div
-					class="heading text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white "
-				>
-					Legal
-				</div>
-				<a href="/legal/terms_and_conditions" class="btn btn-sm  btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black"
-					>T &amp; C</a
-				>
-				<a href="/legal/privacy_policy" class="btn btn-sm  btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black"
-					>Privacy Policy</a
-				>
-				<a href="/legal/contact_info" class="btn btn-sm  btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black">Legal Contact</a>
-			</div>
-				</div>
-	</div></div>	
+				</div>	</div>		
 </div>	
 
 <!-- <div class="section md:w-1/3 w-5/6 h-5/6 bg-black/20 py-8 md:py-0 rounded-lg border border-white">
