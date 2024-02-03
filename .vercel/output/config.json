@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "routes": [
+    {
+      "src": "/guide",
+      "dest": "/guide/"
+    },
+    {
+      "src": "/guide/",
+      "status": 308,
+      "headers": {
+        "Location": "/guide"
+      }
+    },
+    {
+      "src": "/_app/immutable/.+",
+      "headers": {
+        "cache-control": "public, immutable, max-age=31536000"
+      }
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/render"
+    }
+  ],
+  "overrides": {
+    "index.html": {
+      "path": ""
+    },
+    "guide.html": {
+      "path": "guide"
+    }
+  }
+}

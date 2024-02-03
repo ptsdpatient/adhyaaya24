@@ -1,0 +1,87 @@
+/* Write your global styles here, in PostCSS syntax */
+/* @import 'zoomwall.js/lib/zoomwall.css'; */
+@import "https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+	font-size: 16px;
+} */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	height: 100%;
+}
+
+/* Weird hack to remove the styles chrome puts */
+input:-webkit-autofill {
+	transition: all 0s 50000s;
+}
+
+.no-scroll-bar {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.no-scroll-bar::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+.swiper-v.swiper {
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+@font-face {
+	font-family: 'My Font';
+	src: url('/fonts/My4Font.woff2') format('woff2'), url('/fonts/My4Font.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Akkurat';
+	src: local('Akkurat'), url('/fonts/Akkurat.woff2') format('woff2'),
+		url('/fonts/Akkurat.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Hemnder';
+	src: url('/fonts/hemnder.woff2') format('woff2'), url('/fonts/hemnder.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.nunu {
+	font-family: 'Nunito', sans-serif;
+}
+
+.hemnder {
+	font-family: 'Hemnder', sans-serif;
+}
+
+* {
+	font-family: 'My Font', sans-serif;
+	@apply font-bold;
+}
+
+.myfont {
+	font-family: 'My Font', sans-serif;
+}
+
+.gravedigger {
+	font-family: 'Gravedigger', sans-serif;
+}

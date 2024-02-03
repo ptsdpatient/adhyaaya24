@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/_test/event_icon/[id]/+page.svelte";

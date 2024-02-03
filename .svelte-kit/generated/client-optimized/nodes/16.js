@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/legal/privacy_policy/+page.svelte";

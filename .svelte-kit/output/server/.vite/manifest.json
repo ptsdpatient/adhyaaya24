@@ -1,0 +1,973 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "EventInfoModal.css": {
+    "file": "_app/immutable/assets/EventInfoModal.fbc88251.css",
+    "src": "EventInfoModal.css"
+  },
+  "Toaster.css": {
+    "file": "_app/immutable/assets/Toaster.5032d475.css",
+    "src": "Toaster.css"
+  },
+  "_Toaster.svelte_svelte_type_style_lang.js": {
+    "css": [
+      "_app/immutable/assets/Toaster.5032d475.css"
+    ],
+    "file": "chunks/Toaster.svelte_svelte_type_style_lang.js",
+    "imports": [
+      "_index3.js",
+      "_index2.js"
+    ]
+  },
+  "_email.js": {
+    "file": "chunks/email.js",
+    "imports": [
+      "_events.js"
+    ]
+  },
+  "_events.js": {
+    "assets": [
+      "_app/immutable/assets/virtual-placement.745c0ba7.png",
+      "_app/immutable/assets/respawn.5c19a68f.png",
+      "_app/immutable/assets/vaad-vivad.8032fb54.png",
+      "_app/immutable/assets/foodoholics.643a0b40.png",
+      "_app/immutable/assets/cricbash.14c31fad.png",
+      "_app/immutable/assets/jigyasa.b0467e26.png",
+      "_app/immutable/assets/stargazer.47c6db67.png",
+      "_app/immutable/assets/gdsc.5c2d0325.png",
+      "_app/immutable/assets/valorant1.aa835005.png",
+      "_app/immutable/assets/BGMI.73324a16.jpg",
+      "_app/immutable/assets/lounge.9cd11a7a.jpg",
+      "_app/immutable/assets/aeromodel.4c63f982.png",
+      "_app/immutable/assets/stock.1f6ad73c.png",
+      "_app/immutable/assets/roborace.38e77c50.png",
+      "_app/immutable/assets/inexpress.eedfc8f5.jpg",
+      "_app/immutable/assets/sspy.c90e7370.png",
+      "_app/immutable/assets/qmaster.0a4d9e33.png",
+      "_app/immutable/assets/avish.44389cda.jpg",
+      "_app/immutable/assets/bridge-o-craft.a58990eb.jpg",
+      "_app/immutable/assets/cv.aa5038fb.jpg",
+      "_app/immutable/assets/respawn.5a501964.jpg",
+      "_app/immutable/assets/vp.9bf02091.jpg",
+      "_app/immutable/assets/bp.55a661a0.jpg",
+      "_app/immutable/assets/cad-o-shop.e4a9f24c.jpg",
+      "_app/immutable/assets/cb.70e8465b.jpg",
+      "_app/immutable/assets/fh.1ad5f95a.jpg",
+      "_app/immutable/assets/ML.90b4b020.jpg",
+      "_app/immutable/assets/jigyasa.49026e0d.jpg",
+      "_app/immutable/assets/rr.a16d74d2.jpg",
+      "_app/immutable/assets/sg.a6bf3055.jpg",
+      "_app/immutable/assets/ST.ff112710.jpg",
+      "_app/immutable/assets/vaad-vivaad.6094128d.jpg"
+    ],
+    "file": "chunks/events.js"
+  },
+  "_index.js": {
+    "file": "chunks/index.js"
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js"
+  },
+  "_index3.js": {
+    "file": "chunks/index3.js",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_internal.js": {
+    "dynamicImports": [
+      "src/hooks.server.ts"
+    ],
+    "file": "chunks/internal.js",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_navigation.js": {
+    "file": "chunks/navigation.js"
+  },
+  "_solid-resize.js": {
+    "assets": [
+      "_app/immutable/assets/solid-resize.fd012ce5.webp"
+    ],
+    "file": "chunks/solid-resize.js"
+  },
+  "_store.js": {
+    "file": "chunks/store.js",
+    "imports": [
+      "_index3.js",
+      "_index2.js"
+    ]
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_stores.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_internal.js",
+      "_index.js",
+      "_index3.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "src/hooks.server.ts": {
+    "file": "chunks/hooks.server.js",
+    "isDynamicEntry": true,
+    "src": "src/hooks.server.ts"
+  },
+  "src/lib/assets/3d-models/drone.glb": {
+    "file": "_app/immutable/assets/drone.5226bdc2.glb",
+    "src": "src/lib/assets/3d-models/drone.glb"
+  },
+  "src/lib/assets/3d-models/sb.glb": {
+    "file": "_app/immutable/assets/sb.94b83198.glb",
+    "src": "src/lib/assets/3d-models/sb.glb"
+  },
+  "src/lib/assets/backgrounds/register-1.jpg": {
+    "file": "_app/immutable/assets/register-1.10d49068.jpg",
+    "src": "src/lib/assets/backgrounds/register-1.jpg"
+  },
+  "src/lib/assets/backgrounds/register-3.jpg": {
+    "file": "_app/immutable/assets/register-3.146a5dcb.jpg",
+    "src": "src/lib/assets/backgrounds/register-3.jpg"
+  },
+  "src/lib/assets/icons/BGMI.jpg": {
+    "file": "_app/immutable/assets/BGMI.73324a16.jpg",
+    "src": "src/lib/assets/icons/BGMI.jpg"
+  },
+  "src/lib/assets/icons/aeromodel.png": {
+    "file": "_app/immutable/assets/aeromodel.4c63f982.png",
+    "src": "src/lib/assets/icons/aeromodel.png"
+  },
+  "src/lib/assets/icons/cadoshop.png": {
+    "file": "_app/immutable/assets/cadoshop.029a8884.png",
+    "src": "src/lib/assets/icons/cadoshop.png"
+  },
+  "src/lib/assets/icons/cricbash.png": {
+    "file": "_app/immutable/assets/cricbash.14c31fad.png",
+    "src": "src/lib/assets/icons/cricbash.png"
+  },
+  "src/lib/assets/icons/foodoholics.png": {
+    "file": "_app/immutable/assets/foodoholics.643a0b40.png",
+    "src": "src/lib/assets/icons/foodoholics.png"
+  },
+  "src/lib/assets/icons/gdsc.png": {
+    "file": "_app/immutable/assets/gdsc.5c2d0325.png",
+    "src": "src/lib/assets/icons/gdsc.png"
+  },
+  "src/lib/assets/icons/inexpress.jpg": {
+    "file": "_app/immutable/assets/inexpress.eedfc8f5.jpg",
+    "src": "src/lib/assets/icons/inexpress.jpg"
+  },
+  "src/lib/assets/icons/jigyasa.png": {
+    "file": "_app/immutable/assets/jigyasa.b0467e26.png",
+    "src": "src/lib/assets/icons/jigyasa.png"
+  },
+  "src/lib/assets/icons/lounge.jpg": {
+    "file": "_app/immutable/assets/lounge.9cd11a7a.jpg",
+    "src": "src/lib/assets/icons/lounge.jpg"
+  },
+  "src/lib/assets/icons/nontech.png": {
+    "file": "_app/immutable/assets/nontech.7b867384.png",
+    "src": "src/lib/assets/icons/nontech.png"
+  },
+  "src/lib/assets/icons/qmaster.png": {
+    "file": "_app/immutable/assets/qmaster.0a4d9e33.png",
+    "src": "src/lib/assets/icons/qmaster.png"
+  },
+  "src/lib/assets/icons/respawn.png": {
+    "file": "_app/immutable/assets/respawn.5c19a68f.png",
+    "src": "src/lib/assets/icons/respawn.png"
+  },
+  "src/lib/assets/icons/roborace.png": {
+    "file": "_app/immutable/assets/roborace.38e77c50.png",
+    "src": "src/lib/assets/icons/roborace.png"
+  },
+  "src/lib/assets/icons/sspy.png": {
+    "file": "_app/immutable/assets/sspy.c90e7370.png",
+    "src": "src/lib/assets/icons/sspy.png"
+  },
+  "src/lib/assets/icons/stargazer.png": {
+    "file": "_app/immutable/assets/stargazer.47c6db67.png",
+    "src": "src/lib/assets/icons/stargazer.png"
+  },
+  "src/lib/assets/icons/stock.png": {
+    "file": "_app/immutable/assets/stock.1f6ad73c.png",
+    "src": "src/lib/assets/icons/stock.png"
+  },
+  "src/lib/assets/icons/tech.png": {
+    "file": "_app/immutable/assets/tech.5dc0cc44.png",
+    "src": "src/lib/assets/icons/tech.png"
+  },
+  "src/lib/assets/icons/vaad-vivad.png": {
+    "file": "_app/immutable/assets/vaad-vivad.8032fb54.png",
+    "src": "src/lib/assets/icons/vaad-vivad.png"
+  },
+  "src/lib/assets/icons/valorant1.png": {
+    "file": "_app/immutable/assets/valorant1.aa835005.png",
+    "src": "src/lib/assets/icons/valorant1.png"
+  },
+  "src/lib/assets/icons/virtual-placement.png": {
+    "file": "_app/immutable/assets/virtual-placement.745c0ba7.png",
+    "src": "src/lib/assets/icons/virtual-placement.png"
+  },
+  "src/lib/assets/icons/workshops.png": {
+    "file": "_app/immutable/assets/workshops.3de3a172.png",
+    "src": "src/lib/assets/icons/workshops.png"
+  },
+  "src/lib/assets/logo/gcoen-knockout-resize.webp": {
+    "file": "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp",
+    "src": "src/lib/assets/logo/gcoen-knockout-resize.webp"
+  },
+  "src/lib/assets/logo/solid-resize.webp": {
+    "file": "_app/immutable/assets/solid-resize.fd012ce5.webp",
+    "src": "src/lib/assets/logo/solid-resize.webp"
+  },
+  "src/lib/assets/map.png": {
+    "file": "_app/immutable/assets/map.9ea077fc.png",
+    "src": "src/lib/assets/map.png"
+  },
+  "src/lib/assets/posters/ML.jpg": {
+    "file": "_app/immutable/assets/ML.90b4b020.jpg",
+    "src": "src/lib/assets/posters/ML.jpg"
+  },
+  "src/lib/assets/posters/ST.jpg": {
+    "file": "_app/immutable/assets/ST.ff112710.jpg",
+    "src": "src/lib/assets/posters/ST.jpg"
+  },
+  "src/lib/assets/posters/avish.jpg": {
+    "file": "_app/immutable/assets/avish.44389cda.jpg",
+    "src": "src/lib/assets/posters/avish.jpg"
+  },
+  "src/lib/assets/posters/bp.jpg": {
+    "file": "_app/immutable/assets/bp.55a661a0.jpg",
+    "src": "src/lib/assets/posters/bp.jpg"
+  },
+  "src/lib/assets/posters/bridge-o-craft.jpg": {
+    "file": "_app/immutable/assets/bridge-o-craft.a58990eb.jpg",
+    "src": "src/lib/assets/posters/bridge-o-craft.jpg"
+  },
+  "src/lib/assets/posters/cad-o-shop.jpg": {
+    "file": "_app/immutable/assets/cad-o-shop.e4a9f24c.jpg",
+    "src": "src/lib/assets/posters/cad-o-shop.jpg"
+  },
+  "src/lib/assets/posters/caddiction.jpg": {
+    "file": "_app/immutable/assets/caddiction.88b54b05.jpg",
+    "src": "src/lib/assets/posters/caddiction.jpg"
+  },
+  "src/lib/assets/posters/cb.jpg": {
+    "file": "_app/immutable/assets/cb.70e8465b.jpg",
+    "src": "src/lib/assets/posters/cb.jpg"
+  },
+  "src/lib/assets/posters/cv.jpg": {
+    "file": "_app/immutable/assets/cv.aa5038fb.jpg",
+    "src": "src/lib/assets/posters/cv.jpg"
+  },
+  "src/lib/assets/posters/fh.jpg": {
+    "file": "_app/immutable/assets/fh.1ad5f95a.jpg",
+    "src": "src/lib/assets/posters/fh.jpg"
+  },
+  "src/lib/assets/posters/jigyasa.jpg": {
+    "file": "_app/immutable/assets/jigyasa.49026e0d.jpg",
+    "src": "src/lib/assets/posters/jigyasa.jpg"
+  },
+  "src/lib/assets/posters/respawn.jpg": {
+    "file": "_app/immutable/assets/respawn.5a501964.jpg",
+    "src": "src/lib/assets/posters/respawn.jpg"
+  },
+  "src/lib/assets/posters/rr.jpg": {
+    "file": "_app/immutable/assets/rr.a16d74d2.jpg",
+    "src": "src/lib/assets/posters/rr.jpg"
+  },
+  "src/lib/assets/posters/sg.jpg": {
+    "file": "_app/immutable/assets/sg.a6bf3055.jpg",
+    "src": "src/lib/assets/posters/sg.jpg"
+  },
+  "src/lib/assets/posters/vaad-vivaad.jpg": {
+    "file": "_app/immutable/assets/vaad-vivaad.6094128d.jpg",
+    "src": "src/lib/assets/posters/vaad-vivaad.jpg"
+  },
+  "src/lib/assets/posters/vp.jpg": {
+    "file": "_app/immutable/assets/vp.9bf02091.jpg",
+    "src": "src/lib/assets/posters/vp.jpg"
+  },
+  "src/lib/assets/sponsors/caad.png": {
+    "file": "_app/immutable/assets/caad.05722700.png",
+    "src": "src/lib/assets/sponsors/caad.png"
+  },
+  "src/lib/assets/sponsors/droiddevs.jpg": {
+    "file": "_app/immutable/assets/droiddevs.655f7411.jpg",
+    "src": "src/lib/assets/sponsors/droiddevs.jpg"
+  },
+  "src/lib/assets/sponsors/everythingsweet.png": {
+    "file": "_app/immutable/assets/everythingsweet.eff53ed1.png",
+    "src": "src/lib/assets/sponsors/everythingsweet.png"
+  },
+  "src/lib/assets/sponsors/foodisland.webp": {
+    "file": "_app/immutable/assets/foodisland.650031b5.webp",
+    "src": "src/lib/assets/sponsors/foodisland.webp"
+  },
+  "src/lib/assets/sponsors/frostandfeather.webp": {
+    "file": "_app/immutable/assets/frostandfeather.01a5954b.webp",
+    "src": "src/lib/assets/sponsors/frostandfeather.webp"
+  },
+  "src/lib/assets/sponsors/hackerearth.jpg": {
+    "file": "_app/immutable/assets/hackerearth.fc96efcf.jpg",
+    "src": "src/lib/assets/sponsors/hackerearth.jpg"
+  },
+  "src/lib/assets/sponsors/ie.png": {
+    "file": "_app/immutable/assets/ie.1b385ba3.png",
+    "src": "src/lib/assets/sponsors/ie.png"
+  },
+  "src/lib/assets/sponsors/niobm.png": {
+    "file": "_app/immutable/assets/niobm.64c078b1.png",
+    "src": "src/lib/assets/sponsors/niobm.png"
+  },
+  "src/lib/assets/sponsors/oraipl.jpg": {
+    "file": "_app/immutable/assets/oraipl.6ff2ff87.jpg",
+    "src": "src/lib/assets/sponsors/oraipl.jpg"
+  },
+  "src/lib/assets/sponsors/orangebits.webp": {
+    "file": "_app/immutable/assets/orangebits.3d0be576.webp",
+    "src": "src/lib/assets/sponsors/orangebits.webp"
+  },
+  "src/lib/assets/sponsors/parangat.webp": {
+    "file": "_app/immutable/assets/parangat.cb94d09b.webp",
+    "src": "src/lib/assets/sponsors/parangat.webp"
+  },
+  "src/lib/assets/sponsors/pythonacademy.webp": {
+    "file": "_app/immutable/assets/pythonacademy.50dc955c.webp",
+    "src": "src/lib/assets/sponsors/pythonacademy.webp"
+  },
+  "src/lib/assets/sponsors/siuk.webp": {
+    "file": "_app/immutable/assets/siuk.192f1692.webp",
+    "src": "src/lib/assets/sponsors/siuk.webp"
+  },
+  "src/lib/assets/sponsors/stock.png": {
+    "file": "_app/immutable/assets/stock.608de2c3.png",
+    "src": "src/lib/assets/sponsors/stock.png"
+  },
+  "src/lib/assets/team/accounting/nimish-gotmare.webp": {
+    "file": "_app/immutable/assets/nimish-gotmare.4a4a297b.webp",
+    "src": "src/lib/assets/team/accounting/nimish-gotmare.webp"
+  },
+  "src/lib/assets/team/accounting/prajwal_akarte.jpeg": {
+    "file": "_app/immutable/assets/prajwal_akarte.89c75679.jpeg",
+    "src": "src/lib/assets/team/accounting/prajwal_akarte.jpeg"
+  },
+  "src/lib/assets/team/advisors/aditya-tete-compressed.webp": {
+    "file": "_app/immutable/assets/aditya-tete-compressed.7310ba16.webp",
+    "src": "src/lib/assets/team/advisors/aditya-tete-compressed.webp"
+  },
+  "src/lib/assets/team/advisors/malhar-paradkar-compressed.webp": {
+    "file": "_app/immutable/assets/malhar-paradkar-compressed.892822b3.webp",
+    "src": "src/lib/assets/team/advisors/malhar-paradkar-compressed.webp"
+  },
+  "src/lib/assets/team/advisors/mayank-masram-compressed.webp": {
+    "file": "_app/immutable/assets/mayank-masram-compressed.a4aed599.webp",
+    "src": "src/lib/assets/team/advisors/mayank-masram-compressed.webp"
+  },
+  "src/lib/assets/team/advisors/shlok-tajne-compressed.webp": {
+    "file": "_app/immutable/assets/shlok-tajne-compressed.f640fb33.webp",
+    "src": "src/lib/assets/team/advisors/shlok-tajne-compressed.webp"
+  },
+  "src/lib/assets/team/advisors/swarali-prayagi-compressed.webp": {
+    "file": "_app/immutable/assets/swarali-prayagi-compressed.5a588e57.webp",
+    "src": "src/lib/assets/team/advisors/swarali-prayagi-compressed.webp"
+  },
+  "src/lib/assets/team/content-writing/sabrina-mondal-compressed.jpg": {
+    "file": "_app/immutable/assets/sabrina-mondal-compressed.f708e2b7.jpg",
+    "src": "src/lib/assets/team/content-writing/sabrina-mondal-compressed.jpg"
+  },
+  "src/lib/assets/team/content-writing/shravani-gawande-compressed.webp.jpg": {
+    "file": "_app/immutable/assets/shravani-gawande-compressed.webp.e1d2d866.jpg",
+    "src": "src/lib/assets/team/content-writing/shravani-gawande-compressed.webp.jpg"
+  },
+  "src/lib/assets/team/coordinators/aditya-shinde.webp": {
+    "file": "_app/immutable/assets/aditya-shinde.213336e2.webp",
+    "src": "src/lib/assets/team/coordinators/aditya-shinde.webp"
+  },
+  "src/lib/assets/team/coordinators/anukul-ghosh.webp": {
+    "file": "_app/immutable/assets/anukul-ghosh.0851833b.webp",
+    "src": "src/lib/assets/team/coordinators/anukul-ghosh.webp"
+  },
+  "src/lib/assets/team/coordinators/om.jpg": {
+    "file": "_app/immutable/assets/om.50ee1209.jpg",
+    "src": "src/lib/assets/team/coordinators/om.jpg"
+  },
+  "src/lib/assets/team/coordinators/sushrut.jpeg": {
+    "file": "_app/immutable/assets/sushrut.e14f581c.jpeg",
+    "src": "src/lib/assets/team/coordinators/sushrut.jpeg"
+  },
+  "src/lib/assets/team/coordinators/swara_nagpure.png": {
+    "file": "_app/immutable/assets/swara_nagpure.365faffe.png",
+    "src": "src/lib/assets/team/coordinators/swara_nagpure.png"
+  },
+  "src/lib/assets/team/creativity-and-decoration/WhatsApp_Image_2024-01-31_at_11.29.21_PM.jpeg": {
+    "file": "_app/immutable/assets/WhatsApp_Image_2024-01-31_at_11.29.21_PM.e97ff731.jpeg",
+    "src": "src/lib/assets/team/creativity-and-decoration/WhatsApp_Image_2024-01-31_at_11.29.21_PM.jpeg"
+  },
+  "src/lib/assets/team/creativity-and-decoration/ashlesha-chute.png": {
+    "file": "_app/immutable/assets/ashlesha-chute.2784c502.png",
+    "src": "src/lib/assets/team/creativity-and-decoration/ashlesha-chute.png"
+  },
+  "src/lib/assets/team/creativity-and-decoration/ashlesha-chute.webp": {
+    "file": "_app/immutable/assets/ashlesha-chute.f6a6dac2.webp",
+    "src": "src/lib/assets/team/creativity-and-decoration/ashlesha-chute.webp"
+  },
+  "src/lib/assets/team/creativity-and-decoration/dh.jpg": {
+    "file": "_app/immutable/assets/dh.64a2808b.jpg",
+    "src": "src/lib/assets/team/creativity-and-decoration/dh.jpg"
+  },
+  "src/lib/assets/team/creativity-and-decoration/karan-buradkar.webp": {
+    "file": "_app/immutable/assets/karan-buradkar.510610e0.webp",
+    "src": "src/lib/assets/team/creativity-and-decoration/karan-buradkar.webp"
+  },
+  "src/lib/assets/team/creativity-and-decoration/rohit-thakare.webp": {
+    "file": "_app/immutable/assets/rohit-thakare.0b49a063.webp",
+    "src": "src/lib/assets/team/creativity-and-decoration/rohit-thakare.webp"
+  },
+  "src/lib/assets/team/creativity-and-decoration/sn.jpg": {
+    "file": "_app/immutable/assets/sn.89c72289.jpg",
+    "src": "src/lib/assets/team/creativity-and-decoration/sn.jpg"
+  },
+  "src/lib/assets/team/hospitality-and-discipline/aditya-gawai.webp": {
+    "file": "_app/immutable/assets/aditya-gawai.77723711.webp",
+    "src": "src/lib/assets/team/hospitality-and-discipline/aditya-gawai.webp"
+  },
+  "src/lib/assets/team/hospitality-and-discipline/hardik-bodele.webp": {
+    "file": "_app/immutable/assets/hardik-bodele.157fe32c.webp",
+    "src": "src/lib/assets/team/hospitality-and-discipline/hardik-bodele.webp"
+  },
+  "src/lib/assets/team/hospitality-and-discipline/himanshi-bisen.png": {
+    "file": "_app/immutable/assets/himanshi-bisen.a316cbd4.png",
+    "src": "src/lib/assets/team/hospitality-and-discipline/himanshi-bisen.png"
+  },
+  "src/lib/assets/team/hospitality-and-discipline/palash-atram.webp.jpg": {
+    "file": "_app/immutable/assets/palash-atram.webp.6b1d60d0.jpg",
+    "src": "src/lib/assets/team/hospitality-and-discipline/palash-atram.webp.jpg"
+  },
+  "src/lib/assets/team/hospitality-and-discipline/sweta-mane.png": {
+    "file": "_app/immutable/assets/sweta-mane.3f4641c8.png",
+    "src": "src/lib/assets/team/hospitality-and-discipline/sweta-mane.png"
+  },
+  "src/lib/assets/team/organisation/aditya-muddamwar-compressed,webp.jpg": {
+    "file": "_app/immutable/assets/aditya-muddamwar-compressed_webp.b26090e3.jpg",
+    "src": "src/lib/assets/team/organisation/aditya-muddamwar-compressed,webp.jpg"
+  },
+  "src/lib/assets/team/organisation/aranya-sharma-compressed.webp.jpg": {
+    "file": "_app/immutable/assets/aranya-sharma-compressed.webp.47260592.jpg",
+    "src": "src/lib/assets/team/organisation/aranya-sharma-compressed.webp.jpg"
+  },
+  "src/lib/assets/team/organisation/ayush-khangar-compressed,webp.jpg": {
+    "file": "_app/immutable/assets/ayush-khangar-compressed_webp.6407f1c0.jpg",
+    "src": "src/lib/assets/team/organisation/ayush-khangar-compressed,webp.jpg"
+  },
+  "src/lib/assets/team/organisation/ayushi-singh-compressed.webp.jpg": {
+    "file": "_app/immutable/assets/ayushi-singh-compressed.webp.8fdeddf5.jpg",
+    "src": "src/lib/assets/team/organisation/ayushi-singh-compressed.webp.jpg"
+  },
+  "src/lib/assets/team/organisation/khushi.sandekar-compressed.webp.jpg": {
+    "file": "_app/immutable/assets/khushi.sandekar-compressed.webp.b0ad1e8a.jpg",
+    "src": "src/lib/assets/team/organisation/khushi.sandekar-compressed.webp.jpg"
+  },
+  "src/lib/assets/team/organisation/varun-dudhane-compressed.webp.jpg": {
+    "file": "_app/immutable/assets/varun-dudhane-compressed.webp.9be1eeb7.jpg",
+    "src": "src/lib/assets/team/organisation/varun-dudhane-compressed.webp.jpg"
+  },
+  "src/lib/assets/team/publicity/aadil-burani-compressed.webp": {
+    "file": "_app/immutable/assets/aadil-burani-compressed.8f35c572.webp",
+    "src": "src/lib/assets/team/publicity/aadil-burani-compressed.webp"
+  },
+  "src/lib/assets/team/publicity/anushree-barad.webp": {
+    "file": "_app/immutable/assets/anushree-barad.ab45e1fe.webp",
+    "src": "src/lib/assets/team/publicity/anushree-barad.webp"
+  },
+  "src/lib/assets/team/publicity/jaideep-roy.png": {
+    "file": "_app/immutable/assets/jaideep-roy.db9ec096.png",
+    "src": "src/lib/assets/team/publicity/jaideep-roy.png"
+  },
+  "src/lib/assets/team/publicity/rohit-wagh.png": {
+    "file": "_app/immutable/assets/rohit-wagh.987e4790.png",
+    "src": "src/lib/assets/team/publicity/rohit-wagh.png"
+  },
+  "src/lib/assets/team/publicity/rugved-yadalwar-compressed.webp": {
+    "file": "_app/immutable/assets/rugved-yadalwar-compressed.939144cf.webp",
+    "src": "src/lib/assets/team/publicity/rugved-yadalwar-compressed.webp"
+  },
+  "src/lib/assets/team/publicity/suhani-garad.webp": {
+    "file": "_app/immutable/assets/suhani-garad.5d37099c.webp",
+    "src": "src/lib/assets/team/publicity/suhani-garad.webp"
+  },
+  "src/lib/assets/team/publicity/swayam-jawade.png": {
+    "file": "_app/immutable/assets/swayam-jawade.72851a35.png",
+    "src": "src/lib/assets/team/publicity/swayam-jawade.png"
+  },
+  "src/lib/assets/team/publicity/tejesh-ghuge.webp": {
+    "file": "_app/immutable/assets/tejesh-ghuge.22a6ec46.webp",
+    "src": "src/lib/assets/team/publicity/tejesh-ghuge.webp"
+  },
+  "src/lib/assets/team/sponsorship/Screenshot_20240125-143331.jpg": {
+    "file": "_app/immutable/assets/Screenshot_20240125-143331.f27f7b52.jpg",
+    "src": "src/lib/assets/team/sponsorship/Screenshot_20240125-143331.jpg"
+  },
+  "src/lib/assets/team/technical/aditya_thombre.webp": {
+    "file": "_app/immutable/assets/aditya_thombre.e9c3a1dc.webp",
+    "src": "src/lib/assets/team/technical/aditya_thombre.webp"
+  },
+  "src/lib/assets/team/technical/mohit_deotare.png": {
+    "file": "_app/immutable/assets/mohit_deotare.cfebcc11.png",
+    "src": "src/lib/assets/team/technical/mohit_deotare.png"
+  },
+  "src/lib/assets/team/technical/tanshiq_dhote.webp.jpg": {
+    "file": "_app/immutable/assets/tanshiq_dhote.webp.e82fb48f.jpg",
+    "src": "src/lib/assets/team/technical/tanshiq_dhote.webp.jpg"
+  },
+  "src/routes/(app)/__register/+page.css": {
+    "file": "_app/immutable/assets/_page.1b56f4d4.css",
+    "src": "src/routes/(app)/__register/+page.css"
+  },
+  "src/routes/(app)/__register/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/register-1.10d49068.jpg"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.1b56f4d4.css"
+    ],
+    "file": "entries/pages/(app)/__register/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/__register/+page.svelte"
+  },
+  "src/routes/(app)/events/+page.css": {
+    "file": "_app/immutable/assets/_page.b976b217.css",
+    "src": "src/routes/(app)/events/+page.css"
+  },
+  "src/routes/(app)/events/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/tech.5dc0cc44.png",
+      "_app/immutable/assets/nontech.7b867384.png",
+      "_app/immutable/assets/workshops.3de3a172.png"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.b976b217.css",
+      "_app/immutable/assets/EventInfoModal.fbc88251.css"
+    ],
+    "file": "entries/pages/(app)/events/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_store.js",
+      "_navigation.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_stores.js",
+      "_events.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/events/+page.svelte"
+  },
+  "src/routes/(app)/events/+page.ts": {
+    "file": "entries/pages/(app)/events/_page.ts.js",
+    "imports": [
+      "_events.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/events/+page.ts"
+  },
+  "src/routes/(app)/forms/contact_us/+page.server.ts": {
+    "file": "entries/pages/(app)/forms/contact_us/_page.server.ts.js",
+    "imports": [
+      "_email.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/forms/contact_us/+page.server.ts"
+  },
+  "src/routes/(app)/gallery/+page.css": {
+    "file": "_app/immutable/assets/_page.fd1e1e00.css",
+    "src": "src/routes/(app)/gallery/+page.css"
+  },
+  "src/routes/(app)/gallery/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/bg.1c1f47a2.jpg"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.fd1e1e00.css"
+    ],
+    "file": "entries/pages/(app)/gallery/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/gallery/+page.svelte"
+  },
+  "src/routes/(app)/gallery/bg.jpg": {
+    "file": "_app/immutable/assets/bg.1c1f47a2.jpg",
+    "src": "src/routes/(app)/gallery/bg.jpg"
+  },
+  "src/routes/(app)/guide/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/map.9ea077fc.png"
+    ],
+    "file": "entries/pages/(app)/guide/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_events.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/guide/+page.svelte"
+  },
+  "src/routes/(app)/guide/+page.ts": {
+    "file": "entries/pages/(app)/guide/_page.ts.js",
+    "isEntry": true,
+    "src": "src/routes/(app)/guide/+page.ts"
+  },
+  "src/routes/(app)/pg/[rid]/pay/+page.server.ts": {
+    "file": "entries/pages/(app)/pg/_rid_/pay/_page.server.ts.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/pg/[rid]/pay/+page.server.ts"
+  },
+  "src/routes/(app)/pg/[rid]/pay/+page.svelte": {
+    "file": "entries/pages/(app)/pg/_rid_/pay/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_navigation.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/pg/[rid]/pay/+page.svelte"
+  },
+  "src/routes/(app)/pg/[rid]/success/+page.css": {
+    "file": "_app/immutable/assets/_page.a7e77728.css",
+    "src": "src/routes/(app)/pg/[rid]/success/+page.css"
+  },
+  "src/routes/(app)/pg/[rid]/success/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.a7e77728.css"
+    ],
+    "file": "entries/pages/(app)/pg/_rid_/success/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_solid-resize.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_events.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/pg/[rid]/success/+page.svelte"
+  },
+  "src/routes/(app)/pg/[rid]/success/+page.ts": {
+    "file": "entries/pages/(app)/pg/_rid_/success/_page.ts.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/pg/[rid]/success/+page.ts"
+  },
+  "src/routes/(app)/pg/check_status/+server.ts": {
+    "file": "entries/endpoints/(app)/pg/check_status/_server.ts.js",
+    "imports": [
+      "_index.js",
+      "_email.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/pg/check_status/+server.ts"
+  },
+  "src/routes/(app)/register/+page.css": {
+    "file": "_app/immutable/assets/_page.cc60a16c.css",
+    "src": "src/routes/(app)/register/+page.css"
+  },
+  "src/routes/(app)/register/+page.server.ts": {
+    "file": "entries/pages/(app)/register/_page.server.ts.js",
+    "imports": [
+      "_events.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/register/+page.server.ts"
+  },
+  "src/routes/(app)/register/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/register-3.146a5dcb.jpg"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.cc60a16c.css"
+    ],
+    "file": "entries/pages/(app)/register/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_navigation.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_store.js",
+      "_events.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/register/+page.svelte"
+  },
+  "src/routes/(app)/register/+page.ts": {
+    "file": "entries/pages/(app)/register/_page.ts.js",
+    "imports": [
+      "_index.js",
+      "_events.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/register/+page.ts"
+  },
+  "src/routes/(app)/sponsors/+page.css": {
+    "file": "_app/immutable/assets/_page.0fbda1fe.css",
+    "src": "src/routes/(app)/sponsors/+page.css"
+  },
+  "src/routes/(app)/sponsors/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/bg.ca369b45.jpg",
+      "_app/immutable/assets/orangebits.3d0be576.webp",
+      "_app/immutable/assets/pythonacademy.50dc955c.webp",
+      "_app/immutable/assets/parangat.cb94d09b.webp",
+      "_app/immutable/assets/frostandfeather.01a5954b.webp",
+      "_app/immutable/assets/foodisland.650031b5.webp",
+      "_app/immutable/assets/siuk.192f1692.webp",
+      "_app/immutable/assets/niobm.64c078b1.png",
+      "_app/immutable/assets/oraipl.6ff2ff87.jpg",
+      "_app/immutable/assets/hackerearth.fc96efcf.jpg",
+      "_app/immutable/assets/ie.1b385ba3.png",
+      "_app/immutable/assets/droiddevs.655f7411.jpg",
+      "_app/immutable/assets/everythingsweet.eff53ed1.png",
+      "_app/immutable/assets/stock.608de2c3.png"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.0fbda1fe.css"
+    ],
+    "file": "entries/pages/(app)/sponsors/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/sponsors/+page.svelte"
+  },
+  "src/routes/(app)/sponsors/bg.jpg": {
+    "file": "_app/immutable/assets/bg.ca369b45.jpg",
+    "src": "src/routes/(app)/sponsors/bg.jpg"
+  },
+  "src/routes/(app)/team/+page.css": {
+    "file": "_app/immutable/assets/_page.fd9ea111.css",
+    "src": "src/routes/(app)/team/+page.css"
+  },
+  "src/routes/(app)/team/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/bg.91af023d.png",
+      "_app/immutable/assets/swarali-prayagi-compressed.5a588e57.webp",
+      "_app/immutable/assets/shlok-tajne-compressed.f640fb33.webp",
+      "_app/immutable/assets/aditya-tete-compressed.7310ba16.webp",
+      "_app/immutable/assets/malhar-paradkar-compressed.892822b3.webp",
+      "_app/immutable/assets/mayank-masram-compressed.a4aed599.webp",
+      "_app/immutable/assets/anukul-ghosh.0851833b.webp",
+      "_app/immutable/assets/swara_nagpure.365faffe.png",
+      "_app/immutable/assets/aditya-shinde.213336e2.webp",
+      "_app/immutable/assets/om.50ee1209.jpg",
+      "_app/immutable/assets/tanshiq_dhote.webp.e82fb48f.jpg",
+      "_app/immutable/assets/aditya_thombre.e9c3a1dc.webp",
+      "_app/immutable/assets/mohit_deotare.cfebcc11.png",
+      "_app/immutable/assets/ayush-khangar-compressed_webp.6407f1c0.jpg",
+      "_app/immutable/assets/aditya-muddamwar-compressed_webp.b26090e3.jpg",
+      "_app/immutable/assets/varun-dudhane-compressed.webp.9be1eeb7.jpg",
+      "_app/immutable/assets/aranya-sharma-compressed.webp.47260592.jpg",
+      "_app/immutable/assets/ayushi-singh-compressed.webp.8fdeddf5.jpg",
+      "_app/immutable/assets/khushi.sandekar-compressed.webp.b0ad1e8a.jpg",
+      "_app/immutable/assets/rohit-wagh.987e4790.png",
+      "_app/immutable/assets/jaideep-roy.db9ec096.png",
+      "_app/immutable/assets/suhani-garad.5d37099c.webp",
+      "_app/immutable/assets/swayam-jawade.72851a35.png",
+      "_app/immutable/assets/nimish-gotmare.4a4a297b.webp",
+      "_app/immutable/assets/sabrina-mondal-compressed.f708e2b7.jpg",
+      "_app/immutable/assets/shravani-gawande-compressed.webp.e1d2d866.jpg",
+      "_app/immutable/assets/Screenshot_20240125-143331.f27f7b52.jpg",
+      "_app/immutable/assets/karan-buradkar.510610e0.webp",
+      "_app/immutable/assets/ashlesha-chute.2784c502.png",
+      "_app/immutable/assets/dh.64a2808b.jpg",
+      "_app/immutable/assets/rohit-thakare.0b49a063.webp",
+      "_app/immutable/assets/WhatsApp_Image_2024-01-31_at_11.29.21_PM.e97ff731.jpeg",
+      "_app/immutable/assets/sn.89c72289.jpg",
+      "_app/immutable/assets/aditya-gawai.77723711.webp",
+      "_app/immutable/assets/sweta-mane.3f4641c8.png",
+      "_app/immutable/assets/palash-atram.webp.6b1d60d0.jpg",
+      "_app/immutable/assets/hardik-bodele.157fe32c.webp",
+      "_app/immutable/assets/himanshi-bisen.a316cbd4.png",
+      "_app/immutable/assets/prajwal_akarte.89c75679.jpeg",
+      "_app/immutable/assets/tejesh-ghuge.22a6ec46.webp",
+      "_app/immutable/assets/anushree-barad.ab45e1fe.webp",
+      "_app/immutable/assets/sushrut.e14f581c.jpeg"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.fd9ea111.css"
+    ],
+    "file": "entries/pages/(app)/team/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/team/+page.svelte"
+  },
+  "src/routes/(app)/team/bg.png": {
+    "file": "_app/immutable/assets/bg.91af023d.png",
+    "src": "src/routes/(app)/team/bg.png"
+  },
+  "src/routes/(app)/timeline/+page.svelte": {
+    "file": "entries/pages/(app)/timeline/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/(app)/timeline/+page.svelte"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout.bc4a97f8.css",
+    "src": "src/routes/+layout.css"
+  },
+  "src/routes/+layout.server.ts": {
+    "file": "entries/pages/_layout.server.ts.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.server.ts"
+  },
+  "src/routes/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/_layout.bc4a97f8.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_store.js",
+      "_navigation.js",
+      "_solid-resize.js",
+      "_stores.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.ts"
+  },
+  "src/routes/+page.css": {
+    "file": "_app/immutable/assets/_page.926414d6.css",
+    "src": "src/routes/+page.css"
+  },
+  "src/routes/+page.svelte": {
+    "assets": [
+      "_app/immutable/assets/drone.5226bdc2.glb",
+      "_app/immutable/assets/sb.94b83198.glb",
+      "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.926414d6.css",
+      "_app/immutable/assets/EventInfoModal.fbc88251.css"
+    ],
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_index3.js",
+      "_stores.js",
+      "_events.js",
+      "_Toaster.svelte_svelte_type_style_lang.js",
+      "_solid-resize.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  },
+  "src/routes/+page.ts": {
+    "file": "entries/pages/_page.ts.js",
+    "isEntry": true,
+    "src": "src/routes/+page.ts"
+  },
+  "src/routes/_index/+page.css": {
+    "file": "_app/immutable/assets/_page.739e3ac1.css",
+    "src": "src/routes/_index/+page.css"
+  },
+  "src/routes/_index/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.739e3ac1.css"
+    ],
+    "file": "entries/pages/_index/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/_index/+page.svelte"
+  },
+  "src/routes/legal/+page.svelte": {
+    "file": "entries/pages/legal/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/legal/+page.svelte"
+  },
+  "src/routes/legal/contact_info/+page.css": {
+    "file": "_app/immutable/assets/_page.6097cb5d.css",
+    "src": "src/routes/legal/contact_info/+page.css"
+  },
+  "src/routes/legal/contact_info/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.6097cb5d.css"
+    ],
+    "file": "entries/pages/legal/contact_info/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/legal/contact_info/+page.svelte"
+  },
+  "src/routes/legal/privacy_policy/+page.css": {
+    "file": "_app/immutable/assets/_page.1a7d9c10.css",
+    "src": "src/routes/legal/terms_and_conditions/+page.css"
+  },
+  "src/routes/legal/privacy_policy/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.1a7d9c10.css"
+    ],
+    "file": "entries/pages/legal/privacy_policy/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/legal/privacy_policy/+page.svelte"
+  },
+  "src/routes/legal/terms_and_conditions/+page.css": {
+    "file": "_app/immutable/assets/_page.1a7d9c10.css",
+    "src": "src/routes/legal/terms_and_conditions/+page.css"
+  },
+  "src/routes/legal/terms_and_conditions/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.1a7d9c10.css"
+    ],
+    "file": "entries/pages/legal/terms_and_conditions/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/legal/terms_and_conditions/+page.svelte"
+  }
+}
