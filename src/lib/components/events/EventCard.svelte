@@ -35,7 +35,7 @@
 		openModal(EventInfoModal, { event: data });
 	}}
 	style:--tw-rotate='{randomInt(-3, 3)}deg'
-	class="p-6 border border-white rounded-lg text-white bg-white/10 hover:bg-white/20 bg-blur-xl flex flex-col items-center justify-evenly gap-4 w-52 h-64 transition-all duration-300 hover:transform"
+	class="p-6 border border-white rounded-lg text-white hover:bg-white hover:text-black bg-blur-xl flex flex-col items-center justify-evenly gap-4 w-52 h-64 transition-all duration-300 hover:transform"
 >
 	{#if data.icon.includes('url::')}
 		<img

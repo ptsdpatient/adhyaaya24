@@ -15,7 +15,7 @@
 		</div>
 		<a
 			href="/sponsors"
-			class="da-button team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8"
+			class="da-button bg-black/20 backdrop-blur-sm team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8"
 			
 			><span>View Sponsors</span> <iconify-icon icon="mdi:arrow-right" /></a
 		>
@@ -44,6 +44,5 @@
 		animation: move-da-button 10s ease infinite;
 		z-index: -1;
 		content: '';
-		@apply absolute h-full w-full blur-2xl p-8 max-w-lg text-center bg-gradient-to-r from-pink-500 via-fuchsia-500 to-sky-500 rounded-xl transition-all duration-300 scale-105;
-	}
+			}
 </style>

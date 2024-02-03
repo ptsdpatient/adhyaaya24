@@ -9,9 +9,9 @@
 
 {#if $page.url.pathname === '/'}
 <div class="wrapper w-full h-full flex items-center text-left relative">
-	<div class="main h-full w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%] mb-4">
+	<div class="main h-full w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%] mb-4 ">
 		
-		<p class="absolute text-2xl w-4/5 md:w-2/4 md:text-3xl left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-40">Embark on an interstellar journey to higher level with Adhyaaya, where innovation meets the infinite!
+		<p class="absolute text-2xl w-4/5 md:w-2/4 md:text-4xl left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-40 md:bottom-30 top-[58vh] md:top-[45vh]">Embark on an interstellar journey to higher level with Adhyaaya, where innovation meets the infinite!
 		</p>
 	</div>
 	
@@ -21,7 +21,7 @@
 			class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-2xl font-normal text-white opacity-60"
 		>
 			SCROLL TO EXPLORE
-			<div class="scroll-line mt-2 h-24 w-1 bg-blue-300/80 " />
+			<div class="scroll-line md:mt-2 h-[70px] md:h-[12vh] w-1 bg-blue-300/80 " />
 		</div>
 	{/if}
 </div>

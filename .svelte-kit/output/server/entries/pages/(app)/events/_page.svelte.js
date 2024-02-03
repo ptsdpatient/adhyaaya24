@@ -229,7 +229,7 @@ const EventCard = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let { data } = $$props;
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
-  return `<button class="p-6 border border-white rounded-lg text-white bg-white/10 hover:bg-white/20 bg-blur-xl flex flex-col items-center justify-evenly gap-4 w-52 h-64 transition-all duration-300 hover:transform"${add_styles({ "--tw-rotate": `${randomInt(-3, 3)}deg` })}>${data.icon.includes("url::") ? `<img height="150" width="150"${add_attribute("src", data.icon.replace("url::", ""), 0)} alt="" class="min-h-[150px] object-contain">` : `<iconify-icon${add_attribute("icon", data.icon, 0)} class="text-[10rem]"></iconify-icon>`}
+  return `<button class="p-6 border border-white rounded-lg text-white hover:bg-white hover:text-black bg-blur-xl flex flex-col items-center justify-evenly gap-4 w-52 h-64 transition-all duration-300 hover:transform"${add_styles({ "--tw-rotate": `${randomInt(-3, 3)}deg` })}>${data.icon.includes("url::") ? `<img height="150" width="150"${add_attribute("src", data.icon.replace("url::", ""), 0)} alt="" class="min-h-[150px] object-contain">` : `<iconify-icon${add_attribute("icon", data.icon, 0)} class="text-[10rem]"></iconify-icon>`}
 	<span class="text-xl lg:text-2xl nunu">${escape(data.name)}</span></button>`;
 });
 const ntech = "/_app/immutable/assets/nontech.7b867384.png";
@@ -268,7 +268,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 <div id="bg-filter" class="fixed h-screen w-screen -z-40 backdrop-blur-[100px]"></div>
 <div class="events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-[50vh] scroll-smooth">
 	<div class="flex flex-col items-center justify-center"><h1 class="text-4xl font-bold text-center text-white myfont">Events</h1></div>
-	<div class="section-header h-full min-h-[calc(100vh-7rem)] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16">${validate_component(MainCards, "MainCards").$$render(
+	<div class="section-header h-full min-h-[calc(100vh-7rem)] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-3 pt-16">${validate_component(MainCards, "MainCards").$$render(
     $$result,
     {
       color: 3,

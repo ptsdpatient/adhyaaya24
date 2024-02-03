@@ -1,8 +1,12 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'; // Import GLTFLoader
 import drone from '$lib/assets/3d-models/drone.glb?url'
-import nova from '$lib/assets/3d-models/ms.glb?url'
+import sb_0 from '$lib/assets/3d-models/sb.glb?url'
+import sb_1 from '$lib/assets/3d-models/sb_2.glb?url'
+import sb_2 from '$lib/assets/3d-models/sb_3.glb?url'
+import sb_3 from '$lib/assets/3d-models/sb_4.glb?url'
 import type { Var } from 'svelte/types/compiler/interfaces';
+import { randInt } from 'three/src/math/MathUtils.js';
 export class Sketch {
   private scene: THREE.Scene;
   private camera: THREE.PerspectiveCamera;
@@ -11,8 +15,8 @@ export class Sketch {
   private model2: THREE.Object3D;
   private floatingSpeed = 0.002
   private scrollPosition = 0;
-  private mixer:THREE.AnimationMixer;
   
+  private skybox: string[] = [sb_0,sb_1, sb_2, sb_3];
   loaded=false;
   constructor(canvas: HTMLCanvasElement) {
     
@@ -20,6 +24,7 @@ export class Sketch {
     this.scene = new THREE.Scene();
     this.model1 = new THREE.Object3D();
     this.model2 = new THREE.Object3D();
+    
     // Create a camera
     this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     this.camera.position.z = 6;
@@ -36,18 +41,19 @@ export class Sketch {
       if (window.innerWidth < 1024) {
         this.model1.position.set(0, 0, 5);
         this.model1.scale.set(0.15,0.15,0.15)
-         
+        
       } else {
         this.model1.position.set(0.4, 0,5.5);
         this.model1.scale.set(0.1,0.1,0.1)
+        
       }     
-      
+      this.model1.rotation.y=2;
       this.scene.add(this.model1);
     this.loaded=true;
     });
 
     const loader2 = new GLTFLoader();
-    loader2.load(nova, (gltf) => {
+    loader2.load(this.skybox[randInt(0,3)], (gltf) => {
       this.model2 = gltf.scene;
       if (window.innerWidth < 1024) {
         this.model2.position.set(0, 0, 5);
@@ -57,8 +63,8 @@ export class Sketch {
       }     
       this.model2.rotation.x=-1.3;
       this.scene.add(this.model2);
-      const animationAction = this.mixer.clipAction(gltf.animations[1]); 
-        animationAction.play();
+      this.model2.rotation.x=2;
+      this.model2.rotation.z=2;
     this.loaded=true;
     });
 
@@ -68,7 +74,8 @@ export class Sketch {
     this.scene.add(ambientLight);
 
     this.animate();
-
+    this.handleScroll
+    window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', () => {
       this.camera.aspect = window.innerWidth / window.innerHeight;
       this.camera.updateProjectionMatrix();
@@ -82,31 +89,28 @@ export class Sketch {
         this.model1.scale.set(0.1,0.1,0.1)
       }     
     });
+   
   }
   
-  private handleScroll = () => {
+   handleScroll=()=>{
     this.scrollPosition = window.scrollY;
     const normalizedScroll = this.scrollPosition / (document.body.scrollHeight - window.innerHeight);
     this.model1.rotation.y =90+ normalizedScroll * Math.PI *-2;
-    // this.model2.rotation.y =90+ normalizedScroll * Math.PI *-2;
+    this.model1.position.x=(window.innerWidth < 1024)?  0: normalizedScroll*-0.4+0.4;
+    
      this.model2.rotation.x =90+ normalizedScroll * Math.PI *-2;
      this.model2.rotation.z =90+ normalizedScroll * Math.PI *-2;
-  };
+  }
   private animate = () => {
-    this.handleScroll();
+ 
     requestAnimationFrame(this.animate);
-    if (this.mixer) this.mixer.update(0.01);
+  
     if (this.model1) {
-     // this.model.rotation.x += 0.005;
+
       this.model1.position.y = Math.cos(Date.now() * this.floatingSpeed) * 0.01; 
       this.camera.position.y=Math.sin(Date.now() * this.floatingSpeed) * 0.02
     }
-    if (this.model2) {
-      // this.model.rotation.x += 0.005;
-      //  this.model1.position.y = Math.sin(Date.now() * this.floatingSpeed) * 0.3; 
-          
-          
-     }
+    
 
     this.renderer.render(this.scene, this.camera);
   };

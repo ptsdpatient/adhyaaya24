@@ -39,9 +39,7 @@ declare module '$env/static/private' {
 	export const COMPUTERNAME: string;
 	export const ComSpec: string;
 	export const DriverData: string;
-	export const EFC_13908: string;
-	export const FPS_BROWSER_APP_PROFILE_STRING: string;
-	export const FPS_BROWSER_USER_PROFILE_STRING: string;
+	export const EFC_20024: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
 	export const HOMEPATH: string;
@@ -141,7 +139,7 @@ declare module '$env/static/private' {
 	export const OneDriveConsumer: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const OS: string;
-	export const Path: string;
+	export const path: string;
 	export const PATHEXT: string;
 	export const PNPM_SCRIPT_SRC_DIR: string;
 	export const PROCESSOR_ARCHITECTURE: string;
@@ -210,9 +208,7 @@ declare module '$env/dynamic/private' {
 		COMPUTERNAME: string;
 		ComSpec: string;
 		DriverData: string;
-		EFC_13908: string;
-		FPS_BROWSER_APP_PROFILE_STRING: string;
-		FPS_BROWSER_USER_PROFILE_STRING: string;
+		EFC_20024: string;
 		HOME: string;
 		HOMEDRIVE: string;
 		HOMEPATH: string;
@@ -312,7 +308,7 @@ declare module '$env/dynamic/private' {
 		OneDriveConsumer: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		OS: string;
-		Path: string;
+		path: string;
 		PATHEXT: string;
 		PNPM_SCRIPT_SRC_DIR: string;
 		PROCESSOR_ARCHITECTURE: string;

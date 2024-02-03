@@ -1,45 +1,5 @@
 <script lang="ts">
-	// import Nav from '$lib/components/Nav.svelte';
-	// import type Sketch from '$lib/components/DNA/Sketch';
-	// import { tweened } from 'svelte/motion';
-	// import { onMount } from 'svelte';
-
-	// let sketch: Sketch;
-	// let scrollY: number, headingHeight: number, containerHeight: number, scrollHeight: number;
-
-	// let container: HTMLDivElement, heading: HTMLDivElement;
-	// function scrollMapping(percentScroll: number) {
-	// 	const positionRange = 8 - -1;
-	// 	return percentScroll * positionRange + -1;
-	// }
-	// $: {
-	// 	if (sketch) {
-	// 		scrollHeight = containerHeight * 18 + headingHeight * 10;
-	// 		sketch.camera.position.set(0, scrollMapping(scrollY / scrollHeight), 5);
-	// 		sketch.duration += 0.17;
-	// 	}
-	// }
-	// onMount(async () => {
-	// 	const bg = await import('$lib/components/DNA/Sketch');
-	// 	const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');
-	// 	sketch = new bg.default(canvas);
-	// 	sketch.camera.position.set(-2, -1, 5);
-	// 	sketch.loadObjects();
-	// 	// duration.set(2.5);
-	// 	// setTimeout(() => {
-	// 	// 	duration.set(0);
-	// 	// }, 2000);
-	// 	// function animate() {
-	// 	// 	if (sketch) {
-	// 	// 		sketch.duration += $duration;
-	// 	// 	}
-	// 	// 	requestAnimationFrame(animate);
-	// 	// }
-	// 	// animate();
-	// 	// calculate scroll height :
-	// 	containerHeight = container.scrollHeight;
-	// 	headingHeight = heading.scrollHeight;
-	// });
+	
 	import bg from './bg.png';
 
 	// Image Imports
@@ -66,12 +26,6 @@
 	import aranya_sharma_photo from '$lib/assets/team/organisation/aranya-sharma-compressed.webp.jpg?url';
 	import ayushi_singh_photo from '$lib/assets/team/organisation/ayushi-singh-compressed.webp.jpg?url';
 	import khushi_sandekar_photo from '$lib/assets/team/organisation/khushi.sandekar-compressed.webp.jpg?url';
-	// import urvashi_gour_photo from '$lib/assets/team/organisation/aditya-muddamwar-compressed,webp.jpg';
-	// import ayush_khangar_photo from '$lib/assets/team/sponsorship/nihal-gaikwad-compressed.webp?url';
-	// import varun_dudhane_photo from '$lib/assets/team/sponsorship/atharva-mande-compressed.webp?url';
-	// import divija_pawar_photo from '$lib/assets/team/sponsorship/divija-pawar-compressed.webp?url';
-	// import anish_behere_photo from '$lib/assets/team/sponsorship/anish-behere-compressed.webp?url';
-	// import yash_khandelwal_photo from '$lib/assets/team/sponsorship/yash-khandelwal-compressed.webp?url';
 	import rohit_wagh_photo from '$lib/assets/team/publicity/rohit-wagh.png?url';
 	import jaideep_roy_photo from '$lib/assets/team/publicity/jaideep-roy.png?url';
 	import suhani_garad_photo from '$lib/assets/team/publicity/suhani-garad.webp?url';
@@ -79,13 +33,6 @@
 	import rugved_yadalwar_photo from '$lib/assets/team/publicity/rugved-yadalwar-compressed.webp?url';
 	import aadil_burani_photo from '$lib/assets/team/publicity/aadil-burani-compressed.webp?url';
 	import nimish_gotmare_photo from '$lib/assets/team/accounting/nimish-gotmare.webp';
-	// import ninad_burande_photo from '$lib/assets/team/accounting/ninad-burande-compressed.webp?url';
-	// import kashish_budhwani_photo from '$lib/assets/team/accounting/kashish-budhwani-compressed.webp?url';
-	// import vidhan_rajput_photo from '$lib/assets/team/accounting/vidhan-rajput-compressed.webp?url';
-	// import rushikesh_potpite_photo from '$lib/assets/team/accounting/rushikesh-potpite-compressed.webp?url';
-	// import aishwarya_dongare_photo from '$lib/assets/team/accounting/aishwarya-dongare-compressed.png';
-	// import vikas_yadav_photo from '$lib/assets/team/accounting/vikas-yadav-compressed.webp?url';
-	// import kashish_budwani_photo from '$lib/assets/team/content-writing/kashish-budwani-compressed.webp?url';
 	import sabrina_mondal_photo from '$lib/assets/team/content-writing/sabrina-mondal-compressed.jpg?url';
 	import shravani_gawande_photo from '$lib/assets/team/content-writing/shravani-gawande-compressed.webp.jpg?url';
 	import dude_from_mechanical from '$lib/assets/team/sponsorship/Screenshot_20240125-143331.jpg?url'
@@ -1812,42 +1759,6 @@
 </div>
 
 <style>
-	/* @font-face {
-		font-family: 'Grotesque';
-		src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.eot'),
-			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.ttf'),
-			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.woff');
-		font-weight: normal;
-	}
-	@font-face {
-		font-family: 'Grotesque Black';
-		src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.eot'),
-			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.ttf'),
-			url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.woff');
-		font-weight: bold;
-	}
-	@font-face {
-		font-family: 'title';
-		src: url(Sofia\ Pro\ SemiBold.ttf);
-	}
-	* {
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		font-size: 100%;
-	}
-
-	body::-webkit-scrollbar {
-		display: none;
-	}
-
-	body {
-		padding: 0;
-		margin: 0;
-		background: #152536;
-	} */
 
 	#dna-bg {
 		background: var(--bg) center no-repeat;

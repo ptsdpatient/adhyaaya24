@@ -2,6 +2,7 @@ import { y as assign, z as now, A as loop, B as identity, c as create_ssr_compon
 import { w as writable } from "../../chunks/index3.js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { randInt } from "three/src/math/MathUtils.js";
 import { p as page } from "../../chunks/stores.js";
 import { E as EVENTS } from "../../chunks/events.js";
 import "../../chunks/Toaster.svelte_svelte_type_style_lang.js";
@@ -104,7 +105,10 @@ function tweened(value, defaults = {}) {
   };
 }
 const drone = "/_app/immutable/assets/drone.5226bdc2.glb";
-const nova = "/_app/immutable/assets/ms.2672a151.glb";
+const sb_0 = "/_app/immutable/assets/sb.94b83198.glb";
+const sb_1 = "/_app/immutable/assets/sb_2.ab25e8b5.glb";
+const sb_2 = "/_app/immutable/assets/sb_3.3ab4e68d.glb";
+const sb_3 = "/_app/immutable/assets/sb_4.966019d8.glb";
 class Sketch {
   scene;
   camera;
@@ -113,7 +117,7 @@ class Sketch {
   model2;
   floatingSpeed = 2e-3;
   scrollPosition = 0;
-  mixer;
+  skybox = [sb_0, sb_1, sb_2, sb_3];
   loaded = false;
   constructor(canvas) {
     this.scene = new THREE.Scene();
@@ -133,11 +137,12 @@ class Sketch {
         this.model1.position.set(0.4, 0, 5.5);
         this.model1.scale.set(0.1, 0.1, 0.1);
       }
+      this.model1.rotation.y = 2;
       this.scene.add(this.model1);
       this.loaded = true;
     });
     const loader2 = new GLTFLoader();
-    loader2.load(nova, (gltf) => {
+    loader2.load(this.skybox[randInt(0, 3)], (gltf) => {
       this.model2 = gltf.scene;
       if (window.innerWidth < 1024) {
         this.model2.position.set(0, 0, 5);
@@ -146,14 +151,16 @@ class Sketch {
       }
       this.model2.rotation.x = -1.3;
       this.scene.add(this.model2);
-      const animationAction = this.mixer.clipAction(gltf.animations[1]);
-      animationAction.play();
+      this.model2.rotation.x = 2;
+      this.model2.rotation.z = 2;
       this.loaded = true;
     });
     const ambientLight = new THREE.AmbientLight(4210752);
     ambientLight.intensity = 10;
     this.scene.add(ambientLight);
     this.animate();
+    this.handleScroll;
+    window.addEventListener("scroll", this.handleScroll);
     window.addEventListener("resize", () => {
       this.camera.aspect = window.innerWidth / window.innerHeight;
       this.camera.updateProjectionMatrix();
@@ -171,20 +178,16 @@ class Sketch {
     this.scrollPosition = window.scrollY;
     const normalizedScroll = this.scrollPosition / (document.body.scrollHeight - window.innerHeight);
     this.model1.rotation.y = 90 + normalizedScroll * Math.PI * -2;
+    this.model1.position.x = window.innerWidth < 1024 ? 0 : normalizedScroll * -0.4 + 0.4;
     this.model2.rotation.x = 90 + normalizedScroll * Math.PI * -2;
     this.model2.rotation.z = 90 + normalizedScroll * Math.PI * -2;
   };
   animate = () => {
-    this.handleScroll();
     requestAnimationFrame(this.animate);
-    if (this.mixer)
-      this.mixer.update(0.01);
     if (this.model1) {
       this.model1.position.y = Math.cos(Date.now() * this.floatingSpeed) * 0.01;
       this.camera.position.y = Math.sin(Date.now() * this.floatingSpeed) * 0.02;
     }
-    if (this.model2)
-      ;
     this.renderer.render(this.scene, this.camera);
   };
 }
@@ -195,11 +198,11 @@ const Home = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.scrollPos === void 0 && $$bindings.scrollPos && scrollPos !== void 0)
     $$bindings.scrollPos(scrollPos);
   $$unsubscribe_page();
-  return `${$page.url.pathname === "/" ? `<div class="wrapper w-full h-full flex items-center text-left relative"><div class="main h-full w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%] mb-4"><p class="absolute text-2xl w-4/5 md:w-2/4 md:text-3xl left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-40">Embark on an interstellar journey to higher level with Adhyaaya, where innovation meets the infinite!
+  return `${$page.url.pathname === "/" ? `<div class="wrapper w-full h-full flex items-center text-left relative"><div class="main h-full w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%] mb-4 "><p class="absolute text-2xl w-4/5 md:w-2/4 md:text-4xl left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-40 md:bottom-30 top-[58vh] md:top-[45vh]">Embark on an interstellar journey to higher level with Adhyaaya, where innovation meets the infinite!
 		</p></div>
 	
 	${scrollPos < 35 ? `<div class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-2xl font-normal text-white opacity-60">SCROLL TO EXPLORE
-			<div class="scroll-line mt-2 h-24 w-1 bg-blue-300/80 "></div></div>` : ``}</div>` : ``}
+			<div class="scroll-line md:mt-2 h-[70px] md:h-[12vh] w-1 bg-blue-300/80 "></div></div>` : ``}</div>` : ``}
 
 `;
 });
@@ -239,7 +242,7 @@ const Events = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 	<div class="middle-container text-4xl lg:text-3xl border border-white flex items-center flex-col">
 		
-		<a href="/events" class="da-button text-2xl md:text-3xl relative lg:p-8 max-w-xs lg:max-w-lg text-center hover:bg-white hover:text-black hover:scale-110 active:opacity-90 inline-flex items-center justify-center gap-3 text-white transition-all duration-300 border border-solid border-2 border-white rounded-md p-4 svelte-1e82bll"><span>EXPLORE OUR EVENTS</span> <iconify-icon icon="mdi:arrow-right"></iconify-icon></a>
+		<a href="/events" class="da-button bg-black/40 backdrop-blur-sm text-2xl md:text-3xl relative max-w-xs lg:max-w-lg text-center hover:bg-white hover:text-black hover:scale-[104%] active:opacity-90 inline-flex items-center justify-center text-white transition-all duration-300 border border-solid border-2 border-white rounded-md p-6 svelte-1e82bll"><span>EXPLORE OUR EVENTS</span> <iconify-icon icon="mdi:arrow-right"></iconify-icon></a>
 		</div>
 
 	${validate_component(EventsCarousel, "EventsCarousel").$$render($$result, { alt: true }, {}, {})}
@@ -252,7 +255,7 @@ const css$3 = {
 };
 const ContactUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$3);
-  return `<div class="h-auto md:h-auto h-[200vh] w-full flex flex-col justify-between"><div class="w-full h-[100vh] "><div class="w-full md:w-5/6 m-auto md:h-full flex flex-col md:flex-row justify-center items-center p-10 text-white"><div class="section md:w-1/2 md:h-full w-full h-5/6 md:bg-black/20 py-3 md:py-0 rounded-lg md:rounded-r-none md:border border-white svelte-neitl1"><form class="p-2 md:p-10 h-full w-full flex flex-col items-center justify-evenly" method="POST" action="/forms/contact_us">
+  return `<div class="h-auto md:h-auto h-[200vh] w-full flex flex-col justify-between"><div class="w-full h-[100vh] "><div class="w-full md:w-5/6 m-auto md:h-full flex flex-col md:flex-row justify-center items-center p-10 text-white"><div class="section md:w-1/2 md:h-full w-full h-5/6 py-3 md:py-0 rounded-lg md:rounded-r-none md:border border-white svelte-neitl1"><form class="p-2 md:p-10 h-full w-full flex flex-col items-center justify-evenly" method="POST" action="/forms/contact_us">
 			<div class="relative z-0 mb-3 w-full group"><input type="text" name="name" id="name" class="nunu block py-2 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 appearance-none border-gray-400 focus:outline-none focus:ring-0 peer text-xl" placeholder=" " required>
 				<label for="name" class="peer-focus:font-medium absolute text-xl text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label></div>
 			<div class="relative z-0 mb-3 w-full group"><input type="email" name="email" id="email" class="nunu block py-2 px-0 w-full text-xl text-white bg-transparent border-0 border-b-2 appearance-none border-gray-400 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required>
@@ -278,18 +281,18 @@ const ContactUs = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 
 
 	<div class="w-full md:h-[100vh] h-[150vh]"><div class="section md:p-6 md:gap-8 h-full w-full md:h-full md:w-full flex flex-col justify-end md:flex-row svelte-neitl1"><div class="section w-5/6 md:h-full h-1/5 md:w-1/3 mx-auto py-3 md:py-0 rounded-lg md:border border-white svelte-neitl1"><iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/YiVULH51pJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-			<div class="section w-5/6 md:h-full h-auto md:w-1/3 mx-auto flex flex-col items-center py-3 md:py-0 bg-black/40 rounded-lg md:border md:border-white pd-10 svelte-neitl1"><div class="flex flex-col w-4/6 items-stretch pd-0 p-4 pb-0 pt-4 gap-2"><div class="heading pt-0 text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white ">Sitemap
+			<div class="section bg-black/20 backdrop-blur-sm w-5/6 md:h-full h-auto md:w-1/3 mx-auto flex flex-col items-center py-3 md:py-0 bg-black/40 rounded-lg md:border md:border-white pd-10 svelte-neitl1"><div class="flex flex-col w-4/6 items-stretch pd-0 p-4 pb-0 pt-4 gap-2"><div class="heading pt-0 text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white ">Sitemap
 				</div>
-				<a href="/" class="btn btn-ghost btn-sm text-xl text-white font-normal hover:bg-white hover:text-black">Home</a>
-				<a href="/events" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Events</a>
-				<a data-sveltekit-reload href="/team" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Team</a>
-				<a href="/sponsors" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Sponsors</a>
-				<a href="/gallery" data-sveltekit-reload class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black">Gallery</a></div>
-			<div class="flex flex-col w-4/6 pt-4 items-stretch justify-evenly gap-1"><div class="heading text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white ">Legal
+				<a href="/" class="btn btn-ghost btn-sm text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Home</a>
+				<a href="/events" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Events</a>
+				<a data-sveltekit-reload href="/team" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Team</a>
+				<a href="/sponsors" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Sponsors</a>
+				<a href="/gallery" data-sveltekit-reload class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Gallery</a></div>
+			<div class="flex flex-col w-4/6 pt-4 items-stretch justify-evenly gap-1"><div class="heading transition-all duration-300 ease-in-out text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white ">Legal
 				</div>
-				<a href="/legal/terms_and_conditions" class="btn btn-sm btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black">T &amp; C</a>
+				<a href="/legal/terms_and_conditions" class="btn btn-sm transition-all duration-300 ease-in-out btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black">T &amp; C</a>
 				<a href="/legal/privacy_policy" class="btn btn-sm btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black">Privacy Policy</a>
-				<a href="/legal/contact_info" class="btn btn-sm btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black">Legal Contact</a></div></div>
+				<a href="/legal/contact_info" class="btn btn-sm transition-all duration-300 ease-in-out btn-ghost text-white text-xl font-normal hover:bg-white hover:text-black">Legal Contact</a></div></div>
 	
 			<div class="section w-5/6 h-1/5 md:h-full md:w-1/3 mx-auto flex flex-col items-center justify-between py-3 md:py-0 rounded-lg md:border md:border-white svelte-neitl1"><div class="h-5/6 w-full bg-black/50"><iframe title="Google Map for GCOEN" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.525563997084!2d79.05785451517583!3d21.051661192371412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4be5e617378eb%3A0x682e0bc768d22adb!2sGovernment%20Engineering%20College%2CNagpur!5e0!3m2!1sen!2sin!4v1674120640996!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-full w-full z-[220] rounded-lg"></iframe></div>
 			<div class="h-1/6 w-full flex flex-row items-center justify-evenly py-8 text-white"><a href="mailto:adhyaaya.gcoen@gmail.com" class="email h-8 w-8 lg:h-12 lg:w-12 bg-red-500 rounded-full text-2xl lg:text-4xl inline-flex items-center justify-center hover:scale-105 active:scale-95 active:opacity-95 transition-all duration-300 ease-in-out"><iconify-icon icon="mdi:email-outline"></iconify-icon></a>
@@ -315,22 +318,22 @@ const AboutUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 				from renowned experts and attracts participants from across the region. Join us at Adhyaaya
 				for a journey of innovation and creativity.
 			</p>
-			<a data-sveltekit-reload href="/team" class="team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-1e6fhy2">Meet The Team <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
+			<a data-sveltekit-reload href="/team" class="team-button bg-black/20 backdrop-blur-sm relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-1e6fhy2">Meet The Team <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
 		<div class="us w-full max-w-2xl xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify backdrop-blur-none rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"><img loading="lazy"${add_attribute("src", gcoen, 0)} class="h-28" height="112" width="355" alt="">
 			<p class="max-w-lg md:text-2xl nunu">Government College of Engineering, Nagpur is a premier engineering institute established in
 				2016, affiliated to Rashtrasant Tukadoji Maharaj Nagpur University and mentored by
 				Visvesvaraya National Institute of Technology. The campus is situated at New Khapri, Nagpur,
 				providing a top-notch engineering education to its students.
 			</p>
-			<a data-sveltekit-reload href="https://gcoen.ac.in/" target="_blank" rel="noreferrer" class="team-button font-bold relative text-white text-3xl text-3xl border border-solid border-white rounded-lg hover:scale-110 hover:bg-white hover:text-black py-3 px-5 rounded-lg inline-flex items-center uppercase font-medium gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4 mt-4 svelte-1e6fhy2">Our College <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div></div>
+			<a data-sveltekit-reload href="https://gcoen.ac.in/" target="_blank" rel="noreferrer" class="team-button font-bold bg-black/20 backdrop-blur-sm relative text-white text-3xl text-3xl border border-solid border-white rounded-lg hover:scale-110 hover:bg-white hover:text-black py-3 px-5 rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-4 mt-4 svelte-1e6fhy2">Our College <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div></div>
 	<div class="flex flex-col items-center justify-center pt-10"><lite-youtube-embed videoid="DeRLoZuCKfs"></lite-youtube-embed>
 		<lite-youtube videoid="DeRLoZuCKfs" playlabel="Adhyaaya'20 Aftermovie" class="w-[80vw] lg:w-[50vw] rounded-lg"></lite-youtube></div>
-	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8"><a data-sveltekit-reload href="/gallery" class="gallery-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8">Image Gallery <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
+	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8"><a data-sveltekit-reload href="/gallery" class="gallery-button bg-black/20 backdrop-blur-sm relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8">Image Gallery <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
 </div>`;
 });
 const Sponsors_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "@keyframes svelte-p0c6z0-move-da-button{0%,100%{background-position:left center}50%{background-position:right center}}.da-button.svelte-p0c6z0{background-size:200% auto;animation:svelte-p0c6z0-move-da-button 10s ease infinite}.da-button.svelte-p0c6z0::before{background-size:200% auto;animation:svelte-p0c6z0-move-da-button 10s ease infinite;z-index:-1;content:'';position:absolute;height:100%;width:100%;max-width:32rem;--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));border-radius:0.75rem;background-image:linear-gradient(to right, var(--tw-gradient-stops));--tw-gradient-from:#ec4899 var(--tw-gradient-from-position);--tw-gradient-to:rgb(236 72 153 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to);--tw-gradient-to:rgb(217 70 239 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #d946ef var(--tw-gradient-via-position), var(--tw-gradient-to);--tw-gradient-to:#0ea5e9 var(--tw-gradient-to-position);padding:2rem;text-align:center;--tw-blur:blur(40px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}",
+  code: "@keyframes svelte-rnku6n-move-da-button{0%,100%{background-position:left center}50%{background-position:right center}}.da-button.svelte-rnku6n{background-size:200% auto;animation:svelte-rnku6n-move-da-button 10s ease infinite}.da-button.svelte-rnku6n::before{background-size:200% auto;animation:svelte-rnku6n-move-da-button 10s ease infinite;z-index:-1;content:''}",
   map: null
 };
 const Sponsors = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -341,7 +344,7 @@ const Sponsors = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 			unparalleled. The fest has always been a platform for several brands to engage in unique crowd
 			engaging activations which has proved to deliver a strong sponsor take back value.
 		</div>
-		<a href="/sponsors" class="da-button team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-p0c6z0"><span>View Sponsors</span> <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
+		<a href="/sponsors" class="da-button bg-black/20 backdrop-blur-sm team-button relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-rnku6n"><span>View Sponsors</span> <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
 	<div class="xl:w-1/3"></div>
 </div>`;
 });

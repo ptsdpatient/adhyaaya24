@@ -97,7 +97,7 @@
 		<h1 class="text-4xl font-bold text-center text-white myfont">Events</h1>
 	</div>
 	<div
-		class="section-header h-full min-h-[calc(100vh-7rem)] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-10 pt-16"
+		class="section-header h-full min-h-[calc(100vh-7rem)] flex items-center justify-center flex-wrap transition-all duration-500 ease-in-out gap-4 md:gap-3 pt-16"
 	>
 		<MainCards
 			color={3}
