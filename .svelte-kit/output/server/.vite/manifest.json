@@ -835,8 +835,7 @@
     ],
     "file": "entries/pages/(app)/team/_page.svelte.js",
     "imports": [
-      "_index2.js",
-      "_stores.js"
+      "_index2.js"
     ],
     "isEntry": true,
     "src": "src/routes/(app)/team/+page.svelte"
@@ -850,7 +849,7 @@
     "src": "src/routes/(app)/timeline/+page.svelte"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.89ec9f0c.css",
+    "file": "_app/immutable/assets/_layout.98b780ae.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.server.ts": {
@@ -860,7 +859,7 @@
   },
   "src/routes/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.89ec9f0c.css"
+      "_app/immutable/assets/_layout.98b780ae.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
@@ -885,11 +884,6 @@
   },
   "src/routes/+page.svelte": {
     "assets": [
-      "_app/immutable/assets/drone.5226bdc2.glb",
-      "_app/immutable/assets/sb.94b83198.glb",
-      "_app/immutable/assets/sb_2.ab25e8b5.glb",
-      "_app/immutable/assets/sb_3.3ab4e68d.glb",
-      "_app/immutable/assets/sb_4.966019d8.glb",
       "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp"
     ],
     "css": [

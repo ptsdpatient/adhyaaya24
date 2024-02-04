@@ -1,5 +1,4 @@
-import { c as create_ssr_component, s as subscribe, k as add_styles } from "../../../../chunks/index2.js";
-import { p as page } from "../../../../chunks/stores.js";
+import { c as create_ssr_component, k as add_styles } from "../../../../chunks/index2.js";
 const swarali_prayagi_photo = "/_app/immutable/assets/swarali-prayagi-compressed.5a588e57.webp";
 const shlok_tajne_photo = "/_app/immutable/assets/shlok-tajne-compressed.f640fb33.webp";
 const aditya_tete_photo = "/_app/immutable/assets/aditya-tete-compressed.7310ba16.webp";
@@ -47,16 +46,15 @@ const css = {
   map: null
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $page, $$unsubscribe_page;
-  $$unsubscribe_page = subscribe(page, (value) => $page = value);
   $$result.css.add(css);
-  $$unsubscribe_page();
   return `
 
 ${$$result.head += `<!-- HEAD_svelte-3fdjl5_START -->${$$result.title = `<title>Meet Our Team | Adhyaaya&#39;24</title>`, ""}<!-- HEAD_svelte-3fdjl5_END -->`, ""}
 
 
-${$page.url.pathname === "/team" ? `<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black opacity-75 svelte-1rh3r4h"></div>
+
+
+<div id="dna-bg" class="fixed h-screen w-screen -z-50 bg-black opacity-75 svelte-1rh3r4h"></div>
 
 <div class="flex_title !mt-0 pt-20 svelte-1rh3r4h">Advisors</div>
 
@@ -462,7 +460,8 @@ ${$page.url.pathname === "/team" ? `<div id="dna-bg" class="fixed h-screen w-scr
 			<p class="txt svelte-1rh3r4h"></p>
 			<div class="details svelte-1rh3r4h"><a rel="external noopener noreferrer nofollow" target="_blank" href=""><iconify-icon class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text" icon="mdi:email-outline"></iconify-icon></a>
 				<a rel="external noopener noreferrer nofollow" target="_blank" href=""><iconify-icon class="text-3xl lg:text-5xl text-[#FF1C7C] bg-clip-text" icon="mdi:instagram"></iconify-icon></a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href=""><iconify-icon class="text-3xl lg:text-5xl text-[#006192] bg-clip-text" icon="mdi:linkedin"></iconify-icon></a></div></div></article></div>` : ``}`;
+				<a rel="external noopener noreferrer nofollow" target="_blank" href=""><iconify-icon class="text-3xl lg:text-5xl text-[#006192] bg-clip-text" icon="mdi:linkedin"></iconify-icon></a></div></div></article></div>
+`;
 });
 export {
   Page as default

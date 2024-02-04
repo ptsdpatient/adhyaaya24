@@ -388,7 +388,7 @@
 	<hr class="border border-white/60 mt-4" />
 	<div class="mx-auto text-sm px-10">
 		<br />By registering you agree to receive transactional (receipts etc.) emails from Adhyaaya.
-		Please see our <a class="underline text-white" href="/legal/privacy_policy">Privacy Policy</a>
+		Please see our <a class="underline text-white"  href="/legal/privacy_policy" >Privacy Policy</a>
 		for info on how your data is handled and
 		<a class="underline text-white" href="/legal/terms_and_conditions">Terms and Conditions</a> for
 		more info.

@@ -10,7 +10,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 
-<div class="compalinace-content svelte-ohjeo3"><div class="content-container prose nunu svelte-ohjeo3"><p class="content-head svelte-ohjeo3">Privacy Policy</p>
+<div class="compalinace-content  svelte-ohjeo3"><div class="content-container prose nunu svelte-ohjeo3"><p class="content-head svelte-ohjeo3">Privacy Policy</p>
 		<div class="content-seprater svelte-ohjeo3"></div>
 		<p class="updated-date svelte-ohjeo3">Last updated on 27th Feb 2023</p>
 		<p class="content-text svelte-ohjeo3">This privacy policy sets out how Adhyaaya&#39;24 uses and protects any information that you give

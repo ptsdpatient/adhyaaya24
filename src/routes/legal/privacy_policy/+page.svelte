@@ -21,7 +21,7 @@
 	same.<br />
 </div> -->
 
-<div class="compalinace-content">
+<div class="compalinace-content ">
 	<div class="content-container prose nunu">
 		<p class="content-head">Privacy Policy</p>
 		<div class="content-seprater" />
