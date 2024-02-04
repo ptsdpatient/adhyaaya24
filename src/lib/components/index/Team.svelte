@@ -1,7 +1,6 @@
 <script lang="ts">
 	// import {hasScrolled} from '$lib/stores/UI';
 	import { slide } from 'svelte/transition';
-	import {page} from '$app/stores';	
 
 	// Image Imports
 	import swarali_prayagi_photo from '$lib/assets/team/advisors/swarali-prayagi-compressed.webp?url';
@@ -59,8 +58,9 @@
 	import anushree_barad_photo from '$lib/assets/team/publicity/anushree-barad.webp?url';
 	import sushrut_kohale_photo from '$lib/assets/team/coordinators/sushrut.jpeg?url';
 	// import lokesh_shelke_photo from '$lib/assets/team/hospitality-and-discipline/lokesh-shelke-compressed.webp?url';
-
+	import {page} from '$app/stores';
 </script>
+
 {#if $page.url.pathname === '/team'}
 <div class="flex_title !mt-0 pt-20">Advisors</div>
 <!-- bind:this={container} -->

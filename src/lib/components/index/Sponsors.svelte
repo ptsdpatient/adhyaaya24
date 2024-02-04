@@ -2,10 +2,10 @@
 	class="us w-full max-w-4xl  xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"
 >
 	<div
-		class="text-content h-1/2 w-full text-justify text-sm  md:text-lg xl:text-2xl flex flex-col items-center justify-center bg-clip-text text-pink-200 bg-gradient-to-tr from-pink-200 via-fuchsia-200 to-sky-200 font-thin"
+		class="text-content h-1/2 w-full text-justify text-sm  md:text-lg xl:text-2xl flex flex-col items-center justify-center bg-clip-text "
 	>
 		<div
-			class="max-w-2xl lg:max-w-4xl mx-auto px-8 pt-4 md:pl-10 pb-4 nunu font-thin backdrop-blur-none rounded-lg mb-12 text-xl md:text-2xl"
+			class="max-w-2xl lg:max-w-4xl mx-auto px-8 pt-4 md:pl-10 pb-4 nunu backdrop-blur-none rounded-lg mb-12 text-xl md:text-2xl font-bold"
 		>
 			Over the past years Adhyaaya has had the privilege to have hosted a number of sponsors which
 			provided a very entertaining experience to our visitors as well as the brand. The crowd

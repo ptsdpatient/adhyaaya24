@@ -1,6 +1,6 @@
 <script lang="ts">
 	
-	import bg from './bg.png';
+
 
 	// Image Imports
 	import swarali_prayagi_photo from '$lib/assets/team/advisors/swarali-prayagi-compressed.webp?url';
@@ -58,6 +58,8 @@
 	import anushree_barad_photo from '$lib/assets/team/publicity/anushree-barad.webp?url';
 	import sushrut_kohale_photo from '$lib/assets/team/coordinators/sushrut.jpeg?url';
 	// import lokesh_shelke_photo from '$lib/assets/team/hospitality-and-discipline/lokesh-shelke-compressed.webp?url';
+	import {page} from '$app/stores';
+
 </script>
 
 <!-- <svelte:window bind:scrollY /> -->
@@ -67,9 +69,9 @@
 </svelte:head>
 
 <!-- <Nav /> -->
-
+{#if $page.url.pathname === '/team'}
 <div
-	style:--bg="url('{bg}')"
+	
 	id="dna-bg"
 	class="fixed h-screen w-screen -z-50 bg-black opacity-75"
 />
@@ -1757,7 +1759,7 @@
 		</div>
 	</article>
 </div>
-
+{/if}
 <style>
 
 	#dna-bg {

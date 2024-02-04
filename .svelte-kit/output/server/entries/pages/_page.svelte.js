@@ -201,7 +201,7 @@ const Home = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${$page.url.pathname === "/" ? `<div class="wrapper w-full h-full flex items-center text-left relative"><div class="main h-full w-full ml-[8.33333333333333334%] md:ml-[16.66666666667%] mb-4 "><p class="absolute text-2xl w-4/5 md:w-2/4 md:text-4xl left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-40 md:bottom-30 top-[58vh] md:top-[45vh]">Embark on an interstellar journey to higher level with Adhyaaya, where innovation meets the infinite!
 		</p></div>
 	
-	${scrollPos < 35 ? `<div class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-2xl font-normal text-white opacity-60">SCROLL TO EXPLORE
+	${scrollPos < 35 ? `<div class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-xl md:text-2xl font-normal text-white opacity-60">SCROLL TO EXPLORE
 			<div class="scroll-line md:mt-2 h-[70px] md:h-[12vh] w-1 bg-blue-300/80 "></div></div>` : ``}</div>` : ``}
 
 `;
@@ -338,7 +338,7 @@ const css$1 = {
 };
 const Sponsors = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<div class="us w-full max-w-4xl xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"><div class="text-content h-1/2 w-full text-justify text-sm md:text-lg xl:text-2xl flex flex-col items-center justify-center bg-clip-text text-pink-200 bg-gradient-to-tr from-pink-200 via-fuchsia-200 to-sky-200 font-thin"><div class="max-w-2xl lg:max-w-4xl mx-auto px-8 pt-4 md:pl-10 pb-4 nunu font-thin backdrop-blur-none rounded-lg mb-12 text-xl md:text-2xl">Over the past years Adhyaaya has had the privilege to have hosted a number of sponsors which
+  return `<div class="us w-full max-w-4xl xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"><div class="text-content h-1/2 w-full text-justify text-sm md:text-lg xl:text-2xl flex flex-col items-center justify-center bg-clip-text "><div class="max-w-2xl lg:max-w-4xl mx-auto px-8 pt-4 md:pl-10 pb-4 nunu backdrop-blur-none rounded-lg mb-12 text-xl md:text-2xl font-bold">Over the past years Adhyaaya has had the privilege to have hosted a number of sponsors which
 			provided a very entertaining experience to our visitors as well as the brand. The crowd
 			engagement, media exposure, sampling and brand building opportunities offered at Adhyaaya are
 			unparalleled. The fest has always been a platform for several brands to engage in unique crowd

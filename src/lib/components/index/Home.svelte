@@ -18,7 +18,7 @@
 	{#if scrollPos < 35}
 		<div
 			in:slide={{delay: 300, duration: 800}} out:slide={{delay: 0, duration: 300}}
-			class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-2xl font-normal text-white opacity-60"
+			class="scroll-text absolute left-[8.33333333333333334%] md:left-[16.66666666667%] bottom-0 text-xl md:text-2xl font-normal text-white opacity-60"
 		>
 			SCROLL TO EXPLORE
 			<div class="scroll-line md:mt-2 h-[70px] md:h-[12vh] w-1 bg-blue-300/80 " />

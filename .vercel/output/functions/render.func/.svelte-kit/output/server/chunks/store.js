@@ -1,5 +1,5 @@
 import { w as writable } from "./index3.js";
-import { a as get_store_value } from "./index2.js";
+import { g as get_store_value } from "./index2.js";
 const exitBeforeEnter = writable(false);
 const transitioning = writable(null);
 const modals = writable([]);
