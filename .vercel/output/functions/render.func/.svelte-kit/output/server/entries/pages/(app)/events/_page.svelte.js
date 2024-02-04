@@ -76,7 +76,7 @@ const NoiseShader = "#define NUM_OCTAVES 5\r\n\r\nvec3 mod289(vec3 x) { return x
 const tech = "/_app/immutable/assets/tech.5dc0cc44.png";
 const MainCards_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".album-item.svelte-17grcf3{word-break:keep-all;background:black;box-shadow:0 2px 30px rgba(0, 0, 0, 0.5);position:relative;-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;border-radius:10px;white-space:nowrap;overflow:hidden;display:inline-block;transition:all 0.2s ease-out;transform:scale(1);margin:auto;height:20rem;width:16rem}.album-item.svelte-17grcf3:hover{transform:scale(1.02)}.album-details.svelte-17grcf3{background:transparent;position:absolute;top:0;left:0;width:100%;text-shadow:0 2px 15px rgba(0, 0, 0, 0.5);padding:1rem;white-space:initial;float:left;box-sizing:border-box;color:white;height:100%;font-weight:600;z-index:99}.title.svelte-17grcf3{font-weight:900;display:inline-block;width:100%;font-size:1.5rem;line-height:2rem}@media(min-width: 640px){.title.svelte-17grcf3{font-size:1.875rem;line-height:2.25rem}}.subtitle.svelte-17grcf3{font-weight:100;font-size:1.25rem;line-height:1.75rem}@media(min-width: 640px){.subtitle.svelte-17grcf3{font-size:1.5rem;line-height:2rem}}.subtext.svelte-17grcf3{font-size:1.1167rem;position:absolute;bottom:0;left:0;padding:1.25rem 1rem;width:100%;white-space:initial;letter-spacing:0;box-sizing:border-box;font-weight:400;background:var(--bg, rgba(0, 0, 0, 0.75))}.icon.svelte-17grcf3{font-size:1rem;line-height:1rem;display:block;padding:0 0 0.5rem 0}.canvas.svelte-17grcf3{position:absolute;top:0;left:0}",
+  code: ".album-item.svelte-1g4vu9u{word-break:keep-all;position:relative;-webkit-user-drag:none;user-drag:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;border-radius:10px;white-space:nowrap;overflow:hidden;display:inline-block;transition:all 0.2s ease-out;transform:scale(1);margin:auto;height:20rem;width:16rem}.album-item.svelte-1g4vu9u:hover{transform:scale(1.02)}.album-details.svelte-1g4vu9u{background:transparent;position:absolute;top:0;left:0;width:100%;padding:1rem;white-space:initial;float:left;box-sizing:border-box;height:100%;font-weight:600;z-index:99}.title.svelte-1g4vu9u{font-weight:900;display:inline-block;width:100%;font-size:1.5rem;line-height:2rem}@media(min-width: 640px){.title.svelte-1g4vu9u{font-size:1.875rem;line-height:2.25rem}}.subtitle.svelte-1g4vu9u{font-weight:100;font-size:1.25rem;line-height:1.75rem}@media(min-width: 640px){.subtitle.svelte-1g4vu9u{font-size:1.5rem;line-height:2rem}}.subtext.svelte-1g4vu9u{font-size:1.1167rem;position:absolute;bottom:0;left:0;padding:1.25rem 1rem;width:100%;white-space:initial;letter-spacing:0;box-sizing:border-box;font-weight:400}.icon.svelte-1g4vu9u{font-size:1rem;line-height:1rem;display:block;padding:0 0 0.5rem 0}.canvas.svelte-1g4vu9u{position:absolute;top:0;left:0}",
   map: null
 };
 const MainCards = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -214,11 +214,11 @@ const MainCards = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   if ($$props.createWave === void 0 && $$bindings.createWave && createWave !== void 0)
     $$bindings.createWave(createWave);
   $$result.css.add(css$1);
-  return `<a class="album-item svelte-17grcf3"${add_attribute("href", href, 0)}${add_attribute("this", card, 0)}><canvas class="canvas svelte-17grcf3" width="250" height="300"${add_attribute("this", canvas, 0)}></canvas>
-	<span class="album-details svelte-17grcf3"><span class="icon inline-flex justify-center items-center justify-items-center svelte-17grcf3"><iconify-icon${add_attribute("icon", icon, 0)}></iconify-icon> ${escape(icontext)}</span>
-		<span class="title svelte-17grcf3">${escape(title)}</span>
-		<span class="${"subtitle " + escape(subtitle.length < 3 ? "text-transparent" : "", true) + " svelte-17grcf3"}">${escape(subtitle)}</span>
-		<span class="subtext svelte-17grcf3"${add_styles({ "--bg": _bg })}>${escape(subtext)}</span>
+  return `<a class="album-item border border-white hover:bg-white active:bg-white svelte-1g4vu9u"${add_attribute("href", href, 0)}><canvas class="canvas svelte-1g4vu9u" width="250" height="300"></canvas>
+	<span class="album-details hover:text-black active:text-black svelte-1g4vu9u"><span class="icon inline-flex justify-center items-center justify-items-center  svelte-1g4vu9u"><iconify-icon${add_attribute("icon", icon, 0)}></iconify-icon> ${escape(icontext)}</span>
+		<span class="title svelte-1g4vu9u">${escape(title)}</span>
+		<span class="${"subtitle " + escape(subtitle.length < 3 ? "text-transparent" : "", true) + " svelte-1g4vu9u"}">${escape(subtitle)}</span>
+		<span class="subtext svelte-1g4vu9u"${add_styles({ "--bg": _bg })}>${escape(subtext)}</span>
 		<img${add_attribute("src", image, 0)} class="absolute mx-auto left-0 right-0 h-auto w-36 pt-8" alt=""></span>
 </a>`;
 });

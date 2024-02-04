@@ -367,17 +367,17 @@ function add_styles(style_object) {
   return styles ? ` style="${styles}"` : "";
 }
 export {
-  merge_ssr_styles as A,
-  is_promise as B,
+  loop as A,
+  identity as B,
   is_void as C,
   tick as D,
-  get_store_value as a,
-  safe_not_equal as b,
+  safe_not_equal as a,
+  getContext as b,
   create_ssr_component as c,
   each as d,
   escape as e,
   add_attribute as f,
-  getContext as g,
+  get_store_value as g,
   null_to_empty as h,
   is_function as i,
   setContext as j,
@@ -391,10 +391,10 @@ export {
   run_all as r,
   subscribe as s,
   escape_object as t,
-  assign as u,
+  onDestroy as u,
   validate_component as v,
-  now as w,
-  loop as x,
-  identity as y,
-  onDestroy as z
+  merge_ssr_styles as w,
+  is_promise as x,
+  assign as y,
+  now as z
 };
