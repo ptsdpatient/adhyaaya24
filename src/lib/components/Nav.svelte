@@ -79,7 +79,7 @@
 	</div>
 {/if}
 <div
-	class="menu-container {isMenuOpen} h-full bg-[#0d0028]/95 rounded-none z-[120] fixed right-0 top-0 flex flex-col print:hidden"
+	class="menu-container {isMenuOpen} h-full bg-black/30 backdrop-blur-sm rounded-none z-[120] fixed right-0 top-0 flex flex-col print:hidden"
 >
 	{#if isMenuOpen}
 		<div class="{isMenuOpen} header h-16 md:h-24 lg:h-36 w-full" />
@@ -243,7 +243,7 @@
 	}
 
 	.menu-items:hover > .menu-item {
-		@apply hover:opacity-100 opacity-30;
+		
 	}
 
 	.menu-item-container {
@@ -255,7 +255,7 @@
 	}
 
 	.menu-items:hover > .menu-item-container > .submenu-item {
-		@apply hover:opacity-100 opacity-30;
+		
 	}
 
 	.menu-item {
@@ -263,7 +263,7 @@
 	}
 
 	.menu-item:hover {
-		@apply opacity-100;
+		@apply scale-[110%];
 	}
 
 	.menu-background-pattern {

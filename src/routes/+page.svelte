@@ -53,7 +53,12 @@
 	setTimeout(() => {
 			loaded = true;
 			duration.set(0);
-		}, 2500);
+		}, 3500);
+
+
+
+
+		
 </script>
 
 <svelte:head>
@@ -71,10 +76,12 @@
  {#if !loaded}
 	<div
 		
-		class="loader h-screen w-screen bg-[#0d0028] fixed z-[9999] flex items-center justify-center"
+		class="loader h-screen w-screen bg-[black] fixed z-[9999] flex items-center justify-center"
 	>
-		<div class="preloader">
-			<svg
+		<div class="stars preloader w-full h-full">
+			
+
+		 <svg
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
 				style="margin: auto; background: transparent; display: block;"
@@ -624,7 +631,7 @@
 						begin="-2.3s"
 					/>
 				</circle>
-			</svg>
+			</svg> 
 		</div>
 	</div>
 {/if} 
@@ -827,7 +834,7 @@ window.onresize = function() {
 	#dna-bg {
 		filter: saturate(1.2) brightness(1.1) contrast(1.2);
 	}
-
+	
 	.preloader {
 		display: flex;
 	}

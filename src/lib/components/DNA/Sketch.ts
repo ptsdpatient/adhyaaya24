@@ -15,9 +15,9 @@ export class Sketch {
   private model2: THREE.Object3D;
   private floatingSpeed = 0.002
   private scrollPosition = 0;
-  
+  loaded=0;
   private skybox: string[] = [sb_0,sb_1, sb_2, sb_3];
-  loaded=false;
+ 
   constructor(canvas: HTMLCanvasElement) {
     
     // Create a scene
@@ -49,7 +49,7 @@ export class Sketch {
       }     
       this.model1.rotation.y=2;
       this.scene.add(this.model1);
-    this.loaded=true;
+    this.loaded++;
     });
 
     const loader2 = new GLTFLoader();
@@ -65,7 +65,7 @@ export class Sketch {
       this.scene.add(this.model2);
       this.model2.rotation.x=2;
       this.model2.rotation.z=2;
-    this.loaded=true;
+    this.loaded++
     });
 
     // Add lights
