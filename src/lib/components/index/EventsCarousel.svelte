@@ -85,14 +85,14 @@
 
 	.slider {
 		/* background: white; */
-		box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+	
 		height: 100px;
 		/* margin: auto; */
 		overflow: hidden;
 		position: relative;
 		/* width: 960px; */
 		/* Change here to change the color of the background */
-		@apply w-full h-40 shadow-2xl rounded-2xl flex items-center justify-center;
+		@apply w-full h-40 rounded-2xl flex items-center justify-center;
 	}
 	.slider::before,
 	.slider::after {

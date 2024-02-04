@@ -121,8 +121,8 @@
 </script>
 
 <a
-	bind:this={card}
-	class="album-item"
+	
+	class="album-item border border-white hover:bg-white active:bg-white"
 	{href}
 	on:click|preventDefault={(e) => {
 		const tgt = e.currentTarget.getAttribute('href');
@@ -130,9 +130,9 @@
 		// window.scrollTo({top: 0, behavior: 'smooth'});
 	}}
 >
-	<canvas bind:this={canvas} class="canvas" width="250" height="300" />
-	<span class="album-details">
-		<span class="icon inline-flex justify-center items-center justify-items-center"
+	<canvas class="canvas" width="250" height="300" />
+	<span class="album-details hover:text-black active:text-black">
+		<span class="icon inline-flex justify-center items-center  justify-items-center "
 			><iconify-icon {icon} /> {icontext}</span
 		>
 		<span class="title">{title}</span>
@@ -145,8 +145,7 @@
 <style>
 	.album-item {
 		word-break: keep-all;
-		background: black;
-		box-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+		
 		position: relative;
 		/* width: 250px; */
 		-webkit-user-drag: none;
@@ -173,12 +172,12 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+		
 		padding: 1rem;
 		white-space: initial;
 		float: left;
 		box-sizing: border-box;
-		color: white;
+	
 		height: 100%;
 		/* font-size: 2.5rem; */
 		font-weight: 600;
@@ -206,7 +205,7 @@
 		letter-spacing: 0;
 		box-sizing: border-box;
 		font-weight: 400;
-		background: var(--bg, rgba(0, 0, 0, 0.75));
+	
 	}
 	.icon {
 		font-size: 1rem;

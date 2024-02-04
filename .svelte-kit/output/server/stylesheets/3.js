@@ -1,2 +1,2 @@
-// _app/immutable/assets/16.1a7d9c10.css
-export default ".compalinace-content.svelte-ohjeo3{padding:10rem 1.5rem}.content-container.svelte-ohjeo3{margin-left:auto;margin-right:auto;max-width:56rem}.content-head.svelte-ohjeo3{font-size:2.25rem;line-height:2.5rem}.content-seprater.svelte-ohjeo3{width:28px;height:5px;background-color:#213554;margin-top:16px}.updated-date.svelte-ohjeo3{margin-top:1rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}[class*=content-].svelte-ohjeo3,strong.svelte-ohjeo3{font-family:Nunito,sans-serif}\n";
+// _app/immutable/assets/EventInfoModal.fbc88251.css
+export default ".modal-wrapper.svelte-10v77i8{position:absolute;top:0;left:0;display:flex;justify-content:center;align-items:center;background-color:#00000080;color:#fff}\n";

@@ -69,7 +69,7 @@
 </svelte:head>
 
 <!-- <Nav /> -->
-<!-- {#if $page.url.pathname === '/team'} -->
+{#if $page.url.pathname === '/team'}
 
 <div
 	
@@ -1760,7 +1760,7 @@
 		</div>
 	</article>
 </div>
-<!-- {/if} -->
+{/if}
 <style>
 
 	#dna-bg {

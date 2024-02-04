@@ -1,5 +1,8 @@
-import { u as assign, w as now, x as loop, y as identity, c as create_ssr_component, s as subscribe, e as escape, d as each, f as add_attribute, v as validate_component } from "../../chunks/index2.js";
+import { y as assign, z as now, A as loop, B as identity, c as create_ssr_component, s as subscribe, e as escape, d as each, f as add_attribute, v as validate_component } from "../../chunks/index2.js";
 import { w as writable } from "../../chunks/index3.js";
+import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { randInt } from "three/src/math/MathUtils.js";
 import { p as page } from "../../chunks/stores.js";
 import { E as EVENTS } from "../../chunks/events.js";
 import "../../chunks/Toaster.svelte_svelte_type_style_lang.js";
@@ -101,6 +104,93 @@ function tweened(value, defaults = {}) {
     subscribe: store.subscribe
   };
 }
+const drone = "/_app/immutable/assets/drone.5226bdc2.glb";
+const sb_0 = "/_app/immutable/assets/sb.94b83198.glb";
+const sb_1 = "/_app/immutable/assets/sb_2.ab25e8b5.glb";
+const sb_2 = "/_app/immutable/assets/sb_3.3ab4e68d.glb";
+const sb_3 = "/_app/immutable/assets/sb_4.966019d8.glb";
+class Sketch {
+  scene;
+  camera;
+  renderer;
+  model1;
+  model2;
+  floatingSpeed = 2e-3;
+  scrollPosition = 0;
+  loaded = 0;
+  skybox = [sb_0, sb_1, sb_2, sb_3];
+  constructor(canvas) {
+    this.scene = new THREE.Scene();
+    this.model1 = new THREE.Object3D();
+    this.model2 = new THREE.Object3D();
+    this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1e3);
+    this.camera.position.z = 6;
+    this.renderer = new THREE.WebGLRenderer({ canvas });
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    const loader1 = new GLTFLoader();
+    loader1.load(drone, (gltf) => {
+      this.model1 = gltf.scene;
+      if (window.innerWidth < 1024) {
+        this.model1.position.set(0, 0, 5);
+        this.model1.scale.set(0.15, 0.15, 0.15);
+      } else {
+        this.model1.position.set(0.4, 0, 5.5);
+        this.model1.scale.set(0.1, 0.1, 0.1);
+      }
+      this.model1.rotation.y = 2;
+      this.scene.add(this.model1);
+      this.loaded++;
+    });
+    const loader2 = new GLTFLoader();
+    loader2.load(this.skybox[randInt(0, 3)], (gltf) => {
+      this.model2 = gltf.scene;
+      if (window.innerWidth < 1024) {
+        this.model2.position.set(0, 0, 5);
+      } else {
+        this.model2.position.set(0, 0, 5);
+      }
+      this.model2.rotation.x = -1.3;
+      this.scene.add(this.model2);
+      this.model2.rotation.x = 2;
+      this.model2.rotation.z = 2;
+      this.loaded++;
+    });
+    const ambientLight = new THREE.AmbientLight(4210752);
+    ambientLight.intensity = 10;
+    this.scene.add(ambientLight);
+    this.animate();
+    this.handleScroll;
+    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", () => {
+      this.camera.aspect = window.innerWidth / window.innerHeight;
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
+      if (window.innerWidth < 1024) {
+        this.model1.position.set(0, 0, 5);
+        this.model1.scale.set(0.15, 0.15, 0.15);
+      } else {
+        this.model1.position.set(0.4, 0, 5.5);
+        this.model1.scale.set(0.1, 0.1, 0.1);
+      }
+    });
+  }
+  handleScroll = () => {
+    this.scrollPosition = window.scrollY;
+    const normalizedScroll = this.scrollPosition / (document.body.scrollHeight - window.innerHeight);
+    this.model1.rotation.y = 90 + normalizedScroll * Math.PI * -2;
+    this.model1.position.x = window.innerWidth < 1024 ? 0 : normalizedScroll * -0.4 + 0.4;
+    this.model2.rotation.x = 90 + normalizedScroll * Math.PI * -2;
+    this.model2.rotation.z = 90 + normalizedScroll * Math.PI * -2;
+  };
+  animate = () => {
+    requestAnimationFrame(this.animate);
+    if (this.model1) {
+      this.model1.position.y = Math.cos(Date.now() * this.floatingSpeed) * 0.01;
+      this.camera.position.y = Math.sin(Date.now() * this.floatingSpeed) * 0.02;
+    }
+    this.renderer.render(this.scene, this.camera);
+  };
+}
 const Home = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
@@ -118,7 +208,7 @@ const Home = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const EventsCarousel_svelte_svelte_type_style_lang = "";
 const css$5 = {
-  code: "@keyframes svelte-1mhxldn-scroll{0%{transform:translateX(0)}100%{transform:translateX(calc(-250px * 6))}}@keyframes svelte-1mhxldn-scroll-alt{0%{transform:translateX(0)}100%{transform:translateX(calc(250px * 6))}}.slider.svelte-1mhxldn.svelte-1mhxldn{box-shadow:0 10px 20px -5px rgba(0, 0, 0, 0.125);height:100px;overflow:hidden;position:relative;display:flex;height:10rem;width:100%;align-items:center;justify-content:center;border-radius:1rem;--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.slider.svelte-1mhxldn.svelte-1mhxldn::before,.slider.svelte-1mhxldn.svelte-1mhxldn::after{content:'';height:100px;position:absolute;width:200px;z-index:2;background-color:transparent}.slider.svelte-1mhxldn.svelte-1mhxldn::after{right:0;top:0;transform:rotateZ(180deg)}.slider.svelte-1mhxldn.svelte-1mhxldn::before{left:0;top:0}.slider.svelte-1mhxldn .slide-track.svelte-1mhxldn{animation:svelte-1mhxldn-scroll 40s linear infinite forwards;display:flex;width:calc(250px * var(--width, 18))}.slider.svelte-1mhxldn .slide-track.true.svelte-1mhxldn{animation:svelte-1mhxldn-scroll-alt 40s linear infinite forwards;display:flex;width:calc(250px * var(--width, 18))}.slider.svelte-1mhxldn .slide.svelte-1mhxldn{height:100px;width:250px}",
+  code: "@keyframes svelte-rby9sr-scroll{0%{transform:translateX(0)}100%{transform:translateX(calc(-250px * 6))}}@keyframes svelte-rby9sr-scroll-alt{0%{transform:translateX(0)}100%{transform:translateX(calc(250px * 6))}}.slider.svelte-rby9sr.svelte-rby9sr{height:100px;overflow:hidden;position:relative;display:flex;height:10rem;width:100%;align-items:center;justify-content:center;border-radius:1rem}.slider.svelte-rby9sr.svelte-rby9sr::before,.slider.svelte-rby9sr.svelte-rby9sr::after{content:'';height:100px;position:absolute;width:200px;z-index:2;background-color:transparent}.slider.svelte-rby9sr.svelte-rby9sr::after{right:0;top:0;transform:rotateZ(180deg)}.slider.svelte-rby9sr.svelte-rby9sr::before{left:0;top:0}.slider.svelte-rby9sr .slide-track.svelte-rby9sr{animation:svelte-rby9sr-scroll 40s linear infinite forwards;display:flex;width:calc(250px * var(--width, 18))}.slider.svelte-rby9sr .slide-track.true.svelte-rby9sr{animation:svelte-rby9sr-scroll-alt 40s linear infinite forwards;display:flex;width:calc(250px * var(--width, 18))}.slider.svelte-rby9sr .slide.svelte-rby9sr{height:100px;width:250px}",
   map: null
 };
 function shuffle(array) {
@@ -134,8 +224,8 @@ const EventsCarousel = create_ssr_component(($$result, $$props, $$bindings, slot
   if ($$props.alt === void 0 && $$bindings.alt && alt !== void 0)
     $$bindings.alt(alt);
   $$result.css.add(css$5);
-  return `<div class="slider svelte-1mhxldn"><div style="${"--width: " + escape(EVENTS.length, true)}" class="${"slide-track " + escape(alt, true) + " svelte-1mhxldn"}">${each(shuffle(EVENTS.filter((e) => e.is_active)), (event) => {
-    return `<div class="slide inline-flex items-center justify-center svelte-1mhxldn"><button class="flex flex-col items-center justify-center h-full text-xl">${event.icon.includes("url::") ? `<img class="h-full lg:h-12 w-9 lg:w-12 object-contain transition-transform ease-in-out duration-300 transform hover:scale-110"${add_attribute("src", event.icon.replace("url::", ""), 0)} alt="">` : `<iconify-icon class="text-6xl"${add_attribute("icon", event.icon, 0)}></iconify-icon>`}
+  return `<div class="slider svelte-rby9sr"><div style="${"--width: " + escape(EVENTS.length, true)}" class="${"slide-track " + escape(alt, true) + " svelte-rby9sr"}">${each(shuffle(EVENTS.filter((e) => e.is_active)), (event) => {
+    return `<div class="slide inline-flex items-center justify-center svelte-rby9sr"><button class="flex flex-col items-center justify-center h-full text-xl">${event.icon.includes("url::") ? `<img class="h-full lg:h-12 w-9 lg:w-12 object-contain transition-transform ease-in-out duration-300 transform hover:scale-110"${add_attribute("src", event.icon.replace("url::", ""), 0)} alt="">` : `<iconify-icon class="text-6xl"${add_attribute("icon", event.icon, 0)}></iconify-icon>`}
 					<p>${escape(event.name)}</p></button>
 			</div>`;
   })}</div>
@@ -267,6 +357,10 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const duration = tweened(0, { duration: 1500 });
   let loaded = false;
   let scrollY;
+  if (typeof window !== "undefined") {
+    const canvas = document.getElementById("mascotid");
+    new Sketch(canvas);
+  }
   setTimeout(
     () => {
       loaded = true;

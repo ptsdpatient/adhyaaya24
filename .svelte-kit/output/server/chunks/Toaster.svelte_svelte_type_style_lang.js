@@ -1,5 +1,5 @@
 import { d as derived, w as writable } from "./index3.js";
-import { a as get_store_value } from "./index2.js";
+import { g as get_store_value } from "./index2.js";
 function writableDerived(origins, derive, reflect, initial) {
   var childDerivedSetter, originValues, blockNextDerive = false;
   var reflectOldValues = reflect.length >= 2;

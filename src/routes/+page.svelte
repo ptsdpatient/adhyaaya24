@@ -45,8 +45,8 @@
 	//import Sketch from '$lib/components/DNA/Sketch.svelte';
 	
 	if (typeof window !== 'undefined') {
-	// const canvas = document.getElementById('mascotid') as HTMLCanvasElement;
-	// const sketch = new Sketch(canvas);
+	const canvas = document.getElementById('mascotid') as HTMLCanvasElement;
+	const sketch = new Sketch(canvas);
 	
 	}
 

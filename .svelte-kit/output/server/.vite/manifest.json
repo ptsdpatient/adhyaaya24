@@ -574,7 +574,7 @@
     "src": "src/routes/(app)/__register/+page.svelte"
   },
   "src/routes/(app)/events/+page.css": {
-    "file": "_app/immutable/assets/_page.b976b217.css",
+    "file": "_app/immutable/assets/_page.51006094.css",
     "src": "src/routes/(app)/events/+page.css"
   },
   "src/routes/(app)/events/+page.svelte": {
@@ -584,7 +584,7 @@
       "_app/immutable/assets/workshops.3de3a172.png"
     ],
     "css": [
-      "_app/immutable/assets/_page.b976b217.css",
+      "_app/immutable/assets/_page.51006094.css",
       "_app/immutable/assets/EventInfoModal.fbc88251.css"
     ],
     "file": "entries/pages/(app)/events/_page.svelte.js",
@@ -835,7 +835,8 @@
     ],
     "file": "entries/pages/(app)/team/_page.svelte.js",
     "imports": [
-      "_index2.js"
+      "_index2.js",
+      "_stores.js"
     ],
     "isEntry": true,
     "src": "src/routes/(app)/team/+page.svelte"
@@ -849,7 +850,7 @@
     "src": "src/routes/(app)/timeline/+page.svelte"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.98b780ae.css",
+    "file": "_app/immutable/assets/_layout.49555e8b.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.server.ts": {
@@ -859,7 +860,7 @@
   },
   "src/routes/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.98b780ae.css"
+      "_app/immutable/assets/_layout.49555e8b.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
@@ -879,15 +880,20 @@
     "src": "src/routes/+layout.ts"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page.9be692c6.css",
+    "file": "_app/immutable/assets/_page.4bb243a2.css",
     "src": "src/routes/+page.css"
   },
   "src/routes/+page.svelte": {
     "assets": [
+      "_app/immutable/assets/drone.5226bdc2.glb",
+      "_app/immutable/assets/sb.94b83198.glb",
+      "_app/immutable/assets/sb_2.ab25e8b5.glb",
+      "_app/immutable/assets/sb_3.3ab4e68d.glb",
+      "_app/immutable/assets/sb_4.966019d8.glb",
       "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp"
     ],
     "css": [
-      "_app/immutable/assets/_page.9be692c6.css",
+      "_app/immutable/assets/_page.4bb243a2.css",
       "_app/immutable/assets/EventInfoModal.fbc88251.css"
     ],
     "file": "entries/pages/_page.svelte.js",

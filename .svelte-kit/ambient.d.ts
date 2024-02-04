@@ -64,6 +64,7 @@ declare module '$env/static/private' {
 	export const npm_node_execpath: string;
 	export const npm_package_dependencies_gltf_loader: string;
 	export const npm_package_dependencies_pnpm: string;
+	export const npm_package_dependencies_svelte_kit: string;
 	export const npm_package_dependencies__formkit_auto_animate: string;
 	export const npm_package_dependencies__sendgrid_mail: string;
 	export const npm_package_dependencies__splidejs_svelte_splide: string;
@@ -236,6 +237,7 @@ declare module '$env/dynamic/private' {
 		npm_node_execpath: string;
 		npm_package_dependencies_gltf_loader: string;
 		npm_package_dependencies_pnpm: string;
+		npm_package_dependencies_svelte_kit: string;
 		npm_package_dependencies__formkit_auto_animate: string;
 		npm_package_dependencies__sendgrid_mail: string;
 		npm_package_dependencies__splidejs_svelte_splide: string;
