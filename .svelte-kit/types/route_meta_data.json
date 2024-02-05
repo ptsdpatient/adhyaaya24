@@ -73,6 +73,7 @@
 		"src/routes/+layout.server.ts"
 	],
 	"/(app)/team": [
+		"src/routes/(app)/team/+page.ts",
 		"src/routes/+layout.ts",
 		"src/routes/+layout.server.ts"
 	],

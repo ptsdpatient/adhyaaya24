@@ -21,42 +21,42 @@
       ".svelte-kit/generated/client-optimized/nodes/17.js",
       ".svelte-kit/generated/client-optimized/nodes/18.js"
     ],
-    "file": "_app/immutable/entry/app.45082abf.js",
+    "file": "_app/immutable/entry/app.2ef70ac2.js",
     "imports": [
       "_preload-helper.a4192956.js",
-      "_index.08bdcf37.js"
+      "_index.5a650a7b.js"
     ],
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/app.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/0.css": {
-    "file": "_app/immutable/assets/0.2df529b9.css",
+    "file": "_app/immutable/assets/0.7bedb1f4.css",
     "src": ".svelte-kit/generated/client-optimized/nodes/0.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/0.js": {
     "css": [
-      "_app/immutable/assets/0.2df529b9.css"
+      "_app/immutable/assets/0.7bedb1f4.css"
     ],
-    "file": "_app/immutable/nodes/0.7d9b1700.js",
+    "file": "_app/immutable/nodes/0.e2c5d8d0.js",
     "imports": [
-      "_index.08bdcf37.js",
-      "_singletons.a730b04d.js",
-      "_Toaster.svelte_svelte_type_style_lang.eafa23a4.js",
-      "_store.88439e5b.js",
-      "_navigation.ee886ed0.js",
+      "_index.5a650a7b.js",
+      "_singletons.91f6a688.js",
+      "_Toaster.svelte_svelte_type_style_lang.bf485d9e.js",
+      "_store.1d84e5ac.js",
+      "_navigation.f3b45ef7.js",
       "_solid-resize.5cfc3844.js",
       "_iconify-icon.6d541906.js",
-      "_stores.87d2cb78.js"
+      "_stores.4dab0611.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/0.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.07b769b7.js",
+    "file": "_app/immutable/nodes/1.ca4dc8c0.js",
     "imports": [
-      "_index.08bdcf37.js",
-      "_stores.87d2cb78.js"
+      "_index.5a650a7b.js",
+      "_stores.4dab0611.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -86,9 +86,9 @@
     "css": [
       "_app/immutable/assets/10.0fbda1fe.css"
     ],
-    "file": "_app/immutable/nodes/10.290b3fd9.js",
+    "file": "_app/immutable/nodes/10.a91d6233.js",
     "imports": [
-      "_index.08bdcf37.js",
+      "_index.5a650a7b.js",
       "_index.82bf2e87.js"
     ],
     "isDynamicEntry": true,
@@ -96,69 +96,30 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/10.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/11.css": {
-    "file": "_app/immutable/assets/11.90491792.css",
+    "file": "_app/immutable/assets/3.3156910b.css",
     "src": ".svelte-kit/generated/client-optimized/nodes/11.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/11.js": {
-    "assets": [
-      "_app/immutable/assets/swarali-prayagi-compressed.5a588e57.webp",
-      "_app/immutable/assets/shlok-tajne-compressed.f640fb33.webp",
-      "_app/immutable/assets/aditya-tete-compressed.7310ba16.webp",
-      "_app/immutable/assets/malhar-paradkar-compressed.892822b3.webp",
-      "_app/immutable/assets/mayank-masram-compressed.a4aed599.webp",
-      "_app/immutable/assets/anukul-ghosh.0851833b.webp",
-      "_app/immutable/assets/swara_nagpure.365faffe.png",
-      "_app/immutable/assets/aditya-shinde.213336e2.webp",
-      "_app/immutable/assets/om.50ee1209.jpg",
-      "_app/immutable/assets/tanshiq_dhote.webp.e82fb48f.jpg",
-      "_app/immutable/assets/aditya_thombre.e9c3a1dc.webp",
-      "_app/immutable/assets/mohit_deotare.cfebcc11.png",
-      "_app/immutable/assets/ayush-khangar-compressed_webp.6407f1c0.jpg",
-      "_app/immutable/assets/aditya-muddamwar-compressed_webp.b26090e3.jpg",
-      "_app/immutable/assets/varun-dudhane-compressed.webp.9be1eeb7.jpg",
-      "_app/immutable/assets/aranya-sharma-compressed.webp.47260592.jpg",
-      "_app/immutable/assets/ayushi-singh-compressed.webp.8fdeddf5.jpg",
-      "_app/immutable/assets/khushi.sandekar-compressed.webp.b0ad1e8a.jpg",
-      "_app/immutable/assets/rohit-wagh.987e4790.png",
-      "_app/immutable/assets/jaideep-roy.db9ec096.png",
-      "_app/immutable/assets/suhani-garad.5d37099c.webp",
-      "_app/immutable/assets/swayam-jawade.72851a35.png",
-      "_app/immutable/assets/nimish-gotmare.4a4a297b.webp",
-      "_app/immutable/assets/sabrina-mondal-compressed.f708e2b7.jpg",
-      "_app/immutable/assets/shravani-gawande-compressed.webp.e1d2d866.jpg",
-      "_app/immutable/assets/Screenshot_20240125-143331.f27f7b52.jpg",
-      "_app/immutable/assets/karan-buradkar.510610e0.webp",
-      "_app/immutable/assets/ashlesha-chute.2784c502.png",
-      "_app/immutable/assets/dh.64a2808b.jpg",
-      "_app/immutable/assets/rohit-thakare.0b49a063.webp",
-      "_app/immutable/assets/WhatsApp_Image_2024-01-31_at_11.29.21_PM.e97ff731.jpeg",
-      "_app/immutable/assets/sn.89c72289.jpg",
-      "_app/immutable/assets/aditya-gawai.77723711.webp",
-      "_app/immutable/assets/sweta-mane.3f4641c8.png",
-      "_app/immutable/assets/palash-atram.webp.6b1d60d0.jpg",
-      "_app/immutable/assets/hardik-bodele.157fe32c.webp",
-      "_app/immutable/assets/himanshi-bisen.a316cbd4.png",
-      "_app/immutable/assets/prajwal_akarte.89c75679.jpeg",
-      "_app/immutable/assets/tejesh-ghuge.22a6ec46.webp",
-      "_app/immutable/assets/anushree-barad.ab45e1fe.webp",
-      "_app/immutable/assets/sushrut.e14f581c.jpeg"
-    ],
     "css": [
-      "_app/immutable/assets/11.90491792.css"
+      "_app/immutable/assets/3.3156910b.css"
     ],
-    "file": "_app/immutable/nodes/11.76a06f98.js",
+    "file": "_app/immutable/nodes/11.b493ede2.js",
     "imports": [
-      "_index.08bdcf37.js",
-      "_stores.87d2cb78.js"
+      "_events.dca832d9.js",
+      "_index.5a650a7b.js",
+      "_store.1d84e5ac.js",
+      "_EventInfoModal.d5392bbb.js",
+      "_workshops.cefef2c7.js",
+      "_navigation.f3b45ef7.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/11.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/12.js": {
-    "file": "_app/immutable/nodes/12.43dc3feb.js",
+    "file": "_app/immutable/nodes/12.69ae9691.js",
     "imports": [
-      "_index.08bdcf37.js"
+      "_index.5a650a7b.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -175,9 +136,9 @@
     "css": [
       "_app/immutable/assets/13.1b56f4d4.css"
     ],
-    "file": "_app/immutable/nodes/13.dbf505b8.js",
+    "file": "_app/immutable/nodes/13.607d2c8c.js",
     "imports": [
-      "_index.08bdcf37.js",
+      "_index.5a650a7b.js",
       "_iconify-icon.6d541906.js"
     ],
     "isDynamicEntry": true,
@@ -185,9 +146,9 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/13.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/14.js": {
-    "file": "_app/immutable/nodes/14.257843d8.js",
+    "file": "_app/immutable/nodes/14.a80bb5f7.js",
     "imports": [
-      "_index.08bdcf37.js"
+      "_index.5a650a7b.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -201,9 +162,9 @@
     "css": [
       "_app/immutable/assets/15.6097cb5d.css"
     ],
-    "file": "_app/immutable/nodes/15.41721eb6.js",
+    "file": "_app/immutable/nodes/15.4f75e046.js",
     "imports": [
-      "_index.08bdcf37.js"
+      "_index.5a650a7b.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -217,9 +178,9 @@
     "css": [
       "_app/immutable/assets/16.1a7d9c10.css"
     ],
-    "file": "_app/immutable/nodes/16.4bf91e8f.js",
+    "file": "_app/immutable/nodes/16.b968a515.js",
     "imports": [
-      "_index.08bdcf37.js"
+      "_index.5a650a7b.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -233,9 +194,9 @@
     "css": [
       "_app/immutable/assets/16.1a7d9c10.css"
     ],
-    "file": "_app/immutable/nodes/17.efc046dc.js",
+    "file": "_app/immutable/nodes/17.cbf1b632.js",
     "imports": [
-      "_index.08bdcf37.js"
+      "_index.5a650a7b.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -249,9 +210,9 @@
     "css": [
       "_app/immutable/assets/18.739e3ac1.css"
     ],
-    "file": "_app/immutable/nodes/18.8c90545f.js",
+    "file": "_app/immutable/nodes/18.373c0e80.js",
     "imports": [
-      "_index.08bdcf37.js"
+      "_index.5a650a7b.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -277,16 +238,17 @@
     "dynamicImports": [
       "node_modules/lite-youtube-embed/src/lite-yt-embed.js"
     ],
-    "file": "_app/immutable/nodes/2.4b195416.js",
+    "file": "_app/immutable/nodes/2.cf27a99c.js",
     "imports": [
-      "_index.08bdcf37.js",
-      "_index.46e90aa1.js",
-      "_EventInfoModal.f4bb5adb.js",
-      "_stores.87d2cb78.js",
-      "_navigation.ee886ed0.js",
+      "_index.5a650a7b.js",
+      "_index.b47e1f6f.js",
+      "_EventInfoModal.d5392bbb.js",
+      "_singletons.91f6a688.js",
+      "_stores.4dab0611.js",
+      "_navigation.f3b45ef7.js",
       "_events.dca832d9.js",
-      "_store.88439e5b.js",
-      "_forms.9782ee46.js",
+      "_store.1d84e5ac.js",
+      "_forms.887158f9.js",
       "_preload-helper.a4192956.js",
       "_solid-resize.5cfc3844.js"
     ],
@@ -295,25 +257,21 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/2.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/3.css": {
-    "file": "_app/immutable/assets/3.51006094.css",
-    "src": ".svelte-kit/generated/client-optimized/nodes/3.css"
+    "file": "_app/immutable/assets/3.3156910b.css",
+    "src": ".svelte-kit/generated/client-optimized/nodes/11.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/3.js": {
-    "assets": [
-      "_app/immutable/assets/tech.5dc0cc44.png",
-      "_app/immutable/assets/nontech.7b867384.png",
-      "_app/immutable/assets/workshops.3de3a172.png"
-    ],
     "css": [
-      "_app/immutable/assets/3.51006094.css"
+      "_app/immutable/assets/3.3156910b.css"
     ],
-    "file": "_app/immutable/nodes/3.c61161dd.js",
+    "file": "_app/immutable/nodes/3.b493ede2.js",
     "imports": [
       "_events.dca832d9.js",
-      "_index.08bdcf37.js",
-      "_store.88439e5b.js",
-      "_EventInfoModal.f4bb5adb.js",
-      "_navigation.ee886ed0.js"
+      "_index.5a650a7b.js",
+      "_store.1d84e5ac.js",
+      "_EventInfoModal.d5392bbb.js",
+      "_workshops.cefef2c7.js",
+      "_navigation.f3b45ef7.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -335,9 +293,9 @@
     "css": [
       "_app/immutable/assets/5.25a3e9a0.css"
     ],
-    "file": "_app/immutable/nodes/5.a4e17b48.js",
+    "file": "_app/immutable/nodes/5.5b463aa2.js",
     "imports": [
-      "_index.08bdcf37.js"
+      "_index.5a650a7b.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -347,9 +305,9 @@
     "assets": [
       "_app/immutable/assets/map.9ea077fc.png"
     ],
-    "file": "_app/immutable/nodes/6.13b0cfaf.js",
+    "file": "_app/immutable/nodes/6.c2068ff4.js",
     "imports": [
-      "_index.08bdcf37.js",
+      "_index.5a650a7b.js",
       "_events.dca832d9.js"
     ],
     "isDynamicEntry": true,
@@ -357,10 +315,10 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/6.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/7.js": {
-    "file": "_app/immutable/nodes/7.ddfe7a0c.js",
+    "file": "_app/immutable/nodes/7.4644e0e3.js",
     "imports": [
-      "_index.08bdcf37.js",
-      "_navigation.ee886ed0.js"
+      "_index.5a650a7b.js",
+      "_navigation.f3b45ef7.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -374,12 +332,12 @@
     "css": [
       "_app/immutable/assets/8.a7e77728.css"
     ],
-    "file": "_app/immutable/nodes/8.14362b28.js",
+    "file": "_app/immutable/nodes/8.9db8f14e.js",
     "imports": [
       "_index.8f2ca6db.js",
-      "_index.08bdcf37.js",
+      "_index.5a650a7b.js",
       "_solid-resize.5cfc3844.js",
-      "_util.643080e7.js",
+      "_util.9e6ebd6b.js",
       "_events.dca832d9.js",
       "_iconify-icon.6d541906.js"
     ],
@@ -398,18 +356,18 @@
     "css": [
       "_app/immutable/assets/9.1a496daa.css"
     ],
-    "file": "_app/immutable/nodes/9.ded2fc4a.js",
+    "file": "_app/immutable/nodes/9.a6a7f7b8.js",
     "imports": [
       "_index.8f2ca6db.js",
       "_events.dca832d9.js",
-      "_index.08bdcf37.js",
-      "_forms.9782ee46.js",
+      "_index.5a650a7b.js",
+      "_forms.887158f9.js",
       "_index.82bf2e87.js",
       "_iconify-icon.6d541906.js",
-      "_util.643080e7.js",
-      "_store.88439e5b.js",
-      "_navigation.ee886ed0.js",
-      "_stores.87d2cb78.js"
+      "_util.9e6ebd6b.js",
+      "_store.1d84e5ac.js",
+      "_navigation.f3b45ef7.js",
+      "_stores.4dab0611.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -423,27 +381,27 @@
     "file": "_app/immutable/assets/Toaster.5032d475.css",
     "src": "Toaster.css"
   },
-  "_EventInfoModal.f4bb5adb.js": {
+  "_EventInfoModal.d5392bbb.js": {
     "css": [
       "_app/immutable/assets/EventInfoModal.fbc88251.css"
     ],
-    "file": "_app/immutable/chunks/EventInfoModal.f4bb5adb.js",
+    "file": "_app/immutable/chunks/EventInfoModal.d5392bbb.js",
     "imports": [
-      "_index.08bdcf37.js",
-      "_navigation.ee886ed0.js",
-      "_util.643080e7.js",
-      "_stores.87d2cb78.js",
-      "_store.88439e5b.js"
+      "_index.5a650a7b.js",
+      "_navigation.f3b45ef7.js",
+      "_util.9e6ebd6b.js",
+      "_stores.4dab0611.js",
+      "_store.1d84e5ac.js"
     ]
   },
-  "_Toaster.svelte_svelte_type_style_lang.eafa23a4.js": {
+  "_Toaster.svelte_svelte_type_style_lang.bf485d9e.js": {
     "css": [
       "_app/immutable/assets/Toaster.5032d475.css"
     ],
-    "file": "_app/immutable/chunks/Toaster.svelte_svelte_type_style_lang.eafa23a4.js",
+    "file": "_app/immutable/chunks/Toaster.svelte_svelte_type_style_lang.bf485d9e.js",
     "imports": [
-      "_index.46e90aa1.js",
-      "_index.08bdcf37.js"
+      "_index.b47e1f6f.js",
+      "_index.5a650a7b.js"
     ]
   },
   "_bwip-js.994bf074.js": {
@@ -490,25 +448,19 @@
     ],
     "file": "_app/immutable/chunks/events.dca832d9.js"
   },
-  "_forms.9782ee46.js": {
-    "file": "_app/immutable/chunks/forms.9782ee46.js",
+  "_forms.887158f9.js": {
+    "file": "_app/immutable/chunks/forms.887158f9.js",
     "imports": [
       "_parse.bee59afc.js",
-      "_singletons.a730b04d.js",
-      "_navigation.ee886ed0.js"
+      "_singletons.91f6a688.js",
+      "_navigation.f3b45ef7.js"
     ]
   },
   "_iconify-icon.6d541906.js": {
     "file": "_app/immutable/chunks/iconify-icon.6d541906.js"
   },
-  "_index.08bdcf37.js": {
-    "file": "_app/immutable/chunks/index.08bdcf37.js"
-  },
-  "_index.46e90aa1.js": {
-    "file": "_app/immutable/chunks/index.46e90aa1.js",
-    "imports": [
-      "_index.08bdcf37.js"
-    ]
+  "_index.5a650a7b.js": {
+    "file": "_app/immutable/chunks/index.5a650a7b.js"
   },
   "_index.82bf2e87.js": {
     "file": "_app/immutable/chunks/index.82bf2e87.js"
@@ -519,10 +471,16 @@
       "_control.c2cf8273.js"
     ]
   },
-  "_navigation.ee886ed0.js": {
-    "file": "_app/immutable/chunks/navigation.ee886ed0.js",
+  "_index.b47e1f6f.js": {
+    "file": "_app/immutable/chunks/index.b47e1f6f.js",
     "imports": [
-      "_singletons.a730b04d.js"
+      "_index.5a650a7b.js"
+    ]
+  },
+  "_navigation.f3b45ef7.js": {
+    "file": "_app/immutable/chunks/navigation.f3b45ef7.js",
+    "imports": [
+      "_singletons.91f6a688.js"
     ]
   },
   "_parse.bee59afc.js": {
@@ -531,10 +489,10 @@
   "_preload-helper.a4192956.js": {
     "file": "_app/immutable/chunks/preload-helper.a4192956.js"
   },
-  "_singletons.a730b04d.js": {
-    "file": "_app/immutable/chunks/singletons.a730b04d.js",
+  "_singletons.91f6a688.js": {
+    "file": "_app/immutable/chunks/singletons.91f6a688.js",
     "imports": [
-      "_index.46e90aa1.js"
+      "_index.b47e1f6f.js"
     ]
   },
   "_solid-resize.5cfc3844.js": {
@@ -543,34 +501,50 @@
     ],
     "file": "_app/immutable/chunks/solid-resize.5cfc3844.js"
   },
-  "_store.88439e5b.js": {
-    "file": "_app/immutable/chunks/store.88439e5b.js",
+  "_store.1d84e5ac.js": {
+    "file": "_app/immutable/chunks/store.1d84e5ac.js",
     "imports": [
-      "_index.46e90aa1.js",
-      "_index.08bdcf37.js"
+      "_index.b47e1f6f.js",
+      "_index.5a650a7b.js"
     ]
   },
-  "_stores.87d2cb78.js": {
-    "file": "_app/immutable/chunks/stores.87d2cb78.js",
+  "_stores.4dab0611.js": {
+    "file": "_app/immutable/chunks/stores.4dab0611.js",
     "imports": [
-      "_singletons.a730b04d.js"
+      "_singletons.91f6a688.js"
     ]
   },
-  "_util.643080e7.js": {
+  "_util.9e6ebd6b.js": {
     "dynamicImports": [
       "_bwip-js.994bf074.js"
     ],
-    "file": "_app/immutable/chunks/util.643080e7.js",
+    "file": "_app/immutable/chunks/util.9e6ebd6b.js",
     "imports": [
       "_preload-helper.a4192956.js",
-      "_Toaster.svelte_svelte_type_style_lang.eafa23a4.js"
+      "_Toaster.svelte_svelte_type_style_lang.bf485d9e.js"
+    ]
+  },
+  "_workshops.cefef2c7.js": {
+    "assets": [
+      "_app/immutable/assets/tech.5dc0cc44.png",
+      "_app/immutable/assets/nontech.7b867384.png",
+      "_app/immutable/assets/workshops.3de3a172.png"
+    ],
+    "css": [
+      "_app/immutable/assets/workshops.54cf4d38.css"
+    ],
+    "file": "_app/immutable/chunks/workshops.cefef2c7.js",
+    "imports": [
+      "_index.5a650a7b.js",
+      "_EventInfoModal.d5392bbb.js",
+      "_store.1d84e5ac.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/entry/start.3b2a94ef.js",
+    "file": "_app/immutable/entry/start.c8efb719.js",
     "imports": [
-      "_index.08bdcf37.js",
-      "_singletons.a730b04d.js",
+      "_index.5a650a7b.js",
+      "_singletons.91f6a688.js",
       "_parse.bee59afc.js",
       "_control.c2cf8273.js"
     ],
@@ -834,182 +808,6 @@
     "file": "_app/immutable/assets/stock.608de2c3.png",
     "src": "src/lib/assets/sponsors/stock.png"
   },
-  "src/lib/assets/team/accounting/nimish-gotmare.webp": {
-    "file": "_app/immutable/assets/nimish-gotmare.4a4a297b.webp",
-    "src": "src/lib/assets/team/accounting/nimish-gotmare.webp"
-  },
-  "src/lib/assets/team/accounting/prajwal_akarte.jpeg": {
-    "file": "_app/immutable/assets/prajwal_akarte.89c75679.jpeg",
-    "src": "src/lib/assets/team/accounting/prajwal_akarte.jpeg"
-  },
-  "src/lib/assets/team/advisors/aditya-tete-compressed.webp": {
-    "file": "_app/immutable/assets/aditya-tete-compressed.7310ba16.webp",
-    "src": "src/lib/assets/team/advisors/aditya-tete-compressed.webp"
-  },
-  "src/lib/assets/team/advisors/malhar-paradkar-compressed.webp": {
-    "file": "_app/immutable/assets/malhar-paradkar-compressed.892822b3.webp",
-    "src": "src/lib/assets/team/advisors/malhar-paradkar-compressed.webp"
-  },
-  "src/lib/assets/team/advisors/mayank-masram-compressed.webp": {
-    "file": "_app/immutable/assets/mayank-masram-compressed.a4aed599.webp",
-    "src": "src/lib/assets/team/advisors/mayank-masram-compressed.webp"
-  },
-  "src/lib/assets/team/advisors/shlok-tajne-compressed.webp": {
-    "file": "_app/immutable/assets/shlok-tajne-compressed.f640fb33.webp",
-    "src": "src/lib/assets/team/advisors/shlok-tajne-compressed.webp"
-  },
-  "src/lib/assets/team/advisors/swarali-prayagi-compressed.webp": {
-    "file": "_app/immutable/assets/swarali-prayagi-compressed.5a588e57.webp",
-    "src": "src/lib/assets/team/advisors/swarali-prayagi-compressed.webp"
-  },
-  "src/lib/assets/team/content-writing/sabrina-mondal-compressed.jpg": {
-    "file": "_app/immutable/assets/sabrina-mondal-compressed.f708e2b7.jpg",
-    "src": "src/lib/assets/team/content-writing/sabrina-mondal-compressed.jpg"
-  },
-  "src/lib/assets/team/content-writing/shravani-gawande-compressed.webp.jpg": {
-    "file": "_app/immutable/assets/shravani-gawande-compressed.webp.e1d2d866.jpg",
-    "src": "src/lib/assets/team/content-writing/shravani-gawande-compressed.webp.jpg"
-  },
-  "src/lib/assets/team/coordinators/aditya-shinde.webp": {
-    "file": "_app/immutable/assets/aditya-shinde.213336e2.webp",
-    "src": "src/lib/assets/team/coordinators/aditya-shinde.webp"
-  },
-  "src/lib/assets/team/coordinators/anukul-ghosh.webp": {
-    "file": "_app/immutable/assets/anukul-ghosh.0851833b.webp",
-    "src": "src/lib/assets/team/coordinators/anukul-ghosh.webp"
-  },
-  "src/lib/assets/team/coordinators/om.jpg": {
-    "file": "_app/immutable/assets/om.50ee1209.jpg",
-    "src": "src/lib/assets/team/coordinators/om.jpg"
-  },
-  "src/lib/assets/team/coordinators/sushrut.jpeg": {
-    "file": "_app/immutable/assets/sushrut.e14f581c.jpeg",
-    "src": "src/lib/assets/team/coordinators/sushrut.jpeg"
-  },
-  "src/lib/assets/team/coordinators/swara_nagpure.png": {
-    "file": "_app/immutable/assets/swara_nagpure.365faffe.png",
-    "src": "src/lib/assets/team/coordinators/swara_nagpure.png"
-  },
-  "src/lib/assets/team/creativity-and-decoration/WhatsApp_Image_2024-01-31_at_11.29.21_PM.jpeg": {
-    "file": "_app/immutable/assets/WhatsApp_Image_2024-01-31_at_11.29.21_PM.e97ff731.jpeg",
-    "src": "src/lib/assets/team/creativity-and-decoration/WhatsApp_Image_2024-01-31_at_11.29.21_PM.jpeg"
-  },
-  "src/lib/assets/team/creativity-and-decoration/ashlesha-chute.png": {
-    "file": "_app/immutable/assets/ashlesha-chute.2784c502.png",
-    "src": "src/lib/assets/team/creativity-and-decoration/ashlesha-chute.png"
-  },
-  "src/lib/assets/team/creativity-and-decoration/ashlesha-chute.webp": {
-    "file": "_app/immutable/assets/ashlesha-chute.f6a6dac2.webp",
-    "src": "src/lib/assets/team/creativity-and-decoration/ashlesha-chute.webp"
-  },
-  "src/lib/assets/team/creativity-and-decoration/dh.jpg": {
-    "file": "_app/immutable/assets/dh.64a2808b.jpg",
-    "src": "src/lib/assets/team/creativity-and-decoration/dh.jpg"
-  },
-  "src/lib/assets/team/creativity-and-decoration/karan-buradkar.webp": {
-    "file": "_app/immutable/assets/karan-buradkar.510610e0.webp",
-    "src": "src/lib/assets/team/creativity-and-decoration/karan-buradkar.webp"
-  },
-  "src/lib/assets/team/creativity-and-decoration/rohit-thakare.webp": {
-    "file": "_app/immutable/assets/rohit-thakare.0b49a063.webp",
-    "src": "src/lib/assets/team/creativity-and-decoration/rohit-thakare.webp"
-  },
-  "src/lib/assets/team/creativity-and-decoration/sn.jpg": {
-    "file": "_app/immutable/assets/sn.89c72289.jpg",
-    "src": "src/lib/assets/team/creativity-and-decoration/sn.jpg"
-  },
-  "src/lib/assets/team/hospitality-and-discipline/aditya-gawai.webp": {
-    "file": "_app/immutable/assets/aditya-gawai.77723711.webp",
-    "src": "src/lib/assets/team/hospitality-and-discipline/aditya-gawai.webp"
-  },
-  "src/lib/assets/team/hospitality-and-discipline/hardik-bodele.webp": {
-    "file": "_app/immutable/assets/hardik-bodele.157fe32c.webp",
-    "src": "src/lib/assets/team/hospitality-and-discipline/hardik-bodele.webp"
-  },
-  "src/lib/assets/team/hospitality-and-discipline/himanshi-bisen.png": {
-    "file": "_app/immutable/assets/himanshi-bisen.a316cbd4.png",
-    "src": "src/lib/assets/team/hospitality-and-discipline/himanshi-bisen.png"
-  },
-  "src/lib/assets/team/hospitality-and-discipline/palash-atram.webp.jpg": {
-    "file": "_app/immutable/assets/palash-atram.webp.6b1d60d0.jpg",
-    "src": "src/lib/assets/team/hospitality-and-discipline/palash-atram.webp.jpg"
-  },
-  "src/lib/assets/team/hospitality-and-discipline/sweta-mane.png": {
-    "file": "_app/immutable/assets/sweta-mane.3f4641c8.png",
-    "src": "src/lib/assets/team/hospitality-and-discipline/sweta-mane.png"
-  },
-  "src/lib/assets/team/organisation/aditya-muddamwar-compressed,webp.jpg": {
-    "file": "_app/immutable/assets/aditya-muddamwar-compressed_webp.b26090e3.jpg",
-    "src": "src/lib/assets/team/organisation/aditya-muddamwar-compressed,webp.jpg"
-  },
-  "src/lib/assets/team/organisation/aranya-sharma-compressed.webp.jpg": {
-    "file": "_app/immutable/assets/aranya-sharma-compressed.webp.47260592.jpg",
-    "src": "src/lib/assets/team/organisation/aranya-sharma-compressed.webp.jpg"
-  },
-  "src/lib/assets/team/organisation/ayush-khangar-compressed,webp.jpg": {
-    "file": "_app/immutable/assets/ayush-khangar-compressed_webp.6407f1c0.jpg",
-    "src": "src/lib/assets/team/organisation/ayush-khangar-compressed,webp.jpg"
-  },
-  "src/lib/assets/team/organisation/ayushi-singh-compressed.webp.jpg": {
-    "file": "_app/immutable/assets/ayushi-singh-compressed.webp.8fdeddf5.jpg",
-    "src": "src/lib/assets/team/organisation/ayushi-singh-compressed.webp.jpg"
-  },
-  "src/lib/assets/team/organisation/khushi.sandekar-compressed.webp.jpg": {
-    "file": "_app/immutable/assets/khushi.sandekar-compressed.webp.b0ad1e8a.jpg",
-    "src": "src/lib/assets/team/organisation/khushi.sandekar-compressed.webp.jpg"
-  },
-  "src/lib/assets/team/organisation/varun-dudhane-compressed.webp.jpg": {
-    "file": "_app/immutable/assets/varun-dudhane-compressed.webp.9be1eeb7.jpg",
-    "src": "src/lib/assets/team/organisation/varun-dudhane-compressed.webp.jpg"
-  },
-  "src/lib/assets/team/publicity/aadil-burani-compressed.webp": {
-    "file": "_app/immutable/assets/aadil-burani-compressed.8f35c572.webp",
-    "src": "src/lib/assets/team/publicity/aadil-burani-compressed.webp"
-  },
-  "src/lib/assets/team/publicity/anushree-barad.webp": {
-    "file": "_app/immutable/assets/anushree-barad.ab45e1fe.webp",
-    "src": "src/lib/assets/team/publicity/anushree-barad.webp"
-  },
-  "src/lib/assets/team/publicity/jaideep-roy.png": {
-    "file": "_app/immutable/assets/jaideep-roy.db9ec096.png",
-    "src": "src/lib/assets/team/publicity/jaideep-roy.png"
-  },
-  "src/lib/assets/team/publicity/rohit-wagh.png": {
-    "file": "_app/immutable/assets/rohit-wagh.987e4790.png",
-    "src": "src/lib/assets/team/publicity/rohit-wagh.png"
-  },
-  "src/lib/assets/team/publicity/rugved-yadalwar-compressed.webp": {
-    "file": "_app/immutable/assets/rugved-yadalwar-compressed.939144cf.webp",
-    "src": "src/lib/assets/team/publicity/rugved-yadalwar-compressed.webp"
-  },
-  "src/lib/assets/team/publicity/suhani-garad.webp": {
-    "file": "_app/immutable/assets/suhani-garad.5d37099c.webp",
-    "src": "src/lib/assets/team/publicity/suhani-garad.webp"
-  },
-  "src/lib/assets/team/publicity/swayam-jawade.png": {
-    "file": "_app/immutable/assets/swayam-jawade.72851a35.png",
-    "src": "src/lib/assets/team/publicity/swayam-jawade.png"
-  },
-  "src/lib/assets/team/publicity/tejesh-ghuge.webp": {
-    "file": "_app/immutable/assets/tejesh-ghuge.22a6ec46.webp",
-    "src": "src/lib/assets/team/publicity/tejesh-ghuge.webp"
-  },
-  "src/lib/assets/team/sponsorship/Screenshot_20240125-143331.jpg": {
-    "file": "_app/immutable/assets/Screenshot_20240125-143331.f27f7b52.jpg",
-    "src": "src/lib/assets/team/sponsorship/Screenshot_20240125-143331.jpg"
-  },
-  "src/lib/assets/team/technical/aditya_thombre.webp": {
-    "file": "_app/immutable/assets/aditya_thombre.e9c3a1dc.webp",
-    "src": "src/lib/assets/team/technical/aditya_thombre.webp"
-  },
-  "src/lib/assets/team/technical/mohit_deotare.png": {
-    "file": "_app/immutable/assets/mohit_deotare.cfebcc11.png",
-    "src": "src/lib/assets/team/technical/mohit_deotare.png"
-  },
-  "src/lib/assets/team/technical/tanshiq_dhote.webp.jpg": {
-    "file": "_app/immutable/assets/tanshiq_dhote.webp.e82fb48f.jpg",
-    "src": "src/lib/assets/team/technical/tanshiq_dhote.webp.jpg"
-  },
   "src/routes/(app)/gallery/bg.jpg": {
     "file": "_app/immutable/assets/bg.1c1f47a2.jpg",
     "src": "src/routes/(app)/gallery/bg.jpg"
@@ -1017,5 +815,9 @@
   "src/routes/(app)/sponsors/bg.jpg": {
     "file": "_app/immutable/assets/bg.ca369b45.jpg",
     "src": "src/routes/(app)/sponsors/bg.jpg"
+  },
+  "workshops.css": {
+    "file": "_app/immutable/assets/workshops.54cf4d38.css",
+    "src": "workshops.css"
   }
 }

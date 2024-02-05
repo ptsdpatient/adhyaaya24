@@ -1,2 +1,2 @@
-// _app/immutable/assets/13.1b56f4d4.css
-export default ".bg.svelte-1xzi8ty{background:linear-gradient(0deg,rgba(0,0,0,var(--opacity)),rgba(0,0,0,var(--opacity))) center fixed no-repeat,var(--bg) center fixed no-repeat}\n";
+// _app/immutable/assets/EventInfoModal.fbc88251.css
+export default ".modal-wrapper.svelte-10v77i8{position:absolute;top:0;left:0;display:flex;justify-content:center;align-items:center;background-color:#00000080;color:#fff}\n";

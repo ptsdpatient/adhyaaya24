@@ -90,7 +90,7 @@
 <div id="bg-filter" class="fixed h-screen w-screen -z-40 backdrop-blur-[100px]" />
 <div
 	bind:clientHeight={height}
-	class="events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-[50vh] scroll-smooth"
+	class=" bg-black/70 backdrop-blur-sm events-container grid grid-cols-1 justify-items-stretch pt-28 min-h-[50vh] scroll-smooth"
 >
 	<!-- Title -->
 	<div class="flex flex-col items-center justify-center">

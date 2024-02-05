@@ -5,6 +5,7 @@ import sb_0 from '$lib/assets/3d-models/sb.glb?url'
 import sb_1 from '$lib/assets/3d-models/sb_2.glb?url'
 import sb_2 from '$lib/assets/3d-models/sb_3.glb?url'
 import sb_3 from '$lib/assets/3d-models/sb_4.glb?url'
+import {page} from '$app/stores';
 import type { Var } from 'svelte/types/compiler/interfaces';
 import { randInt } from 'three/src/math/MathUtils.js';
 export class Sketch {
