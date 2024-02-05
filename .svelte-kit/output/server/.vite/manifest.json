@@ -247,6 +247,10 @@
     "file": "_app/immutable/assets/workshops.3de3a172.png",
     "src": "src/lib/assets/icons/workshops.png"
   },
+  "src/lib/assets/load.gif": {
+    "file": "_app/immutable/assets/load.7cddbf5b.gif",
+    "src": "src/lib/assets/load.gif"
+  },
   "src/lib/assets/logo/gcoen-knockout-resize.webp": {
     "file": "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp",
     "src": "src/lib/assets/logo/gcoen-knockout-resize.webp"
@@ -850,7 +854,7 @@
     "src": "src/routes/(app)/timeline/+page.svelte"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.49555e8b.css",
+    "file": "_app/immutable/assets/_layout.b99459a7.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.server.ts": {
@@ -860,7 +864,7 @@
   },
   "src/routes/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.49555e8b.css"
+      "_app/immutable/assets/_layout.b99459a7.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
@@ -880,7 +884,7 @@
     "src": "src/routes/+layout.ts"
   },
   "src/routes/+page.css": {
-    "file": "_app/immutable/assets/_page.4bb243a2.css",
+    "file": "_app/immutable/assets/_page.bda62ad6.css",
     "src": "src/routes/+page.css"
   },
   "src/routes/+page.svelte": {
@@ -890,10 +894,11 @@
       "_app/immutable/assets/sb_2.ab25e8b5.glb",
       "_app/immutable/assets/sb_3.3ab4e68d.glb",
       "_app/immutable/assets/sb_4.966019d8.glb",
-      "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp"
+      "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp",
+      "_app/immutable/assets/load.7cddbf5b.gif"
     ],
     "css": [
-      "_app/immutable/assets/_page.4bb243a2.css",
+      "_app/immutable/assets/_page.bda62ad6.css",
       "_app/immutable/assets/EventInfoModal.fbc88251.css"
     ],
     "file": "entries/pages/_page.svelte.js",

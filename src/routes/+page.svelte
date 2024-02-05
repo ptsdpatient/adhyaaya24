@@ -9,6 +9,7 @@
 	import ContactUs from '$lib/components/index/ContactUs.svelte';
 	import AboutUs from '$lib/components/index/AboutUs.svelte';
 	import Sponsors from '$lib/components/index/Sponsors.svelte';
+	import loadingAnimation from '$lib/assets/load.gif'
 	// import Footer from '$lib/components/index/Footer.svelte';
 
 	// import {cubicInOut} from 'svelte/easing';
@@ -53,7 +54,7 @@
 	setTimeout(() => {
 			loaded = true;
 			duration.set(0);
-		}, 3500);
+		}, 2500);
 
 
 
@@ -71,12 +72,13 @@
 
 <svelte:window bind:innerHeight bind:scrollY />
 
-<div id="dna-bg" class="fixed scale-110 overflow-clip h-screen w-screen -z-50 bg-[#0d0028]" />
+<!-- <div id="dna-bg" class="fixed scale-110 overflow-clip h-screen w-screen -z-50 bg-[#0d0028]" /> -->
 
  {#if !loaded}
-	<div
+ <div class="loader  md:h-full md:w-full bg-[black] fixed z-[9999]"><img src={loadingAnimation} class=" h-full w-full absolute" height=100% width=100% alt="transition animation">
+	<!-- <div
 		
-		class="loader h-screen w-screen bg-[black] fixed z-[9999] flex items-center justify-center"
+		class="loader h-screen w-screen bg-[white] fixed z-[9999] flex items-center justify-center"
 	>
 		<div class="stars preloader w-full h-full">
 			
@@ -633,7 +635,7 @@
 				</circle>
 			</svg> 
 		</div>
-	</div>
+	</div> --></div>
 {/if} 
 <!-- {#if !loaded}
 <div class="preloader" id="canvas" style="position: absolute;width: 100%;height: 100%;"></div>
