@@ -1,0 +1,13 @@
+import * as universal from '../entries/pages/_layout.ts.js';
+import * as server from '../entries/pages/_layout.server.ts.js';
+
+export const index = 0;
+let component_cache;
+export const component = async () => component_cache ??= (await import('../entries/pages/_layout.svelte.js')).default;
+export { universal };
+export const universal_id = "src/routes/+layout.ts";
+export { server };
+export const server_id = "src/routes/+layout.server.ts";
+export const imports = ["_app/immutable/nodes/0.e2c5d8d0.js","_app/immutable/chunks/index.5a650a7b.js","_app/immutable/chunks/singletons.91f6a688.js","_app/immutable/chunks/index.b47e1f6f.js","_app/immutable/chunks/Toaster.svelte_svelte_type_style_lang.bf485d9e.js","_app/immutable/chunks/store.1d84e5ac.js","_app/immutable/chunks/navigation.f3b45ef7.js","_app/immutable/chunks/solid-resize.5cfc3844.js","_app/immutable/chunks/iconify-icon.6d541906.js","_app/immutable/chunks/stores.4dab0611.js"];
+export const stylesheets = ["_app/immutable/assets/0.7bedb1f4.css","_app/immutable/assets/Toaster.5032d475.css"];
+export const fonts = [];
