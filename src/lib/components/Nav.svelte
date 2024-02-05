@@ -133,6 +133,7 @@
 					on:focus={() => {
 						setBackgroundPosition(bgX, -75);
 					}}
+					on:click={()=>goto("/team")}
 					on:mouseover={() => {
 						setBackgroundPosition(bgX, -75);
 					}}

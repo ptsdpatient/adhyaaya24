@@ -1,2 +1,2 @@
-// _app/immutable/assets/3.3156910b.css
-export default "#blob.svelte-i28lqe{border-radius:50%;top:50%;left:50%}@keyframes svelte-i28lqe-spin{to{transform:rotate(360deg)}}#blob.animate-spin.svelte-i28lqe{animation:svelte-i28lqe-spin 20s linear infinite;translate:-50% -50%}\n";
+// _app/immutable/assets/EventInfoModal.fbc88251.css
+export default ".modal-wrapper.svelte-10v77i8{position:absolute;top:0;left:0;display:flex;justify-content:center;align-items:center;background-color:#00000080;color:#fff}\n";
