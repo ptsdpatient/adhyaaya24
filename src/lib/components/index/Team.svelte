@@ -1,6 +1,6 @@
 <script lang="ts">
-	// import {hasScrolled} from '$lib/stores/UI';
-	import { slide } from 'svelte/transition';
+	
+
 
 	// Image Imports
 	import swarali_prayagi_photo from '$lib/assets/team/advisors/swarali-prayagi-compressed.webp?url';
@@ -59,9 +59,24 @@
 	import sushrut_kohale_photo from '$lib/assets/team/coordinators/sushrut.jpeg?url';
 	// import lokesh_shelke_photo from '$lib/assets/team/hospitality-and-discipline/lokesh-shelke-compressed.webp?url';
 	import {page} from '$app/stores';
+
 </script>
 
-{#if $page.url.pathname === '/team'}
+<!-- <svelte:window bind:scrollY /> -->
+
+<svelte:head>
+	<title>Meet Our Team | Adhyaaya'24</title>
+</svelte:head>
+
+<!-- <Nav /> -->
+<!-- {#if $page.url.pathname === '/team'} -->
+
+<div
+	
+	id="dna-bg"
+	class="fixed h-screen w-screen -z-50 bg-black/10 "
+/>
+<!-- bind:this={heading} -->
 <div class="flex_title !mt-0 pt-20">Advisors</div>
 <!-- bind:this={container} -->
 <div class="my-cont_flex">
@@ -1503,47 +1518,7 @@
 			</div>
 		</div>
 	</article>
-	<article class="my-cont">
-		<div style:--img={`url(${mrunmai_ingole_photo})`} class="thumb" />
-		<div class="infos">
-			<h2 class="title">Mrunmai Ingole<span class="flag" /></h2>
-			<h3 class="date">Head</h3>
-			<h3 class="seats"><!--status--></h3>
-			<p class="txt"><!-- data--></p>
-			<div class="details">
-				<a
-					rel="external noopener noreferrer nofollow"
-					target="_blank"
-					href="mailto:chetnasalve00@gmail.com"
-				>
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
-						icon="mdi:email-outline"
-					/>
-				</a>
-				<a
-					rel="external noopener noreferrer nofollow"
-					target="_blank"
-					href="https://instagram.com/chetna__salve"
-				>
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#FF1C7C] bg-clip-text"
-						icon="mdi:instagram"
-					/>
-				</a>
-				<a
-					rel="external noopener noreferrer nofollow"
-					target="_blank"
-					href="https://www.linkedin.com/in/chetna-salve-2951a8249"
-				>
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
-						icon="mdi:linkedin"
-					/>
-				</a>
-			</div>
-		</div>
-	</article>
+	
 	<article class="my-cont">
 		<div style:--img={`url(${shweta_mane_photo})`} class="thumb" />
 		<div class="infos">
@@ -1643,9 +1618,7 @@
 			</div>
 		</div>
 	</article>
-</div>
-<div class="my-cont_flex">
-	<article class="my-cont">
+    <article class="my-cont">
 		<div style:--img={`url(${hardik_bodele_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Hardik Bodele<span class="flag" /></h2>
@@ -1686,35 +1659,7 @@
 			</div>
 		</div>
 	</article>
-	<article class="my-cont">
-		<div style:--img={`url(${sneha_motghare_photo})`} class="thumb" />
-		<div class="infos">
-			<h2 class="title">Sneha Motghare<span class="flag" /></h2>
-			<h3 class="date">Co Head</h3>
-			<h3 class="seats"><!--status--></h3>
-			<p class="txt"><!-- data--></p>
-			<div class="details">
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
-						icon="mdi:email-outline"
-					/>
-				</a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#FF1C7C] bg-clip-text"
-						icon="mdi:instagram"
-					/>
-				</a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
-						icon="mdi:linkedin"
-					/>
-				</a>
-			</div>
-		</div>
-	</article>
+	
 	<article class="my-cont">
 		<div style:--img={`url(${samruddhe_nasre_photo})`} class="thumb" />
 		<div class="infos">
@@ -1746,4 +1691,207 @@
 	</article>
 </div>
 
-{/if}
+<!-- {/if} -->
+<style>
+
+	#dna-bg {
+		background: var(--bg) center no-repeat;
+		background-size: cover;
+	}
+
+	.flex_title {
+		font-family: title, sans-serif;
+		font-size: 4rem;
+		color: rgb(255, 255, 255);
+		text-shadow: 4px 1px 10px #000e23ea;
+		text-align: center;
+		margin-bottom: 6vh;
+	}
+	.my-cont_flex {
+		max-width: 80vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		@apply mx-auto 2xl:max-w-full;
+	}
+
+	/* a[rel="external noopener noreferrer nofollow" target="_blank" href] {
+		position: relative;
+	}
+	a[rel="external noopener noreferrer nofollow" target="_blank" href],
+	a[rel="external noopener noreferrer nofollow" target="_blank" href]:link,
+	a[rel="external noopener noreferrer nofollow" target="_blank" href]:visited,
+	a[rel="external noopener noreferrer nofollow" target="_blank" href]:active {
+		text-decoration: none;
+		color: #d8276c;
+		text-shadow: 2px 2px 2px #070c11;
+		padding-bottom: 3px;
+		font-weight: bold;
+	}
+	a[rel="external noopener noreferrer nofollow" target="_blank" href]::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		left: 0;
+		bottom: 0;
+		background: #fff;
+		width: 0;
+		height: 1px;
+		transition: 0.35s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+	}
+	a[rel="external noopener noreferrer nofollow" target="_blank" href]:hover::after {
+		width: 100%;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	}
+
+	.note {
+		margin-top: 30px;
+		color: #fff;
+		font-size: 1rem;
+		font-family: 'Merriweather', sans-serif;
+		line-height: 1.5;
+		text-align: center;
+	} */
+
+	article.my-cont {
+		margin-bottom: 4vw;
+		margin-left: 0.8vw;
+		margin-right: 0.8vw;
+		width: 280px;
+		height: 350px;
+		border-radius: 3px;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+		overflow: hidden;
+	}
+	article.my-cont:hover {
+		box-shadow: 1px 1px 10px 5px rgba(177, 177, 177, 0.803);
+		transition: all 0.5s;
+	}
+
+	article.my-cont .thumb {
+		width: auto;
+		height: 260px;
+		background: var(
+				--img,
+				url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png')
+			)
+			no-repeat;
+		background-size: cover;
+		background-position-x: center;
+		border-radius: 3px;
+	}
+	article.my-cont .infos {
+		width: auto;
+		height: 350px;
+		position: relative;
+		padding: 8px 14px;
+		background: rgb(255, 255, 255);
+		transition: all 0.5s;
+	}
+	article.my-cont .infos .title {
+		position: relative;
+		margin: 2px 0;
+		letter-spacing: 1px;
+		color: #152536;
+		font-family: 'Nunito', sans-serif;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		text-shadow: 0 0 0px #2b2b2b8e;
+		@apply line-clamp-1;
+	}
+	article.my-cont .infos .flag {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		width: 35px;
+		height: 23px;
+		background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.pngss') no-repeat top
+			right;
+		background-size: 100% auto;
+		display: inline-block;
+	}
+	article.my-cont .infos .date,
+	article.my-cont .infos .seats {
+		margin-bottom: 10px;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		color: rgba(21, 37, 54, 0.7);
+		font-family: 'My Font', sans-serif;
+	}
+
+	article.my-cont .infos .seats {
+		display: inline-block;
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		opacity: 0;
+		transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+	}
+	article.my-cont .infos .txt {
+		font-family: 'Merriweather', sans-serif;
+		line-height: 2;
+		font-size: 0.95rem;
+		color: rgba(21, 37, 54, 0.7);
+		opacity: 0;
+		transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+	}
+	article.my-cont .infos i {
+		cursor: pointer;
+	}
+	article.my-cont .infos .details {
+		position: absolute;
+		left: 0px;
+		bottom: 20px;
+		font-size: 2.5rem;
+		opacity: 0;
+		transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+		@apply flex flex-row items-center justify-evenly w-full;
+	}
+	article.my-cont:hover .infos {
+		/* transform: translateY(-260px); */
+		/* background: linear-gradient(0deg,white 30%,rgba(255, 255, 255, 0) 100%); 
+  glowing effect
+  */
+	}
+	article.my-cont:hover .infos .seats,
+	article.my-cont:hover .infos .txt,
+	article.my-cont:hover .infos .details {
+		opacity: 1;
+	}
+	@media only screen and (max-width: 1200px) {
+		.flex_title {
+			margin-top: 7vw;
+			font-size: 12vw;
+		}
+		article.my-cont {
+			width: 66vw;
+			height: 70vw;
+		}
+		article.my-cont .infos .title {
+			/* font-size: 10rem;  */
+			@apply text-lg m-0;
+		}
+
+		article.my-cont .thumb {
+			height: 50vw;
+		}
+		article.my-cont .infos {
+			width: 70vw;
+			height: 70vw;
+		}
+		article.my-cont:hover .infos {
+			/* transform: translateY(-50vw); */
+		}
+		article.my-cont .infos .date {
+			/* font-size: 1.25rem; */
+			margin-top: -2px;
+			@apply text-base;
+		}
+		i {
+			/* font-size: 6rem !important; */
+			/* margin-left: 9vw !important; */
+			margin-bottom: 1rem;
+		}
+	}
+</style>

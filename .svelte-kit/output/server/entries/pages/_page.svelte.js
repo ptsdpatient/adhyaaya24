@@ -117,7 +117,7 @@ class Sketch {
   model2;
   floatingSpeed = 2e-3;
   scrollPosition = 0;
-  loaded = 0;
+  modelLoaded = 0;
   skybox = [sb_0, sb_1, sb_2, sb_3];
   constructor(canvas) {
     this.scene = new THREE.Scene();
@@ -139,7 +139,7 @@ class Sketch {
       }
       this.model1.rotation.y = 2;
       this.scene.add(this.model1);
-      this.loaded++;
+      this.modelLoaded++;
     });
     const loader2 = new GLTFLoader();
     loader2.load(this.skybox[randInt(0, 3)], (gltf) => {
@@ -153,7 +153,7 @@ class Sketch {
       this.scene.add(this.model2);
       this.model2.rotation.x = 2;
       this.model2.rotation.z = 2;
-      this.loaded++;
+      this.modelLoaded++;
     });
     const ambientLight = new THREE.AmbientLight(4210752);
     ambientLight.intensity = 10;
