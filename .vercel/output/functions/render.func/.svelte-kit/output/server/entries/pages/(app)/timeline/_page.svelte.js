@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as each, e as escape } from "../../../../chunks/index2.js";
+import { c as create_ssr_component, b as each, e as escape } from "../../../../chunks/index2.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   var Mode = ((Mode2) => {
     Mode2["ONLINE"] = "Online";

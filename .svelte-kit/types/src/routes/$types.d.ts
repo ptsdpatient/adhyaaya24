@@ -12,7 +12,7 @@ type EnsureDefined<T> = T extends null | undefined ? {} : T;
 type OptionalUnion<U extends Record<string, any>, A extends keyof U = U extends U ? keyof U : never> = U extends unknown ? { [P in Exclude<A, keyof U>]?: never } & U : never;
 export type Snapshot<T = any> = Kit.Snapshot<T>;
 type PageParentData = EnsureDefined<LayoutData>;
-type LayoutRouteId = RouteId | "/" | "/(app)/events" | "/(app)/forms/contact_us" | "/(app)/gallery" | "/(app)/guide" | "/(app)/pg/[rid]/pay" | "/(app)/pg/[rid]/success" | "/(app)/register" | "/(app)/sponsors" | "/(app)/team" | "/(app)/timeline" | "/(app)/__register" | "/legal" | "/legal/contact_info" | "/legal/privacy_policy" | "/legal/terms_and_conditions" | "/_index" | null
+type LayoutRouteId = RouteId | "/" | "/(app)/events" | "/(app)/forms/contact_us" | "/(app)/gallery" | "/(app)/guide" | "/(app)/pg/[rid]/pay" | "/(app)/pg/[rid]/success" | "/(app)/register" | "/(app)/sponsors" | "/(app)/team" | "/(app)/timeline" | "/(app)/__register" | "/legal" | "/legal/contact_info" | "/legal/privacy_policy" | "/legal/terms_and_conditions" | "/teams" | "/_index" | null
 type LayoutParams = RouteParams & { rid?: string }
 type LayoutServerParentData = EnsureDefined<{}>;
 type LayoutParentData = EnsureDefined<{}>;

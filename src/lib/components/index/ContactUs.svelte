@@ -139,7 +139,7 @@
 				</div>
 				<a href="/" class="btn btn-ghost btn-sm text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Home</a>
 				<a href="/events" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Events</a>
-				<a data-sveltekit-reload href="/team" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Team</a>
+				<a data-sveltekit-reload href="/teams" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Team</a>
 				<a href="/sponsors" class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Sponsors</a>
 				<a href="/gallery" data-sveltekit-reload class="btn btn-sm  btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out" 
 					>Gallery</a

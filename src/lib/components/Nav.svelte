@@ -129,11 +129,11 @@
 				> -->
 				<a
 					data-sveltekit-reload
-					href="/team"
+					href="/teams"
 					on:focus={() => {
 						setBackgroundPosition(bgX, -75);
 					}}
-					on:click={()=>goto("/team")}
+					on:click={()=>goto("/teams")}
 					on:mouseover={() => {
 						setBackgroundPosition(bgX, -75);
 					}}

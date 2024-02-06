@@ -111,6 +111,52 @@
       "_index2.js"
     ]
   },
+  "_sushrut.js": {
+    "assets": [
+      "_app/immutable/assets/swarali-prayagi-compressed.5a588e57.webp",
+      "_app/immutable/assets/shlok-tajne-compressed.f640fb33.webp",
+      "_app/immutable/assets/aditya-tete-compressed.7310ba16.webp",
+      "_app/immutable/assets/malhar-paradkar-compressed.892822b3.webp",
+      "_app/immutable/assets/mayank-masram-compressed.a4aed599.webp",
+      "_app/immutable/assets/anukul-ghosh.0851833b.webp",
+      "_app/immutable/assets/swara_nagpure.365faffe.png",
+      "_app/immutable/assets/aditya-shinde.213336e2.webp",
+      "_app/immutable/assets/om.50ee1209.jpg",
+      "_app/immutable/assets/tanshiq_dhote.webp.e82fb48f.jpg",
+      "_app/immutable/assets/aditya_thombre.e9c3a1dc.webp",
+      "_app/immutable/assets/mohit_deotare.cfebcc11.png",
+      "_app/immutable/assets/ayush-khangar-compressed_webp.6407f1c0.jpg",
+      "_app/immutable/assets/aditya-muddamwar-compressed_webp.b26090e3.jpg",
+      "_app/immutable/assets/varun-dudhane-compressed.webp.9be1eeb7.jpg",
+      "_app/immutable/assets/aranya-sharma-compressed.webp.47260592.jpg",
+      "_app/immutable/assets/ayushi-singh-compressed.webp.8fdeddf5.jpg",
+      "_app/immutable/assets/khushi.sandekar-compressed.webp.b0ad1e8a.jpg",
+      "_app/immutable/assets/rohit-wagh.987e4790.png",
+      "_app/immutable/assets/jaideep-roy.db9ec096.png",
+      "_app/immutable/assets/suhani-garad.5d37099c.webp",
+      "_app/immutable/assets/swayam-jawade.72851a35.png",
+      "_app/immutable/assets/nimish-gotmare.4a4a297b.webp",
+      "_app/immutable/assets/sabrina-mondal-compressed.f708e2b7.jpg",
+      "_app/immutable/assets/shravani-gawande-compressed.webp.e1d2d866.jpg",
+      "_app/immutable/assets/Screenshot_20240125-143331.f27f7b52.jpg",
+      "_app/immutable/assets/karan-buradkar.510610e0.webp",
+      "_app/immutable/assets/ashlesha-chute.2784c502.png",
+      "_app/immutable/assets/dh.64a2808b.jpg",
+      "_app/immutable/assets/rohit-thakare.0b49a063.webp",
+      "_app/immutable/assets/WhatsApp_Image_2024-01-31_at_11.29.21_PM.e97ff731.jpeg",
+      "_app/immutable/assets/sn.89c72289.jpg",
+      "_app/immutable/assets/aditya-gawai.77723711.webp",
+      "_app/immutable/assets/sweta-mane.3f4641c8.png",
+      "_app/immutable/assets/palash-atram.webp.6b1d60d0.jpg",
+      "_app/immutable/assets/hardik-bodele.157fe32c.webp",
+      "_app/immutable/assets/himanshi-bisen.a316cbd4.png",
+      "_app/immutable/assets/prajwal_akarte.89c75679.jpeg",
+      "_app/immutable/assets/tejesh-ghuge.22a6ec46.webp",
+      "_app/immutable/assets/anushree-barad.ab45e1fe.webp",
+      "_app/immutable/assets/sushrut.e14f581c.jpeg"
+    ],
+    "file": "chunks/sushrut.js"
+  },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "entries/fallbacks/error.svelte.js",
     "imports": [
@@ -154,6 +200,10 @@
   "src/lib/assets/3d-models/sb_4.glb": {
     "file": "_app/immutable/assets/sb_4.966019d8.glb",
     "src": "src/lib/assets/3d-models/sb_4.glb"
+  },
+  "src/lib/assets/3d-models/sb_5.glb": {
+    "file": "_app/immutable/assets/sb_5.59f97e82.glb",
+    "src": "src/lib/assets/3d-models/sb_5.glb"
   },
   "src/lib/assets/backgrounds/register-1.jpg": {
     "file": "_app/immutable/assets/register-1.10d49068.jpg",
@@ -247,9 +297,9 @@
     "file": "_app/immutable/assets/workshops.3de3a172.png",
     "src": "src/lib/assets/icons/workshops.png"
   },
-  "src/lib/assets/load.gif": {
-    "file": "_app/immutable/assets/load.7cddbf5b.gif",
-    "src": "src/lib/assets/load.gif"
+  "src/lib/assets/loadingspacetravel.gif": {
+    "file": "_app/immutable/assets/loadingspacetravel.3a5a148f.gif",
+    "src": "src/lib/assets/loadingspacetravel.gif"
   },
   "src/lib/assets/logo/gcoen-knockout-resize.webp": {
     "file": "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp",
@@ -788,58 +838,16 @@
   },
   "src/routes/(app)/team/+page.css": {
     "file": "_app/immutable/assets/_page.90491792.css",
-    "src": "src/routes/(app)/team/+page.css"
+    "src": "src/routes/teams/+page.css"
   },
   "src/routes/(app)/team/+page.svelte": {
-    "assets": [
-      "_app/immutable/assets/swarali-prayagi-compressed.5a588e57.webp",
-      "_app/immutable/assets/shlok-tajne-compressed.f640fb33.webp",
-      "_app/immutable/assets/aditya-tete-compressed.7310ba16.webp",
-      "_app/immutable/assets/malhar-paradkar-compressed.892822b3.webp",
-      "_app/immutable/assets/mayank-masram-compressed.a4aed599.webp",
-      "_app/immutable/assets/anukul-ghosh.0851833b.webp",
-      "_app/immutable/assets/swara_nagpure.365faffe.png",
-      "_app/immutable/assets/aditya-shinde.213336e2.webp",
-      "_app/immutable/assets/om.50ee1209.jpg",
-      "_app/immutable/assets/tanshiq_dhote.webp.e82fb48f.jpg",
-      "_app/immutable/assets/aditya_thombre.e9c3a1dc.webp",
-      "_app/immutable/assets/mohit_deotare.cfebcc11.png",
-      "_app/immutable/assets/ayush-khangar-compressed_webp.6407f1c0.jpg",
-      "_app/immutable/assets/aditya-muddamwar-compressed_webp.b26090e3.jpg",
-      "_app/immutable/assets/varun-dudhane-compressed.webp.9be1eeb7.jpg",
-      "_app/immutable/assets/aranya-sharma-compressed.webp.47260592.jpg",
-      "_app/immutable/assets/ayushi-singh-compressed.webp.8fdeddf5.jpg",
-      "_app/immutable/assets/khushi.sandekar-compressed.webp.b0ad1e8a.jpg",
-      "_app/immutable/assets/rohit-wagh.987e4790.png",
-      "_app/immutable/assets/jaideep-roy.db9ec096.png",
-      "_app/immutable/assets/suhani-garad.5d37099c.webp",
-      "_app/immutable/assets/swayam-jawade.72851a35.png",
-      "_app/immutable/assets/nimish-gotmare.4a4a297b.webp",
-      "_app/immutable/assets/sabrina-mondal-compressed.f708e2b7.jpg",
-      "_app/immutable/assets/shravani-gawande-compressed.webp.e1d2d866.jpg",
-      "_app/immutable/assets/Screenshot_20240125-143331.f27f7b52.jpg",
-      "_app/immutable/assets/karan-buradkar.510610e0.webp",
-      "_app/immutable/assets/ashlesha-chute.2784c502.png",
-      "_app/immutable/assets/dh.64a2808b.jpg",
-      "_app/immutable/assets/rohit-thakare.0b49a063.webp",
-      "_app/immutable/assets/WhatsApp_Image_2024-01-31_at_11.29.21_PM.e97ff731.jpeg",
-      "_app/immutable/assets/sn.89c72289.jpg",
-      "_app/immutable/assets/aditya-gawai.77723711.webp",
-      "_app/immutable/assets/sweta-mane.3f4641c8.png",
-      "_app/immutable/assets/palash-atram.webp.6b1d60d0.jpg",
-      "_app/immutable/assets/hardik-bodele.157fe32c.webp",
-      "_app/immutable/assets/himanshi-bisen.a316cbd4.png",
-      "_app/immutable/assets/prajwal_akarte.89c75679.jpeg",
-      "_app/immutable/assets/tejesh-ghuge.22a6ec46.webp",
-      "_app/immutable/assets/anushree-barad.ab45e1fe.webp",
-      "_app/immutable/assets/sushrut.e14f581c.jpeg"
-    ],
     "css": [
       "_app/immutable/assets/_page.90491792.css"
     ],
     "file": "entries/pages/(app)/team/_page.svelte.js",
     "imports": [
-      "_index2.js"
+      "_index2.js",
+      "_sushrut.js"
     ],
     "isEntry": true,
     "src": "src/routes/(app)/team/+page.svelte"
@@ -900,9 +908,10 @@
       "_app/immutable/assets/sb.94b83198.glb",
       "_app/immutable/assets/sb_2.ab25e8b5.glb",
       "_app/immutable/assets/sb_3.3ab4e68d.glb",
+      "_app/immutable/assets/sb_5.59f97e82.glb",
       "_app/immutable/assets/sb_4.966019d8.glb",
       "_app/immutable/assets/gcoen-knockout-resize.f1397a58.webp",
-      "_app/immutable/assets/load.7cddbf5b.gif"
+      "_app/immutable/assets/loadingspacetravel.3a5a148f.gif"
     ],
     "css": [
       "_app/immutable/assets/_page.bda62ad6.css",
@@ -992,5 +1001,22 @@
     ],
     "isEntry": true,
     "src": "src/routes/legal/terms_and_conditions/+page.svelte"
+  },
+  "src/routes/teams/+page.css": {
+    "file": "_app/immutable/assets/_page.90491792.css",
+    "src": "src/routes/teams/+page.css"
+  },
+  "src/routes/teams/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.90491792.css"
+    ],
+    "file": "entries/pages/teams/_page.svelte.js",
+    "imports": [
+      "_index2.js",
+      "_sushrut.js",
+      "_stores.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/teams/+page.svelte"
   }
 }

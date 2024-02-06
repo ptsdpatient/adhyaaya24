@@ -1,4 +1,4 @@
-import { c as create_ssr_component, k as add_styles, d as each, f as add_attribute, e as escape } from "../../../../chunks/index2.js";
+import { c as create_ssr_component, h as add_styles, b as each, f as add_attribute, e as escape } from "../../../../chunks/index2.js";
 import "@formkit/auto-animate";
 const background = "/_app/immutable/assets/bg.ca369b45.jpg";
 const orangebits = "/_app/immutable/assets/orangebits.3d0be576.webp";

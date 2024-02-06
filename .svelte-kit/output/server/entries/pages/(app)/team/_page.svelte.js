@@ -1,45 +1,5 @@
-import { c as create_ssr_component, k as add_styles } from "../../../../chunks/index2.js";
-const swarali_prayagi_photo = "/_app/immutable/assets/swarali-prayagi-compressed.5a588e57.webp";
-const shlok_tajne_photo = "/_app/immutable/assets/shlok-tajne-compressed.f640fb33.webp";
-const aditya_tete_photo = "/_app/immutable/assets/aditya-tete-compressed.7310ba16.webp";
-const malhar_paradkar_photo = "/_app/immutable/assets/malhar-paradkar-compressed.892822b3.webp";
-const mayank_masram_photo = "/_app/immutable/assets/mayank-masram-compressed.a4aed599.webp";
-const anukul_gosh_photo = "/_app/immutable/assets/anukul-ghosh.0851833b.webp";
-const swara_nagpure_photo = "/_app/immutable/assets/swara_nagpure.365faffe.png";
-const aditya_shinde_photo = "/_app/immutable/assets/aditya-shinde.213336e2.webp";
-const om_lokhande_photo = "/_app/immutable/assets/om.50ee1209.jpg";
-const tanishq_dhote_photo = "/_app/immutable/assets/tanshiq_dhote.webp.e82fb48f.jpg";
-const aditya_thombre_photo = "/_app/immutable/assets/aditya_thombre.e9c3a1dc.webp";
-const mohit_deotare_photo = "/_app/immutable/assets/mohit_deotare.cfebcc11.png";
-const ayush_khangar_photo = "/_app/immutable/assets/ayush-khangar-compressed_webp.6407f1c0.jpg";
-const aditya_muddamwar_photo = "/_app/immutable/assets/aditya-muddamwar-compressed_webp.b26090e3.jpg";
-const varun_dudhane_photo = "/_app/immutable/assets/varun-dudhane-compressed.webp.9be1eeb7.jpg";
-const aranya_sharma_photo = "/_app/immutable/assets/aranya-sharma-compressed.webp.47260592.jpg";
-const ayushi_singh_photo = "/_app/immutable/assets/ayushi-singh-compressed.webp.8fdeddf5.jpg";
-const khushi_sandekar_photo = "/_app/immutable/assets/khushi.sandekar-compressed.webp.b0ad1e8a.jpg";
-const rohit_wagh_photo = "/_app/immutable/assets/rohit-wagh.987e4790.png";
-const jaideep_roy_photo = "/_app/immutable/assets/jaideep-roy.db9ec096.png";
-const suhani_garad_photo = "/_app/immutable/assets/suhani-garad.5d37099c.webp";
-const swayam_jawade_photo = "/_app/immutable/assets/swayam-jawade.72851a35.png";
-const nimish_gotmare_photo = "/_app/immutable/assets/nimish-gotmare.4a4a297b.webp";
-const sabrina_mondal_photo = "/_app/immutable/assets/sabrina-mondal-compressed.f708e2b7.jpg";
-const shravani_gawande_photo = "/_app/immutable/assets/shravani-gawande-compressed.webp.e1d2d866.jpg";
-const dude_from_mechanical = "/_app/immutable/assets/Screenshot_20240125-143331.f27f7b52.jpg";
-const karan_buradkar_photo = "/_app/immutable/assets/karan-buradkar.510610e0.webp";
-const ashlesha_chute_photo = "/_app/immutable/assets/ashlesha-chute.2784c502.png";
-const dipti_harshe_photo = "/_app/immutable/assets/dh.64a2808b.jpg";
-const rohit_thakre_photo = "/_app/immutable/assets/rohit-thakare.0b49a063.webp";
-const ajinkya_mundhe_photo = "/_app/immutable/assets/WhatsApp_Image_2024-01-31_at_11.29.21_PM.e97ff731.jpeg";
-const samruddhe_nasre_photo = "/_app/immutable/assets/sn.89c72289.jpg";
-const aditya_gawai_photo = "/_app/immutable/assets/aditya-gawai.77723711.webp";
-const shweta_mane_photo = "/_app/immutable/assets/sweta-mane.3f4641c8.png";
-const palash_atram_photo = "/_app/immutable/assets/palash-atram.webp.6b1d60d0.jpg";
-const hardik_bodele_photo = "/_app/immutable/assets/hardik-bodele.157fe32c.webp";
-const himanshi_bisen_photo = "/_app/immutable/assets/himanshi-bisen.a316cbd4.png";
-const prajwal_akarte_photo = "/_app/immutable/assets/prajwal_akarte.89c75679.jpeg";
-const tejesh_ghuge_photo = "/_app/immutable/assets/tejesh-ghuge.22a6ec46.webp";
-const anushree_barad_photo = "/_app/immutable/assets/anushree-barad.ab45e1fe.webp";
-const sushrut_kohale_photo = "/_app/immutable/assets/sushrut.e14f581c.jpeg";
+import { c as create_ssr_component, h as add_styles } from "../../../../chunks/index2.js";
+import { m as malhar_paradkar_photo, s as shlok_tajne_photo, a as mayank_masram_photo, b as aditya_tete_photo, c as swarali_prayagi_photo, d as anukul_gosh_photo, e as swara_nagpure_photo, f as aditya_shinde_photo, o as om_lokhande_photo, g as sushrut_kohale_photo, t as tanishq_dhote_photo, h as aditya_thombre_photo, i as mohit_deotare_photo, j as ayush_khangar_photo, k as aditya_muddamwar_photo, v as varun_dudhane_photo, l as aranya_sharma_photo, n as ayushi_singh_photo, p as khushi_sandekar_photo, q as dude_from_mechanical, r as sabrina_mondal_photo, u as shravani_gawande_photo, w as rohit_wagh_photo, x as jaideep_roy_photo, y as suhani_garad_photo, z as swayam_jawade_photo, A as tejesh_ghuge_photo, B as anushree_barad_photo, C as nimish_gotmare_photo, D as prajwal_akarte_photo, E as karan_buradkar_photo, F as ashlesha_chute_photo, G as ajinkya_mundhe_photo, H as dipti_harshe_photo, I as rohit_thakre_photo, J as samruddhe_nasre_photo, K as mrunmai_ingole_photo, L as shweta_mane_photo, M as palash_atram_photo, N as himanshi_bisen_photo, O as sneha_motghare_photo } from "../../../../chunks/sushrut.js";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: "#dna-bg.svelte-1rh3r4h.svelte-1rh3r4h{background:var(--bg) center no-repeat;background-size:cover}.flex_title.svelte-1rh3r4h.svelte-1rh3r4h{font-family:title, sans-serif;font-size:4rem;color:rgb(255, 255, 255);text-shadow:4px 1px 10px #000e23ea;text-align:center;margin-bottom:6vh}.my-cont_flex.svelte-1rh3r4h.svelte-1rh3r4h{max-width:80vw;display:flex;flex-wrap:wrap;justify-content:space-evenly;margin-left:auto;margin-right:auto}@media(min-width: 1536px){.my-cont_flex.svelte-1rh3r4h.svelte-1rh3r4h{max-width:100%}}article.my-cont.svelte-1rh3r4h.svelte-1rh3r4h{margin-bottom:4vw;margin-left:0.8vw;margin-right:0.8vw;width:280px;height:350px;border-radius:3px;box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);overflow:hidden}article.my-cont.svelte-1rh3r4h.svelte-1rh3r4h:hover{box-shadow:1px 1px 10px 5px rgba(177, 177, 177, 0.803);transition:all 0.5s}article.my-cont.svelte-1rh3r4h .thumb.svelte-1rh3r4h{width:auto;height:260px;background:var(\r\n				--img,\r\n				url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png')\r\n			)\r\n			no-repeat;background-size:cover;background-position-x:center;border-radius:3px}article.my-cont.svelte-1rh3r4h .infos.svelte-1rh3r4h{width:auto;height:350px;position:relative;padding:8px 14px;background:rgb(255, 255, 255);transition:all 0.5s}article.my-cont.svelte-1rh3r4h .infos .title.svelte-1rh3r4h{position:relative;margin:2px 0;letter-spacing:1px;color:#152536;font-family:'Nunito', sans-serif;font-size:1.2rem;text-transform:uppercase;text-shadow:0 0 0px #2b2b2b8e;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1}article.my-cont.svelte-1rh3r4h .infos .flag.svelte-1rh3r4h{position:absolute;top:50%;right:0;transform:translateY(-50%);width:35px;height:23px;background:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/flag.pngss') no-repeat top\r\n			right;background-size:100% auto;display:inline-block}article.my-cont.svelte-1rh3r4h .infos .date.svelte-1rh3r4h,article.my-cont.svelte-1rh3r4h .infos .seats.svelte-1rh3r4h{margin-bottom:10px;text-transform:uppercase;font-size:1.2rem;color:rgba(21, 37, 54, 0.7);font-family:'My Font', sans-serif}article.my-cont.svelte-1rh3r4h .infos .seats.svelte-1rh3r4h{display:inline-block;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid rgba(0, 0, 0, 0.2);opacity:0;transition:0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03)}article.my-cont.svelte-1rh3r4h .infos .txt.svelte-1rh3r4h{font-family:'Merriweather', sans-serif;line-height:2;font-size:0.95rem;color:rgba(21, 37, 54, 0.7);opacity:0;transition:0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03)}article.my-cont.svelte-1rh3r4h .infos .details.svelte-1rh3r4h{position:absolute;left:0px;bottom:20px;font-size:2.5rem;opacity:0;transition:0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);display:flex;width:100%;flex-direction:row;align-items:center;justify-content:space-evenly}article.my-cont.svelte-1rh3r4h:hover .infos .seats.svelte-1rh3r4h,article.my-cont.svelte-1rh3r4h:hover .infos .txt.svelte-1rh3r4h,article.my-cont.svelte-1rh3r4h:hover .infos .details.svelte-1rh3r4h{opacity:1}@media only screen and (max-width: 1200px){.flex_title.svelte-1rh3r4h.svelte-1rh3r4h{margin-top:7vw;font-size:12vw}article.my-cont.svelte-1rh3r4h.svelte-1rh3r4h{width:66vw;height:70vw}article.my-cont.svelte-1rh3r4h .infos .title.svelte-1rh3r4h{margin:0px;font-size:1.125rem;line-height:1.75rem}article.my-cont.svelte-1rh3r4h .thumb.svelte-1rh3r4h{height:50vw}article.my-cont.svelte-1rh3r4h .infos.svelte-1rh3r4h{width:70vw;height:70vw}article.my-cont.svelte-1rh3r4h .infos .date.svelte-1rh3r4h{margin-top:-2px;font-size:1rem;line-height:1.5rem}}",
@@ -397,7 +357,7 @@ ${$$result.head += `<!-- HEAD_svelte-3fdjl5_START -->${$$result.title = `<title>
 				<a rel="external noopener noreferrer nofollow" target="_blank" href="https://www.linkedin.com/in/pratik-bagdi-b9915a229"><iconify-icon class="text-3xl lg:text-5xl text-[#006192] bg-clip-text" icon="mdi:linkedin"></iconify-icon></a></div></div></article></div>
 
 <div class="flex_title svelte-1rh3r4h">Hospitality And Discipline team</div>
-<div class="my-cont_flex svelte-1rh3r4h"><article class="my-cont svelte-1rh3r4h"><div class="thumb svelte-1rh3r4h"${add_styles({ "--img": `url(${aditya_gawai_photo})` })}></div>
+<div class="my-cont_flex svelte-1rh3r4h"><article class="my-cont svelte-1rh3r4h"><div class="thumb svelte-1rh3r4h"${add_styles({ "--img": `url(${mrunmai_ingole_photo})` })}></div>
 		<div class="infos svelte-1rh3r4h"><h2 class="title svelte-1rh3r4h">Aditya Gawai<span class="flag svelte-1rh3r4h"></span></h2>
 			<h3 class="date svelte-1rh3r4h">Head</h3>
 			<h3 class="seats svelte-1rh3r4h"></h3>
@@ -430,7 +390,7 @@ ${$$result.head += `<!-- HEAD_svelte-3fdjl5_START -->${$$result.title = `<title>
 			<div class="details svelte-1rh3r4h"><a rel="external noopener noreferrer nofollow" target="_blank" href=""><iconify-icon class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text" icon="mdi:email-outline"></iconify-icon></a>
 				<a rel="external noopener noreferrer nofollow" target="_blank" href=""><iconify-icon class="text-3xl lg:text-5xl text-[#FF1C7C] bg-clip-text" icon="mdi:instagram"></iconify-icon></a>
 				<a rel="external noopener noreferrer nofollow" target="_blank" href=""><iconify-icon class="text-3xl lg:text-5xl text-[#006192] bg-clip-text" icon="mdi:linkedin"></iconify-icon></a></div></div></article>
-    <article class="my-cont svelte-1rh3r4h"><div class="thumb svelte-1rh3r4h"${add_styles({ "--img": `url(${hardik_bodele_photo})` })}></div>
+    <article class="my-cont svelte-1rh3r4h"><div class="thumb svelte-1rh3r4h"${add_styles({ "--img": `url(${sneha_motghare_photo})` })}></div>
 		<div class="infos svelte-1rh3r4h"><h2 class="title svelte-1rh3r4h">Hardik Bodele<span class="flag svelte-1rh3r4h"></span></h2>
 			<h3 class="date svelte-1rh3r4h">Co Head</h3>
 			<h3 class="seats svelte-1rh3r4h"></h3>

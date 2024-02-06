@@ -1,4 +1,4 @@
-import { y as assign, z as now, A as loop, B as identity, c as create_ssr_component, s as subscribe, e as escape, d as each, f as add_attribute, v as validate_component } from "../../chunks/index2.js";
+import { y as assign, z as now, A as loop, B as identity, c as create_ssr_component, s as subscribe, e as escape, b as each, f as add_attribute, v as validate_component } from "../../chunks/index2.js";
 import { w as writable } from "../../chunks/index3.js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
@@ -108,6 +108,7 @@ const drone = "/_app/immutable/assets/drone.5226bdc2.glb";
 const sb_0 = "/_app/immutable/assets/sb.94b83198.glb";
 const sb_1 = "/_app/immutable/assets/sb_2.ab25e8b5.glb";
 const sb_2 = "/_app/immutable/assets/sb_3.3ab4e68d.glb";
+const sb_4 = "/_app/immutable/assets/sb_5.59f97e82.glb";
 const sb_3 = "/_app/immutable/assets/sb_4.966019d8.glb";
 class Sketch {
   scene;
@@ -118,7 +119,7 @@ class Sketch {
   floatingSpeed = 2e-3;
   scrollPosition = 0;
   modelLoaded = 0;
-  skybox = [sb_0, sb_1, sb_2, sb_3];
+  skybox = [sb_0, sb_1, sb_2, sb_3, sb_4];
   constructor(canvas) {
     this.scene = new THREE.Scene();
     this.model1 = new THREE.Object3D();
@@ -142,7 +143,7 @@ class Sketch {
       this.modelLoaded++;
     });
     const loader2 = new GLTFLoader();
-    loader2.load(this.skybox[randInt(0, 3)], (gltf) => {
+    loader2.load(this.skybox[randInt(0, 4)], (gltf) => {
       this.model2 = gltf.scene;
       if (window.innerWidth < 1024) {
         this.model2.position.set(0, 0, 5);
@@ -184,9 +185,9 @@ class Sketch {
   };
   animate = () => {
     requestAnimationFrame(this.animate);
-    if (this.model1) {
+    if (this.model1 && this.model2) {
       this.model1.position.y = Math.cos(Date.now() * this.floatingSpeed) * 0.01;
-      this.camera.position.y = Math.sin(Date.now() * this.floatingSpeed) * 0.02;
+      this.camera.position.y = Math.sin(90 + Date.now() * this.floatingSpeed) * 0.03;
     }
     this.renderer.render(this.scene, this.camera);
   };
@@ -285,7 +286,7 @@ const ContactUs = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 				</div>
 				<a href="/" class="btn btn-ghost btn-sm text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Home</a>
 				<a href="/events" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Events</a>
-				<a data-sveltekit-reload href="/team" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Team</a>
+				<a data-sveltekit-reload href="/teams" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Team</a>
 				<a href="/sponsors" class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Sponsors</a>
 				<a href="/gallery" data-sveltekit-reload class="btn btn-sm btn-ghost text-xl text-white font-normal hover:bg-white hover:text-black transition-all duration-300 ease-in-out">Gallery</a></div>
 			<div class="flex flex-col w-4/6 pt-4 items-stretch justify-evenly gap-1"><div class="heading transition-all duration-300 ease-in-out text-3xl btn btn-ghost btn-lg transition-none hover:scale-100 active:scale-100 hover:bg-opacity-0 cursor-auto border-0 border-b-2 rounded-b-none border-white hover:text-white ">Legal
@@ -318,7 +319,7 @@ const AboutUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 				from renowned experts and attracts participants from across the region. Join us at Adhyaaya
 				for a journey of innovation and creativity.
 			</p>
-			<a data-sveltekit-reload href="/team" class="team-button bg-black/20 backdrop-blur-sm relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-1e6fhy2">Meet The Team <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
+			<a data-sveltekit-reload href="/teams" class="team-button bg-black/20 backdrop-blur-sm relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8 svelte-1e6fhy2">Meet The Team <iconify-icon icon="mdi:arrow-right"></iconify-icon></a></div>
 		<div class="us w-full max-w-2xl xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify backdrop-blur-none rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"><img loading="lazy"${add_attribute("src", gcoen, 0)} class="h-28" height="112" width="355" alt="">
 			<p class="max-w-lg md:text-2xl nunu">Government College of Engineering, Nagpur is a premier engineering institute established in
 				2016, affiliated to Rashtrasant Tukadoji Maharaj Nagpur University and mentored by
@@ -348,7 +349,7 @@ const Sponsors = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 	<div class="xl:w-1/3"></div>
 </div>`;
 });
-const loadingAnimation = "/_app/immutable/assets/load.7cddbf5b.gif";
+const loadingAnimation = "/_app/immutable/assets/loadingspacetravel.3a5a148f.gif";
 const _page_svelte_svelte_type_style_lang = "";
 const css = {
   code: ".loader.svelte-1m3van4{font:1em Dosis, sans-serif;line-height:1.5;perspective:40em;z-index:9999;height:100vh;width:100vw}",
@@ -367,7 +368,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       loaded = true;
       duration.set(0);
     },
-    2500
+    5200
   );
   $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-i7tcdq_START --><link rel="preload"><link rel="preload" href="/draco/draco_decoder.wasm"><link rel="preload" href="/draco/draco_wasm_wrapper.js"><link rel="preload" href="/draco/draco_decoder.js">${$$result.title = `<title>Adhyaaya&#39;24</title>`, ""}<!-- HEAD_svelte-i7tcdq_END -->`, ""}

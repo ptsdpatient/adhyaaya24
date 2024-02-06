@@ -4,6 +4,7 @@ import drone from '$lib/assets/3d-models/drone.glb?url'
 import sb_0 from '$lib/assets/3d-models/sb.glb?url'
 import sb_1 from '$lib/assets/3d-models/sb_2.glb?url'
 import sb_2 from '$lib/assets/3d-models/sb_3.glb?url'
+import sb_4 from '$lib/assets/3d-models/sb_5.glb?url'
 import sb_3 from '$lib/assets/3d-models/sb_4.glb?url'
 import {page} from '$app/stores';
 import type { Var } from 'svelte/types/compiler/interfaces';
@@ -17,7 +18,7 @@ export class Sketch {
   private floatingSpeed = 0.002
   private scrollPosition = 0;
   modelLoaded=0;
-  private skybox: string[] = [sb_0,sb_1, sb_2, sb_3];
+  private skybox: string[] = [sb_0,sb_1, sb_2, sb_3,sb_4];
  
   constructor(canvas: HTMLCanvasElement) {
     
@@ -54,7 +55,7 @@ export class Sketch {
     });
 
     const loader2 = new GLTFLoader();
-    loader2.load(this.skybox[randInt(0,3)], (gltf) => {
+    loader2.load(this.skybox[randInt(0,4)], (gltf) => {
       this.model2 = gltf.scene;
       if (window.innerWidth < 1024) {
         this.model2.position.set(0, 0, 5);
@@ -106,10 +107,9 @@ export class Sketch {
  
     requestAnimationFrame(this.animate);
   
-    if (this.model1) {
-
+    if (this.model1&&this.model2) {
       this.model1.position.y = Math.cos(Date.now() * this.floatingSpeed) * 0.01; 
-      this.camera.position.y=Math.sin(Date.now() * this.floatingSpeed) * 0.02
+      this.camera.position.y=Math.sin(90+Date.now() * this.floatingSpeed) * 0.03
     }
     
 

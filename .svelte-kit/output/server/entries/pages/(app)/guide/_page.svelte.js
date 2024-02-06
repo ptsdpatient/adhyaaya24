@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as add_attribute, d as each, e as escape } from "../../../../chunks/index2.js";
+import { c as create_ssr_component, f as add_attribute, b as each, e as escape } from "../../../../chunks/index2.js";
 import { E as EVENTS } from "../../../../chunks/events.js";
 const map = "/_app/immutable/assets/map.9ea077fc.png";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

@@ -1,4 +1,4 @@
-import { u as onDestroy, c as create_ssr_component, k as add_styles, e as escape, v as validate_component, m as missing_component, p as spread, t as escape_object, w as merge_ssr_styles, f as add_attribute, s as subscribe, d as each, x as is_promise, n as noop } from "../../chunks/index2.js";
+import { u as onDestroy, c as create_ssr_component, h as add_styles, e as escape, v as validate_component, m as missing_component, p as spread, t as escape_object, w as merge_ssr_styles, f as add_attribute, s as subscribe, b as each, x as is_promise, n as noop } from "../../chunks/index2.js";
 import { u as useToasterStore, t as toast, s as startPause, e as endPause, a as update, p as prefersReducedMotion } from "../../chunks/Toaster.svelte_svelte_type_style_lang.js";
 import { m as modals, t as transitioning, e as exitBeforeEnter } from "../../chunks/store.js";
 import { a as afterNavigate } from "../../chunks/navigation.js";
@@ -413,7 +413,7 @@ ${!$page.url.pathname.includes("asdfghbjnkml.swderft") ? `
 				<a href="/events" class="menu-item svelte-1cch5ok">Events</a>
 				<a href="/timeline" class="menu-item svelte-1cch5ok">Timeline</a>
 				
-				<a data-sveltekit-reload href="/team" class="menu-item svelte-1cch5ok">Team</a>
+				<a data-sveltekit-reload href="/teams" class="menu-item svelte-1cch5ok">Team</a>
 				<a href="/sponsors" class="menu-item svelte-1cch5ok">Sponsors</a>
 				<a data-sveltekit-reload href="/gallery" class="menu-item svelte-1cch5ok">Gallery</a>
 				<div class="menu-item-container flex flex-col md:flex-row gap-2 md:gap-14 md:pt-10 svelte-1cch5ok"><a href="/legal/privacy_policy" class="submenu-item text-base  svelte-1cch5ok">Privacy Policy</a>

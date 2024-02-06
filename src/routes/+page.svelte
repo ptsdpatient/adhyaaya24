@@ -9,7 +9,7 @@
 	import ContactUs from '$lib/components/index/ContactUs.svelte';
 	import AboutUs from '$lib/components/index/AboutUs.svelte';
 	import Sponsors from '$lib/components/index/Sponsors.svelte';
-	import loadingAnimation from '$lib/assets/load.gif'
+	import loadingAnimation from '$lib/assets/loadingspacetravel.gif'
 	// import Footer from '$lib/components/index/Footer.svelte';
 
 	// import {cubicInOut} from 'svelte/easing';
@@ -54,7 +54,7 @@
 	setTimeout(() => {
 			loaded = true;
 			duration.set(0);
-		}, 2500);
+		}, 5200);
 
 
 

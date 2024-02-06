@@ -27,7 +27,7 @@
 			</p>
 			<a
 				data-sveltekit-reload
-				href="/team"
+				href="/teams"
 				class="team-button bg-black/20 backdrop-blur-sm relative text-white px-5 py-3 text-3xl border border-solid border-white rounded-lg inline-flex items-center uppercase gap-2 hover:scale-110 hover:bg-white hover:text-black active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out mb-8"
 				>Meet The Team <iconify-icon icon="mdi:arrow-right" /></a
 			>

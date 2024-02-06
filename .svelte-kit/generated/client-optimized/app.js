@@ -21,7 +21,8 @@ export const nodes = [
 	() => import('./nodes/15'),
 	() => import('./nodes/16'),
 	() => import('./nodes/17'),
-	() => import('./nodes/18')
+	() => import('./nodes/18'),
+	() => import('./nodes/19')
 ];
 
 export const server_loads = [0];
@@ -29,7 +30,7 @@ export const server_loads = [0];
 export const dictionary = {
 		"/": [2],
 		"/(app)/__register": [13],
-		"/_index": [18],
+		"/_index": [19],
 		"/(app)/events": [3],
 		"/(app)/forms/contact_us": [4],
 		"/(app)/gallery": [5],
@@ -42,6 +43,7 @@ export const dictionary = {
 		"/(app)/pg/[rid]/success": [8],
 		"/(app)/register": [9],
 		"/(app)/sponsors": [10],
+		"/teams": [18],
 		"/(app)/team": [11],
 		"/(app)/timeline": [12]
 	};

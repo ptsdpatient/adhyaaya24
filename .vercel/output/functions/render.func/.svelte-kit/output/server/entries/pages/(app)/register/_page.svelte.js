@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as each, f as add_attribute, e as escape } from "../../../../chunks/index2.js";
+import { c as create_ssr_component, b as each, f as add_attribute, e as escape } from "../../../../chunks/index2.js";
 import "devalue";
 import { a as afterNavigate } from "../../../../chunks/navigation.js";
 import "@formkit/auto-animate";
